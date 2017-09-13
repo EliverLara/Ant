@@ -28,13 +28,13 @@
                   (':checked:active', '-checked-active'),
                   (':checked:backdrop', '-checked-backdrop'),
                   (':checked:disabled', '-checked-insensitive'),
-                  (':checked:disabled:backdrop', '-checked-insensitive-backdrop') {
+                  (':checked:disabled:backdrop', '-checked-insensitive') {
   check#{$s}{
     -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$ch}.png"),url("../assets/checkbox#{$ch}@2.png")), -gtk-scaled(url("../assets/checkbox#{$ch}.png"),url("../assets/checkbox#{$ch}@2.png")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$ch}.png"),url("../assets/radio#{$ch}@2.png")), -gtk-scaled(url("../assets/radio#{$ch}-dark.png"),url("../assets/radio#{$ch}-dark@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$ch}.png"),url("../assets/radio#{$ch}@2.png")), -gtk-scaled(url("../assets/radio#{$ch}.png"),url("../assets/radio#{$ch}@2.png")));
     -gtk-icon-shadow: none;
   }
 }
@@ -45,7 +45,7 @@
                   (':indeterminate:active', '-mixed-active'),
                   (':indeterminate:backdrop', '-mixed-backdrop'),
                   (':indeterminate:disabled', '-mixed-insensitive'),
-                  (':indeterminate:disabled:backdrop', '-mixed-insensitive-backdrop') {
+                  (':indeterminate:disabled:backdrop', '-mixed-insensitive') {
   check#{$s}{
     -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/checkbox#{$mx}.png"),url("../assets/checkbox#{$mx}@2.png")), -gtk-scaled(url("../assets/checkbox#{$mx}.png"),url("../assets/checkbox#{$mx}@2.png")));
     -gtk-icon-shadow: none;
@@ -99,7 +99,7 @@
                   (':indeterminate:disabled:selected', '-mixed'),
                   (':indeterminate:disabled:backdrop:selected', '-mixed') {
   check#{$s}{
-    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-checkbox#{$mx}.png"),url("../assets/selected-checkbox#{$mx}@2.png")), -gtk-scaled(url("../assets/selected-checkbox#{$mx}.png"),url("../assets/selected-checkbox#{$mx}-dark@2.png")));
+    -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/selected-checkbox#{$mx}.png"),url("../assets/selected-checkbox#{$mx}@2.png")), -gtk-scaled(url("../assets/selected-checkbox#{$mx}.png"),url("../assets/selected-checkbox#{$mx}@2.png")));
     -gtk-icon-shadow: none;
   }
   radio#{$s}{
