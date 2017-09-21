@@ -29,6 +29,27 @@
 
   list { background-color: $base_color; }
 
+    //elementary os file manager
+    &.source-list{
+      background: $base_color;
+      padding: 4px 0px;
+      &.view{
+  
+      &:selected {
+        &:active { box-shadow: inset 0 2px 3px -1px transparentize(black, 0.5); }
+  
+        &.has-open-popup,
+        &:hover { background-color: transparentize($selected_bg_color, 0.8); }
+  
+        &:backdrop { background-color: transparent; }
+      }
+        &:hover, iconview.source-list:hover { 
+            background-color: if(variant == light, transparentize($bg_color, 0.6), transparentize($bg_color, 0.6)); 
+        }
+      }
+    }
+    
+
   paned & { &.left, &.right, &.left:dir(rtl), &:dir(rtl), &:dir(ltr), & {
     border-style: none;
     border-color: $borders_color;

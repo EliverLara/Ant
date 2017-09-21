@@ -244,6 +244,9 @@ assistant .sidebar label.highlight {
     text-shadow: none;
     -gtk-icon-shadow: none; }
 
+*:selected {
+  color: #ff5d73; }
+
 /***********
  * Buttons *
  ***********/
@@ -4139,6 +4142,17 @@ treeview ~ scrollbar.vertical {
     transition: 200ms ease-out; }
   .sidebar list {
     background-color: #1E282C; }
+  .sidebar.source-list {
+    background: #1E282C;
+    padding: 4px 0px; }
+    .sidebar.source-list.view:selected:active, iconview.sidebar.source-list:selected:active {
+      box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
+    .sidebar.source-list.view:selected.has-open-popup, iconview.sidebar.source-list:selected.has-open-popup, .sidebar.source-list.view:selected:hover, iconview.sidebar.source-list:selected:hover {
+      background-color: rgba(255, 93, 115, 0.2); }
+    .sidebar.source-list.view:selected:backdrop, iconview.sidebar.source-list:selected:backdrop {
+      background-color: transparent; }
+    .sidebar.source-list.view:hover, iconview.sidebar.source-list:hover, .sidebar.source-list.view iconview.source-list:hover, iconview.sidebar.source-list iconview.source-list:hover {
+      background-color: rgba(30, 40, 44, 0.4); }
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
     border-style: none;
     border-color: rgba(0, 0, 0, 0.1); }

@@ -7,4 +7,5 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Ant
 MetacityTheme=Ant
+IconTheme=Boston
 ButtonLayout=:minimize,maximize,close

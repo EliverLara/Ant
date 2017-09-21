@@ -56,7 +56,13 @@
 
 }
 
-/*agregado*/
+/*elementary os file manager*/
+.sidebar .source-list{
+    padding: 4px 0px;
+}
+.sidebar .source-list.view:not(:selected):hover{
+    background-color: rgba(241, 241, 241, 0.8);
+}
 /* -------------
 NEW ON GTK 3.18
 ---------------*/

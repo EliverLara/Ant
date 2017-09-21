@@ -171,3 +171,7 @@ assistant {
     -gtk-icon-shadow: none;
   }
 }
+
+*:selected {
+  color: $selected_bg_color;
+}
