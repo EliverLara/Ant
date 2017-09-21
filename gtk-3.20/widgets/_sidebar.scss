@@ -28,6 +28,16 @@
   }
 
   list { background-color: $base_color; }
+  row{
+    &:selected{
+      background: $base_color;
+      color: $selected_bg_color;
+      label{
+    
+        color: $selected_bg_color;
+      }
+    }
+  }
 
     //elementary os file manager
     &.source-list{

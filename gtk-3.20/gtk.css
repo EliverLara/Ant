@@ -3184,6 +3184,10 @@ assistant {
 /*************
  * Notebooks *
  *************/
+notebook .frame *:selected {
+  background: transparent;
+  color: #ff5d73; }
+
 notebook > header {
   padding: 1px;
   border-color: rgba(0, 0, 0, 0.2);
@@ -4149,6 +4153,11 @@ treeview ~ scrollbar.vertical {
     transition: 200ms ease-out; }
   .sidebar list {
     background-color: #f8f8f8; }
+  .sidebar row:selected {
+    background: #f8f8f8;
+    color: #ff5d73; }
+    .sidebar row:selected label {
+      color: #ff5d73; }
   .sidebar.source-list {
     background: #f8f8f8;
     padding: 4px 0px; }
@@ -4731,7 +4740,7 @@ popover.background radiobutton:selected,
 .menuitem.button.flat:selected, calendar:selected, spinbutton:not(.vertical) selection:focus, spinbutton:not(.vertical) selection,
 entry selection:focus,
 entry selection, row:selected, treeview.view:selected:focus, treeview.view:selected {
-  color: #ff5d73; }
+  background-color: #ff5d73; }
   row:selected label, label:selected, .selection-mode button.titlebutton, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus,
   textview text:selected:focus, .view text:selected, iconview text:selected,
   textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
@@ -4741,17 +4750,9 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
   .menuitem.button.flat:selected, calendar:selected, spinbutton:not(.vertical) selection:focus, spinbutton:not(.vertical) selection,
   entry selection:focus,
   entry selection, row:selected, treeview.view:selected:focus, treeview.view:selected {
-    color: #ff5d73;
+    color: #fefefe;
     font-weight: bold;
     outline-color: rgba(254, 254, 254, 0.3); }
-    row:selected label:hover, label:hover:selected, .selection-mode button.titlebutton:hover, iconview:hover:selected:focus, .view:hover:selected, iconview:hover:selected, iconview text:hover:selected:focus,
-    textview text:hover:selected:focus, .view text:hover:selected, iconview text:hover:selected,
-    textview text:hover:selected, iconview text selection:hover:focus, .view text selection:hover, iconview text selection:hover,
-    textview text selection:hover, flowbox flowboxchild:hover:selected, modelbutton.flat:hover:selected, popover.background checkbutton:hover:selected,
-    popover.background radiobutton:hover:selected,
-    .menuitem.button.flat:hover:selected, calendar:hover:selected, spinbutton:not(.vertical) selection:hover,
-    entry selection:hover, row:hover:selected {
-      background-color: transparent; }
     row:selected label:disabled, label:disabled:selected, .selection-mode button.titlebutton:disabled, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected, iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, .view text:disabled:selected, iconview text:disabled:selected,
     textview text:disabled:selected, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,

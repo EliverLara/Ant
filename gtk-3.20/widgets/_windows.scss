@@ -116,12 +116,12 @@ headerbar.selection-mode button.titlebutton,
 // catch all extend :)
 
 %selected_items {
-  color: $selected_bg_color;
+  background-color: $selected_bg_color;
 
   @at-root %nobg_selected_items, & {
-    color: $selected_bg_color;
+    color: $selected_fg_color;
     font-weight: bold;
-    &:hover{background-color: transparent;}
+    //&:hover{background-color: transparent;}
     @if $variant == 'light' { outline-color: transparentize($selected_fg_color, 0.7); }
 
     &:disabled { color: mix($selected_fg_color, $selected_bg_color, 50%); }
