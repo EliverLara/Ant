@@ -2,7 +2,7 @@
  * Switch *
  **********/
 switch {
-  font: 1;
+  font-size: 1;
   font-weight: bold;
   outline-offset: -4px;
   transition: all 200ms ease-in;
@@ -50,7 +50,7 @@ switch {
     min-width: 16px;
     min-height: 16px;
 
-    border-radius: 50%;
+    border-radius: 100%;
     transition: $button_transition;
     background-color: $base_color;
 

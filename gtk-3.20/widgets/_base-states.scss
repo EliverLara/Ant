@@ -173,5 +173,6 @@ assistant {
 }
 
 *:selected {
-  color: $selected_bg_color;
+  background: $selected_bg_color;
+  color: $selected_fg_color;
 }
