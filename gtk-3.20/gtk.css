@@ -3314,7 +3314,9 @@ notebook > header {
       min-width: 20px;
       min-height: 20px; }
       notebook > header tab button.flat:hover {
-        color: currentColor; }
+        background: transparent;
+        box-shadow: none;
+        color: #FF044A; }
       notebook > header tab button.flat, notebook > header tab button.flat:backdrop {
         color: alpha(currentColor,0.3); }
       notebook > header tab button.flat:last-child {
