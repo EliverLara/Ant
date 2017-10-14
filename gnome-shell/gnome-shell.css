@@ -790,7 +790,8 @@ StScrollBar {
 .datemenu-today-button,
 .world-clocks-button,
 .weather-button,
-.events-section-title {
+.events-section-title,
+.message-list-section-title {
   border-radius: 4px;
   padding: .4em; }
 
@@ -806,13 +807,16 @@ StScrollBar {
 .weather-button:hover,
 .weather-button:focus,
 .events-section-title:hover,
-.events-section-title:focus {
+.events-section-title:focus,
+.message-list-section-title:hover,
+.message-list-section-title:focus {
   background-color: white; }
 
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
-.events-section-title:active {
+.events-section-title:active,
+.message-list-section-title:active {
   color: white;
   background-color: #FA3F4B; }
 
@@ -821,7 +825,8 @@ StScrollBar {
 
 .world-clocks-header,
 .weather-header,
-.events-section-title {
+.events-section-title,
+.message-list-section-title {
   color: black;
   font-weight: bold; }
 
@@ -928,10 +933,23 @@ StScrollBar {
 .message-list-section-list {
   spacing: 0.4em; }
 
+.message-list-section-close > StIcon {
+  icon-size: 16px;
+  border-radius: 16px;
+  padding: 8px;
+  color: #31363d;
+  background-color: transparent; }
+
+.message-list-section-close:hover > StIcon,
+.message-list-section-close:focus > StIcon .message-list-section-close:active > StIcon {
+  color: #FF044A;
+  background: transparent; }
+
 .message {
-  border-radius: 1px; }
+  border-radius: 1px;
+  background: transparent; }
   .message:hover, .message:focus {
-    background-color: white;
+    background-color: #f8f8f8;
     box-shadow: 3px 0px 0px 0px #FA3F4B inset; }
 
 .message-icon-bin {

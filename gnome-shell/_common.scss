@@ -886,7 +886,8 @@ StScrollBar {
     .datemenu-today-button,
     .world-clocks-button,
     .weather-button,
-    .events-section-title {
+    .events-section-title,
+    .message-list-section-title {
       border-radius: 4px;
       padding: .4em;
     }
@@ -902,7 +903,8 @@ StScrollBar {
     .datemenu-today-button,
     .world-clocks-button,
     .weather-button,
-    .events-section-title {
+    .events-section-title,
+    .message-list-section-title {
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active {
         color: lighten($selected_fg_color,5%);
@@ -919,7 +921,8 @@ StScrollBar {
 
     .world-clocks-header,
     .weather-header,
-    .events-section-title {
+    .events-section-title,
+    .message-list-section-title {
       color: darken($fg_color,40%);
       font-weight: bold;
     }
@@ -1033,13 +1036,29 @@ StScrollBar {
         .message-list-section-list {
           spacing: 0.4em;
         }
+        .message-list-section-close{
+          & > StIcon {
+            icon-size: 16px;
+            border-radius: 16px;
+            padding: 8px;
+            color: $fg_color;
+            background-color: transparent;
+          }
+          &:hover > StIcon,
+          &:focus > StIcon
+          &:active > StIcon{
+            color: $red;
+            background: transparent;
+          }
+        }
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($bg_color,5%);
+            background-color: lighten($bg_color,2%);
             box-shadow: 3px 0px 0px 0px $selected_bg_color inset;
            }
           border-radius: 1px;
+          background: transparent;
         }
 
           .message-icon-bin {
