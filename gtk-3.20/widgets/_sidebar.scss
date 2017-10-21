@@ -6,6 +6,10 @@
   border-width: 0;
   background-color: mix($bg_color, $base_color, 50%);
 
+  .frame{
+    border: none;
+  }
+
   @at-root %sidebar_left,
   &:dir(ltr),
   &.left,

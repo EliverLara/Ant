@@ -70,7 +70,7 @@ headerbar {
     &:backdrop,
     &:disabled,
     &:backdrop:disabled {
-      @include button(backdrop-header,transparent,transparentize(white,0.7));
+      @include button(backdrop-header,transparent,transparentize($fg_color,0.8));
     }
 
     &:backdrop {

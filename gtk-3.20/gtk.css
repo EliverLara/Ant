@@ -2058,7 +2058,8 @@ frame > border,
   box-shadow: none;
   margin: 0;
   padding: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
   frame > border.flat,
   .frame.flat {
     border-style: none; }
@@ -2420,7 +2421,7 @@ headerbar {
     headerbar button:backdrop,
     headerbar button:disabled,
     headerbar button:backdrop:disabled {
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba(49, 54, 61, 0.2);
       background-color: transparent;
       border-radius: 0;
       text-shadow: none;
@@ -3193,7 +3194,7 @@ notebook > header {
   padding: 1px;
   border-color: rgba(0, 0, 0, 0.2);
   border-width: 0px;
-  background-color: #EEEEEE; }
+  background-color: #ececec; }
   notebook > header:backdrop {
     border-color: rgba(119, 119, 119, 0.28);
     background-color: #EEEEEE; }
@@ -3326,18 +3327,18 @@ notebook > header {
         margin-left: -4px;
         margin-right: 4px; }
   notebook > header.top tabs, notebook > header.bottom tabs {
-    padding-left: 4px;
-    padding-right: 4px; }
+    padding-left: 0.5px;
+    padding-right: 0.5px; }
     notebook > header.top tabs:not(:only-child), notebook > header.bottom tabs:not(:only-child) {
-      margin-left: 3px;
-      margin-right: 3px; }
+      margin-left: 0.5px;
+      margin-right: 0.5px; }
       notebook > header.top tabs:not(:only-child):first-child, notebook > header.bottom tabs:not(:only-child):first-child {
         margin-left: -1px; }
       notebook > header.top tabs:not(:only-child):last-child, notebook > header.bottom tabs:not(:only-child):last-child {
         margin-right: -1px; }
     notebook > header.top tabs tab, notebook > header.bottom tabs tab {
-      margin-left: 4px;
-      margin-right: 4px; }
+      margin-left: 0.5px;
+      margin-right: 0.5px; }
       notebook > header.top tabs tab.reorderable-page, notebook > header.bottom tabs tab.reorderable-page {
         border-style: none solid; }
   notebook > header.left tabs, notebook > header.right tabs {
@@ -4144,6 +4145,8 @@ treeview ~ scrollbar.vertical {
   border-style: none;
   border-width: 0;
   background-color: #f3f3f3; }
+  .sidebar .frame {
+    border: none; }
   stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl) {
     border-right: none;
     border-left-style: none; }
