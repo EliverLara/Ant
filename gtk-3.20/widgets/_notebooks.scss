@@ -3,7 +3,7 @@
  *************/
 notebook {
   .frame{
-    *:selected{
+    *:selected, *:selected:backdrop{
       background: transparent;
       color: $selected_bg_color;
     } 
@@ -189,10 +189,9 @@ notebook {
 
       &:backdrop:checked {
         color: $backdrop_fg_color;
-
         &.reorderable-page {
           border-color: $backdrop_borders_color;
-          background-color: $backdrop_bg_color;
+          background-color: $backdrop_base_color;
         }
       }
 
