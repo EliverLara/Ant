@@ -16,5 +16,6 @@ gsettings set org.gnome.desktop.wm.preferences theme "Ant"
 ```
 or Change via distribution specific tool.
 
-### Note:
+### Notes:
 * This theme is based on the [evopop-gtk-theme](https://github.com/solus-project/evopop-gtk-theme).
+* Icon theme in the screenshot is [Boston](https://www.gnome-look.org/p/1012402/).
