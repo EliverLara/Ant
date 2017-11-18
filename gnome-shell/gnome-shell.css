@@ -706,7 +706,8 @@ StScrollBar {
     #panel .panel-button .system-status-icon,
     #panel .panel-button .app-menu-icon > StIcon,
     #panel .panel-button .popup-menu-arrow {
-      text-shadow: 0px 0px 2px rgba(230, 230, 230, 0.9); }
+      text-shadow: 0px 0px 2px rgba(230, 230, 230, 0.9);
+      icon-shadow: none; }
     #panel .panel-button:hover {
       background: #e0e0e0;
       color: #4d4d4d;
@@ -744,13 +745,13 @@ StScrollBar {
   #panel .screencast-indicator {
     color: #ff9f39; }
   #panel.solid {
-    background-color: black;
+    background-color: rgba(216, 216, 216, 0.95);
     /* transition from transparent to solid */
     transition-duration: 300ms; }
     #panel.solid .panel-corner {
       -panel-corner-background-color: black; }
     #panel.solid .panel-button {
-      color: #ccc;
+      color: #333333;
       text-shadow: none; }
       #panel.solid .panel-button:hover {
         color: #484f59; }

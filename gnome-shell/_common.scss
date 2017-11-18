@@ -786,6 +786,7 @@ StScrollBar {
     .app-menu-icon > StIcon,
     .popup-menu-arrow {
       text-shadow: 0px 0px 2px rgba(230, 230, 230, 0.9);
+      icon-shadow: none;
     }
 
     &:hover {
@@ -832,7 +833,7 @@ StScrollBar {
   .screencast-indicator { color: $warning_color; }
 
   &.solid {
-    background-color: black;
+    background-color: transparentize(darken($dracula,10%),0.05);
     /* transition from transparent to solid */
     transition-duration: 300ms;
 
@@ -841,7 +842,7 @@ StScrollBar {
     }
 
     .panel-button {
-      color: #ccc;
+      color: $topbar_color;
       text-shadow: none;
 
       &:hover {
