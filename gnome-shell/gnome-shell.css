@@ -924,6 +924,8 @@ StScrollBar {
 
 .message-list-clear-button.button {
   background-color: transparent;
+  box-shadow: none;
+  border: 1px solid rgba(68, 71, 90, 0.4);
   margin: 1.5em 1.5em 0; }
   .message-list-clear-button.button:hover, .message-list-clear-button.button:focus {
     background-color: white; }
@@ -981,7 +983,7 @@ StScrollBar {
   color: #26292f; }
 
 .message-content {
-  color: #040404;
+  text-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.5);
   padding: 10px; }
   .message-content *:hover > StIcon,
   .message-content *:focus > StIcon {
