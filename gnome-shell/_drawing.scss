@@ -165,8 +165,8 @@
     color: $osd_fg_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    box-shadow: $depth5;
-    border: none;
+    box-shadow: none;
+    border: 1px solid  transparentize($selected_bg_color, 0.5);
   }
 
   @else if $t==hover {
