@@ -1,9 +1,54 @@
-# Bridge | ScionicSpectre
+# Copyright 2016 Peter Cornelis.
+#
+# This file is part of the EvoPop GTK theme.
+#
+# Authors:
+# Sam Hewitt <sam@snwh.org>
+# Peter Cornelis <poltertec@gmail.com>
+#
+# The EvoPop GTK theme is free software: you can redistribute it
+# and/or modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# The EvoPop GTK theme is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+# Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with the EvoPop GTK theme. If not, see http://www.gnu.org/licenses/.
 
-#
-# Imports
-#
-include "colors.rc"
-include "common.rc"
-include "misc.rc"
-include "3rd-party.rc"
+# ==============================================================================
+# EvoPop GTK2 THEME
+# ==============================================================================
+
+# Text/base colors
+gtk-color-scheme = "text_color:#31363d\nbase_color:#f8f8f8"
+# Foreground/background colors
+gtk-color-scheme = "fg_color:#31363d\nbg_color:#eeeeee"
+# Selection colors
+gtk-color-scheme = "selected_fg_color:#fefefe\nselected_bg_color:#ff5d73"
+# Tooltip colors
+gtk-color-scheme = "tooltip_fg_color:#2d2d2d\ntooltip_bg_color:#fefefe"
+# Window colors
+gtk-color-scheme = "wm_color:#31363d\nunfocused_wm_color:#31363d"
+# Panel colors
+gtk-color-scheme = "panel_bg_color:#263238\npanel_fg_color:#ffffff"
+# Dark Theme - Text/base colors
+gtk-color-scheme = "dark_text_color:#fefefe\ndark_base_color:#505359"
+# Dark Theme - Foreground/background colors
+gtk-color-scheme = "dark_fg_color:#31363d\ndark_bg_color:#eeeeee"
+
+gtk-auto-mnemonics = 1
+gtk-primary-button-warps-slider = 1
+
+include "main.rc"
+
+# App stylings
+include "apps/chrome.rc"
+include "apps/gimp.rc"
+include "apps/libreoffice.rc"
+include "apps/terminal.rc"
+include "apps/thunar.rc"
+# include "apps/xfce.rc"

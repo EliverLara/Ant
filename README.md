@@ -1,7 +1,7 @@
 
 ![](Art/logo.png)
 
-![](Art/screenshot.png)
+![](Art/Ant.png)
 
 
 #### Installation
