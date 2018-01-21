@@ -5748,13 +5748,13 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
  * Panel *
  ********/
 .panel {
-  background-color: transparent;
+  background-color: rgba(235, 235, 235, 0.7);
   transition: all 100ms ease-in-out;
-  color: white; }
+  color: #C3C7D1; }
   .panel.maximized {
-    background-color: #000; }
+    background-color: #ebebeb; }
   .panel.translucent {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(235, 235, 235, 0.5); }
 
 .composited-indicator > GtkRevealer,
 .composited-indicator > GtkRevealer GtkImage,
