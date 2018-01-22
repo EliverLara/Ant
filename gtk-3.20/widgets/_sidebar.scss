@@ -36,9 +36,13 @@
     &:selected{
       &:backdrop{
         color: $backdrop_selected_bg_color;
+        background: transparent;
         label{
           color: $backdrop_selected_bg_color;
         }  
+      }
+      &:hover{
+        background-color: transparentize($selected_bg_color, 0.8);
       }
       background: $base_color;
       color: $selected_bg_color;
