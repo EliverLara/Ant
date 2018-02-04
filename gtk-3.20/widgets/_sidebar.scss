@@ -33,6 +33,7 @@
 
   list { background-color: $base_color; }
   row{
+    padding: 7px 14px;
     &:selected{
       &:backdrop{
         color: $backdrop_selected_bg_color;
