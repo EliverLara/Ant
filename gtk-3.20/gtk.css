@@ -2348,8 +2348,7 @@ headerbar {
   min-height: 27px;
   background-color: #EEEEEE;
   color: #31363D;
-  border-radius: 0;
-  -GtkPaned-handle-size: 0; }
+  border-radius: 0; }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
     border-color: rgba(119, 119, 119, 0.28);
@@ -2399,7 +2398,11 @@ headerbar {
       border-style: solid; }
   .titlebar:not(headerbar) entry,
   headerbar entry {
+<<<<<<< HEAD
     min-height: 24px; }
+=======
+    min-height: 25px; }
+>>>>>>> master
   .titlebar:not(headerbar) button,
   headerbar button {
     color: #31363D;
