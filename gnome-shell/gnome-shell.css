@@ -560,7 +560,7 @@ StScrollBar {
   .osd-window .level {
     height: 0.6em;
     border-radius: 0.3em;
-    background-color: rgba(205, 205, 205, 0.45);
+    background-color: rgba(192, 192, 192, 0.65);
     color: #31363d; }
   .osd-window .level-bar {
     background-color: #31363d;
@@ -659,9 +659,10 @@ StScrollBar {
 .switcher-list, .workspace-switcher-container {
   color: #31363d;
   background-color: rgba(243, 243, 243, 0.95);
-  border: none;
+  border: 1px solid rgba(156, 159, 180, 0.4);
   border-radius: 2px;
-  padding: 12px; }
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgba(49, 49, 49, 0.356); }
 
 /* Tiled window previews */
 .tile-preview {
