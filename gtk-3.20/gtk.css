@@ -2398,11 +2398,7 @@ headerbar {
       border-style: solid; }
   .titlebar:not(headerbar) entry,
   headerbar entry {
-<<<<<<< HEAD
     min-height: 24px; }
-=======
-    min-height: 25px; }
->>>>>>> master
   .titlebar:not(headerbar) button,
   headerbar button {
     color: #31363D;
