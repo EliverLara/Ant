@@ -4514,7 +4514,7 @@ tooltip {
   tooltip decoration {
     background-color: transparent; }
   tooltip * {
-    padding: 4px;
+    padding: 2px 4px;
     background-color: transparent;
     color: white; }
 
