@@ -4539,13 +4539,13 @@ tooltip {
   box-shadow: none;
   text-shadow: 0 1px black; }
   tooltip.background {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(30, 40, 44, 0.8);
     background-clip: padding-box;
     border: 1px solid rgba(255, 255, 255, 0.1); }
   tooltip decoration {
     background-color: transparent; }
   tooltip * {
-    padding: 4px;
+    padding: 2px 4px;
     background-color: transparent;
     color: white; }
 
