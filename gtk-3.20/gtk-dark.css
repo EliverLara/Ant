@@ -14,7 +14,7 @@
 /* text/foreground color of selections */
 @define-color theme_selected_fg_color #fefefe;
 /* base background color of disabled widgets */
-@define-color insensitive_bg_color #202a2e;
+@define-color insensitive_bg_color #28363b;
 /* text foreground color of disabled widgets */
 @define-color insensitive_fg_color #71787f;
 /* disabled text widgets and the like base background color */
@@ -151,7 +151,7 @@ read if you used those and something break with a version upgrade you're on your
     background-color: #090c0e; }
   .gtkstyle-fallback:disabled {
     color: #71787f;
-    background-color: #202a2e; }
+    background-color: #28363b; }
   .gtkstyle-fallback:selected {
     color: #fefefe;
     background-color: #ff5d73; }
@@ -335,7 +335,7 @@ button {
     button:backdrop:disabled {
       color: #a3a9b2;
       outline-color: rgba(195, 199, 209, 0.3);
-      background-color: #202a2e;
+      background-color: #28363b;
       text-shadow: none;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
       notebook > header > tabs > arrow:backdrop:disabled:active, notebook > header > tabs > arrow:backdrop:disabled:checked, notebook > header > tabs > arrow:backdrop:disabled:active, notebook > header > tabs > arrow:backdrop:disabled:checked,
@@ -362,7 +362,7 @@ button {
   button:disabled {
     color: #a3a9b2;
     outline-color: rgba(195, 199, 209, 0.3);
-    background-color: #202a2e;
+    background-color: #28363b;
     text-shadow: none;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
     notebook > header > tabs > arrow:disabled:active, notebook > header > tabs > arrow:disabled:checked,
@@ -1805,7 +1805,7 @@ entry {
   entry:disabled {
     color: #71787f;
     border-color: rgba(238, 238, 238, 0.1);
-    background-color: #202a2e;
+    background-color: #28363b;
     box-shadow: none; }
   spinbutton:backdrop:not(.vertical),
   entry:backdrop {
@@ -1818,7 +1818,7 @@ entry {
   entry:backdrop:disabled {
     color: #3d5159;
     border-color: rgba(97, 104, 106, 0.19);
-    background-color: #202a2e;
+    background-color: #28363b;
     box-shadow: none; }
   spinbutton.error:not(.vertical),
   entry.error {
@@ -3508,7 +3508,7 @@ progressbar {
  * GtkScale *
  ************/
 progressbar trough, scale trough, scale fill {
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(120, 120, 120, 0.14);
   border: none;
   border-radius: 3px;
   margin: 0; }
@@ -3548,7 +3548,7 @@ scale {
     min-height: 16px;
     min-width: 16px;
     margin: -7px;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -3556,7 +3556,7 @@ scale {
     scale slider:active {
       background-color: #ff5d73; }
       scale slider:active:disabled {
-        background-color: #202a2e;
+        background-color: #28363b;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.05); }
   scale.fine-tune.horizontal {
     padding-top: 9px;
@@ -3591,16 +3591,16 @@ scale {
     border-color: #222e32;
     border: none;
     border-radius: 12px;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
     scale slider:active {
       border-color: #ff2a47; }
     scale slider:disabled {
-      background-color: #202a2e;
+      background-color: #28363b;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
     scale slider:backdrop, scale slider:backdrop:disabled {
       transition: 200ms ease-out;
-      background-color: #202a2e;
+      background-color: #28363b;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
     row:selected scale slider:disabled, row:selected scale slider {
       border-color: #ff2a47; }
@@ -3699,7 +3699,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3709,7 +3709,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3719,7 +3719,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3729,7 +3729,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3739,7 +3739,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3749,7 +3749,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3759,7 +3759,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3769,7 +3769,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3779,7 +3779,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3789,7 +3789,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3799,7 +3799,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3809,7 +3809,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3819,7 +3819,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3829,7 +3829,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3839,7 +3839,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3849,7 +3849,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3859,7 +3859,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3869,7 +3869,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
@@ -3879,7 +3879,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3889,7 +3889,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3899,7 +3899,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3909,7 +3909,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3919,7 +3919,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -3929,7 +3929,7 @@ scale {
     margin: -7px;
     border: none;
     border-radius: 50%;
-    background-color: #222e32;
+    background-color: #374950;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
@@ -4420,15 +4420,15 @@ switch {
   border-radius: 14px;
   color: transparent;
   padding: 2px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #374950;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(0, 0, 0, 0.1); }
   switch:disabled {
-    background-color: #202a2e; }
+    background-color: #28363b; }
   switch:backdrop {
     background-color: #1E282C;
     transition: 200ms ease-out; }
     switch:backdrop:disabled {
-      background-color: #202a2e; }
+      background-color: #28363b; }
   switch:active, switch:checked {
     background-color: #ff5d73; }
     switch:active:backdrop, switch:checked:backdrop {
@@ -4443,7 +4443,7 @@ switch {
     min-height: 16px;
     border-radius: 100%;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-color: #222e32;
+    background-color: gray;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2); }
     switch slider:backdrop {
       padding: 2px;
@@ -6073,7 +6073,7 @@ ConversationListView {
   #content_frame button:disabled {
     color: #a3a9b2;
     outline-color: rgba(195, 199, 209, 0.3);
-    background-color: #202a2e;
+    background-color: #28363b;
     text-shadow: none;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
 
