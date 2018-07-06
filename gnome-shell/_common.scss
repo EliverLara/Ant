@@ -737,6 +737,7 @@ StScrollBar {
 /* TOP BAR */
 
 #panel {
+  background-gradient-direction: none;
   background-color: transparentize(darken($dracula,10%),0.05);
   /* transition from solid to transparent */
   transition-duration: 500ms;
