@@ -838,6 +838,7 @@ StScrollBar {
   .screencast-indicator { color: $warning_color; }
 
   &.solid {
+    text-shadow: none;
     background-color: transparentize(darken($dracula,10%),0.05);
     /* transition from transparent to solid */
     transition-duration: 300ms;

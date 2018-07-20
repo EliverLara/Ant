@@ -18,9 +18,9 @@ gulp.task('shell-style', function() {
 
 //Watch task
 gulp.task('default',function() {
-    gulp.watch('gtk-3.20/**/*.scss',['styles']);
+    gulp.watch('gtk-3.20/**/*.scss', gulp.series('styles'));
 });
 
 gulp.task('shell',function() {
-    gulp.watch('gnome-shell/*.scss',['shell-style']);
+    gulp.watch('gnome-shell/*.scss', gulp.series('shell-style'));
 });
