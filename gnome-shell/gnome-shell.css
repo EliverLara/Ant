@@ -398,7 +398,7 @@ StScrollBar {
   padding-bottom: 8px; }
 
 .hidden {
-  color: transparent; }
+  color: rgba(0, 0, 0, 0); }
 
 .prompt-dialog-null-label {
   font-size: 10pt;
@@ -610,7 +610,7 @@ StScrollBar {
   background: rgba(68, 71, 90, 0.4); }
 
 .switcher-arrow {
-  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
   color: rgba(49, 54, 61, 0.8); }
   .switcher-arrow:highlighted {
     color: #31363d; }
@@ -755,6 +755,7 @@ StScrollBar {
   #panel .screencast-indicator {
     color: #ff9f39; }
   #panel.solid {
+    text-shadow: none;
     background-color: rgba(216, 216, 216, 0.95);
     /* transition from transparent to solid */
     transition-duration: 300ms; }
