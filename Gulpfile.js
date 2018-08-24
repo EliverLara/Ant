@@ -2,18 +2,20 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var exec = require('gulp-exec');
 
-gulp.task('styles', function() {
+gulp.task('styles', function(done) {
     gulp.src('gtk-3.20/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gtk-3.20/'))
         .pipe(exec(' gsettings set org.gnome.desktop.interface gtk-theme "Ant"'))
+    done();
 });
 
-gulp.task('shell-style', function() {
+gulp.task('shell-style', function(done) {
     gulp.src('gnome-shell/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gnome-shell/'))
         .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Ant"'))
+    done();
 });
 
 //Watch task
