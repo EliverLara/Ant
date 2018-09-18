@@ -3177,7 +3177,7 @@ notebook > header {
   padding: 1px;
   border-color: rgba(0, 0, 0, 0.2);
   border-width: 0px;
-  background-color: #ececec; }
+  background-color: #e4e4e4; }
   notebook > header:backdrop {
     border-color: rgba(119, 119, 119, 0.28);
     background-color: #EEEEEE; }
