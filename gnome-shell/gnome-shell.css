@@ -1594,7 +1594,7 @@ StScrollBar {
   border: none;
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black;
-  background: #1E282C;
+  background-color: #1E282C;
   min-height: 2em;
   min-width: 2em;
   font-size: 14pt;

@@ -1711,7 +1711,7 @@ StScrollBar {
 
   .keyboard-key {
     @include button(normal);
-    background: $base_color;
+    background-color: $base_color;
     min-height: 2em;
     min-width: 2em;
     font-size: 14pt;
