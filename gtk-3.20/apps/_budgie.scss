@@ -2,6 +2,8 @@
 * Budgie *
 *********/
 
+$_borders:  transparentize(black,0.8);
+
 $alert_color: $red;
 $button_bg: transparent;
 $entry_border: transparent;
@@ -13,8 +15,8 @@ $panel_color: $headerbar_fg_color;
 $panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
 $panel_shadow: transparentize(black, 0.7);
 $raven_bg: transparentize($headerbar_color, 0.08);
-$raven_expander_border: transparentize($dark_borders_color, 0.05);
-$raven_border: transparentize($dark_borders_color, 0.08);
+$raven_expander_border: transparentize($_borders, 0.05);
+$raven_border: transparentize($_borders, 0.08);
 $raven_expander_bg: transparentize(lighten($panel_bg, 15%), 0.5);
 $raven_background_bg: transparent;
 $raven_background_border: transparent;
@@ -73,7 +75,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
     background: $panel_bg;
     background-clip: border-box;
     box-shadow: 0 2px 3px 1px transparentize(black, 0.65);
-    border: 1px solid $dark_borders_color;
+    border: 1px solid $_borders;
     list,
     row {
       &:hover { background: none; }
@@ -109,7 +111,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
         border: none;
         background: none;
         padding: 5px 2px;
-        border-bottom: 1px solid $dark_borders_color;
+        border-bottom: 1px solid $_borders;
         border-radius: 0;
         font-size: 120%;
         box-shadow: none;
@@ -124,8 +126,8 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
         border-width: 0;
         margin-left: 3px;
         background: transparent;
-        &:dir(ltr) { border-right: 1px solid $dark_borders_color; }
-        &:dir(rtl) { border-left: 1px solid $dark_borders_color; }
+        &:dir(ltr) { border-right: 1px solid $_borders; }
+        &:dir(rtl) { border-left: 1px solid $_borders; }
     }
 
     .category-button {
@@ -151,7 +153,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
 
     scrollbar {
       background-color: transparent;
-      border-color: $dark_borders_color;
+      border-color: $_borders;
     }
 
     button:not(.category-button) {
@@ -828,7 +830,7 @@ calendar.raven-calendar {
       margin-bottom: 0;
       min-height: 32px;
       border-bottom: none;
-      border-color:$dark_borders_color;
+      border-color:$_borders;
       border-radius: 0;
       color: $headerbar_fg_color;
       background-color: transparent;

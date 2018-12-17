@@ -4761,7 +4761,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
   background: rgba(213, 213, 213, 0.95);
   background-clip: border-box;
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.35);
-  border: 1px solid #e6e6e6; }
+  border: 1px solid rgba(0, 0, 0, 0.2); }
   .budgie-popover list:hover,
   .budgie-popover row:hover,
   .budgie-popover.background list:hover,
@@ -4793,7 +4793,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     border: none;
     background: none;
     padding: 5px 2px;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0;
     font-size: 120%;
     box-shadow: none;
@@ -4809,9 +4809,9 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     margin-left: 3px;
     background: transparent; }
     .budgie-menu .categories:dir(ltr) {
-      border-right: 1px solid #e6e6e6; }
+      border-right: 1px solid rgba(0, 0, 0, 0.2); }
     .budgie-menu .categories:dir(rtl) {
-      border-left: 1px solid #e6e6e6; }
+      border-left: 1px solid rgba(0, 0, 0, 0.2); }
   .budgie-menu .category-button {
     padding: 7px;
     border-radius: 2px 0 0 2px; }
@@ -4829,7 +4829,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
         color: rgba(254, 254, 254, 0.7); }
   .budgie-menu scrollbar {
     background-color: transparent;
-    border-color: #e6e6e6; }
+    border-color: rgba(0, 0, 0, 0.2); }
   .budgie-menu button:not(.category-button) {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -4945,7 +4945,7 @@ button.raven-trigger {
 
 .places-menu .places-section-header {
   padding: 0px;
-  border-bottom: 1px solid rgba(230, 230, 230, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0px 1px 1px alpha(@theme_fg_color, 0.03); }
 
 .places-menu .places-section-header > button {
@@ -4956,11 +4956,11 @@ button.raven-trigger {
 
 .places-menu .places-list {
   background: rgba(49, 54, 61, 0.04);
-  border-bottom: 1px solid rgba(230, 230, 230, 0.95); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 
 .places-menu .unlock-area {
-  border-top: 1px solid rgba(230, 230, 230, 0.85);
-  border-bottom: 1px solid rgba(230, 230, 230, 0.85); }
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
 
 .places-menu .unlock-area entry {
   border-radius: 0;
@@ -4969,7 +4969,7 @@ button.raven-trigger {
 .places-menu .unlock-area button {
   border-radius: 0;
   border: 0;
-  border-left: 1px solid rgba(230, 230, 230, 0.85); }
+  border-left: 1px solid rgba(0, 0, 0, 0.05); }
 
 .places-menu .alternative-label {
   font-size: 15px;
@@ -5157,7 +5157,7 @@ button.raven-trigger {
   background: none; }
   .top .raven-frame border {
     border: none;
-    border-bottom: 1px solid rgba(230, 230, 230, 0.92); }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
 
 .top .shadow-block {
   background-color: transparent;
@@ -5171,7 +5171,7 @@ button.raven-trigger {
   background: none; }
   .bottom .raven-frame border {
     border: none;
-    border-top: 1px solid rgba(230, 230, 230, 0.92); }
+    border-top: 1px solid rgba(0, 0, 0, 0.12); }
 
 .bottom .shadow-block {
   background-color: transparent;
@@ -5185,7 +5185,7 @@ button.raven-trigger {
   background: none; }
   .left .raven-frame border {
     border: none;
-    border-right: 1px solid rgba(230, 230, 230, 0.92); }
+    border-right: 1px solid rgba(0, 0, 0, 0.12); }
 
 .left .shadow-block {
   background-color: transparent;
@@ -5199,7 +5199,7 @@ button.raven-trigger {
   background: none; }
   .right .raven-frame border {
     border: none;
-    border-left: 1px solid rgba(230, 230, 230, 0.92); }
+    border-left: 1px solid rgba(0, 0, 0, 0.12); }
 
 .right .shadow-block {
   background-color: transparent;
@@ -5213,7 +5213,7 @@ button.raven-trigger {
   .raven .raven-header {
     min-height: 32px;
     color: #31363D;
-    border: solid rgba(230, 230, 230, 0.95);
+    border: solid rgba(0, 0, 0, 0.15);
     border-width: 1px 0;
     background-color: rgba(251, 251, 251, 0.45); }
     .raven .raven-header * {
@@ -5441,7 +5441,7 @@ calendar.raven-calendar {
     margin-bottom: 0;
     min-height: 32px;
     border-bottom: none;
-    border-color: #e6e6e6;
+    border-color: rgba(0, 0, 0, 0.2);
     border-radius: 0;
     color: #31363D;
     background-color: transparent;
