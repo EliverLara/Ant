@@ -4434,10 +4434,6 @@ switch {
     background-color: #ff5d73; }
     switch:active:backdrop, switch:checked:backdrop {
       background-color: rgba(255, 93, 115, 0.6); }
-      switch:active:backdrop slider:backdrop, switch:checked:backdrop slider:backdrop {
-        box-shadow: none;
-        background-color: rgba(248, 248, 248, 0.9);
-        border: none; }
   switch slider {
     padding: 2px;
     min-width: 16px;
@@ -4450,6 +4446,12 @@ switch {
       padding: 2px;
       box-shadow: none;
       background-color: #f8f8f8; }
+  switch:checked slider {
+    background: #f8f8f8; }
+    switch:checked slider:backdrop {
+      box-shadow: none;
+      background-color: rgba(248, 248, 248, 0.9);
+      border: none; }
   row:selected switch {
     box-shadow: none;
     border-color: #ff2a47; }
