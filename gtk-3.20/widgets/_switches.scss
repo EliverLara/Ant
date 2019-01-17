@@ -3,6 +3,7 @@
  **********/
  $_switch_bg: if($variant == 'light', transparentize(black, 0.9), lighten($base_color, 10%));
  $_switch_slider_bg: if($variant == 'light', $base_color, lighten(black, 50%));
+ $_switch_slider_bg_active: if($variant == 'light', $_switch_slider_bg, #fff);
 
  switch {
   font-size: 1px;
@@ -36,14 +37,6 @@
 
     &:backdrop {
       background-color: $backdrop_selected_bg_color;
-
-      slider {
-        &:backdrop {
-          box-shadow:none;
-          background-color:transparentize($base_color, 0.1);
-          border:none;
-        }
-      }
     }
   }
 
@@ -67,7 +60,14 @@
     }
   }
 
-  &:checked slider { }
+  &:checked slider {
+    background: $_switch_slider_bg_active;
+    &:backdrop {
+      box-shadow:none;
+      background-color:transparentize($base_color, 0.1);
+      border:none;
+    }
+  }
 
   &:backdrop {
   }
