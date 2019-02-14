@@ -1290,12 +1290,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    color: #FA3F4B;
-    background-color: rgba(243, 243, 243, 0.95);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.3);
-    border: none;
-    text-shadow: none;
-    icon-shadow: none; }
+    background-color: #FA3F4B;
+    color: #f7f7f7; }
   .app-view-control:first-child {
     border-right-width: 0;
     border-radius: 3px 0 0 3px; }
