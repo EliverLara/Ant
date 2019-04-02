@@ -393,6 +393,14 @@ toolbar {
     &:hover { @include button(normal,darken($bg_color,7%));}
     &:active { @include button(normal,darken($bg_color,12%));}
   }
+  &.osd {
+    .linked {
+      button{
+        border-color: $dark_borders_color;
+        box-shadow: none;
+      }
+    }
+  }
 }
 // all the following is for the +|- buttons on inline toolbars, that way
 // should really be deprecated...

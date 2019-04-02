@@ -28,7 +28,7 @@ $selected_bg_color: #ff5d73;
 /*$selected_bg_color: #00e8c6;06d6a0*/
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: darken($bg_color, 10%);
-$dark_borders_color: darken($main_dark_color, 10%);
+$dark_borders_color: transparentize(black, 0.8);
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 $link_color: $blue;
 $link_visited_color:transparentize($link_color,0.5);
