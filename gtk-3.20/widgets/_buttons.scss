@@ -47,6 +47,11 @@ button {
         transition-duration: 500ms;
 
         &:active { transition: $button_transition; }
+
+        &.image-button:hover {
+          background-color: $selected_bg_color;
+          color: $selected_fg_color;
+        }
       }
     }
 
@@ -203,6 +208,10 @@ button {
       box-shadow: none; //FIXME respect no edge on the button mixin
       text-shadow: 0 1px black;
       -gtk-icon-shadow: 0 1px black;
+
+      &.image-button:hover {
+        @include button(osd);
+      } 
 
       &:hover { @include button(osd-hover); }
 
