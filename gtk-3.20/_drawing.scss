@@ -244,7 +244,7 @@
   background-color: transparent;
   border-radius: 0;
   text-shadow: none;
-  @include lines(up);
+  //@include lines(up);
 }
 
 @else if $t==backdrop-header {
