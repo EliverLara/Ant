@@ -1,7 +1,7 @@
 /************
  * GtkScale *
  ************/
- $scale_slider_bg: if($variant == 'light', $base_color, lighten($base_color, 10%));
+ $scale_slider_bg: #fff;
  $scale_trough_bg: if($variant == 'light', transparentize(black,0.86), lighten(transparentize(black,0.86), 47%));
 %scale_trough {
   background-color: $scale_trough_bg;
@@ -180,37 +180,6 @@ scale {
     // ...on selected list rows
     row:selected & { &:disabled, & { border-color: $selected_borders_color; } }
 
-    // OSD
-    .osd & {
-      @include button(osd);
-      border-color: darken($osd_borders_color, 3%);
-      background-color: opacify($osd_bg_color, 1); // solid background needed here
-
-      &:hover {
-        @include button(osd-hover);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
-
-      &:active {
-        @include button(osd-active);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
-
-      &:disabled {
-        @include button(osd-insensitive);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
-
-      &:backdrop {
-        @include button(osd-backdrop);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-
-        &:disabled {
-          @include button(osd-backdrop-insensitive);
-          background-color: opacify($osd_bg_color, 1); // solid background needed here
-        }
-      }
-    }
   }
 
   value { color: gtkalpha(currentColor, 0.4); }
