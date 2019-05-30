@@ -2334,7 +2334,7 @@ headerbar {
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #f7f7f7;
-    min-height: 14px;
+    min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     box-shadow: none; }
@@ -2568,6 +2568,7 @@ headerbar {
   .titlebar .path-bar-box headerbar button:checked,
   headerbar .path-bar-box button:checked {
     background: #ff5d73;
+    border-color: #ff5d73;
     color: #fff; }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
@@ -2595,25 +2596,42 @@ headerbar {
   headerbar .path-bar-box .dim-label,
   headerbar .path-bar-box label.separator,
   headerbar .path-bar-box .subtitle {
-    color: transparent; }
-  .titlebar .path-bar-box button,
-  headerbar .path-bar-box button {
-    margin-left: -6px; }
-    .titlebar .path-bar-box button:last-child,
-    headerbar .path-bar-box button:last-child {
-      margin-left: -6px;
-      border-radius: 0px; }
-      .titlebar .path-bar-box button:last-child:active, .titlebar .path-bar-box button:last-child:checked,
-      headerbar .path-bar-box button:last-child:active,
-      headerbar .path-bar-box button:last-child:checked {
-        border-radius: 0px 4px 4px 0px; }
-    .titlebar .path-bar-box button:first-child,
-    headerbar .path-bar-box button:first-child {
-      border-radius: 4px 0px 0px 4px; }
-      .titlebar .path-bar-box button:first-child:active, .titlebar .path-bar-box button:first-child:checked,
-      headerbar .path-bar-box button:first-child:active,
-      headerbar .path-bar-box button:first-child:checked {
-        border-radius: 4px; }
+    color: transparent;
+    margin-right: -6px; }
+  .titlebar .path-bar-box button:last-child,
+  headerbar .path-bar-box button:last-child {
+    margin-left: -1px;
+    border-radius: 0px; }
+    .titlebar .path-bar-box button:last-child:active, .titlebar .path-bar-box button:last-child:checked,
+    headerbar .path-bar-box button:last-child:active,
+    headerbar .path-bar-box button:last-child:checked {
+      border-radius: 0px 4px 4px 0px; }
+  .titlebar .path-bar-box button:first-child,
+  headerbar .path-bar-box button:first-child {
+    border-radius: 4px 0px 0px 4px; }
+    .titlebar .path-bar-box button:first-child:active, .titlebar .path-bar-box button:first-child:checked,
+    headerbar .path-bar-box button:first-child:active,
+    headerbar .path-bar-box button:first-child:checked {
+      border-radius: 4px; }
+  .titlebar .path-bar-box widget > .text-button:last-child,
+  headerbar .path-bar-box widget > .text-button:last-child {
+    border-radius: 0px 4px 4px 0px;
+    border-color: #ff5d73;
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-color: #ff5d73;
+    text-shadow: none; }
+    .titlebar .path-bar-box widget > .text-button:last-child:backdrop,
+    headerbar .path-bar-box widget > .text-button:last-child:backdrop {
+      background: rgba(255, 93, 115, 0.6);
+      border-color: rgba(255, 93, 115, 0.6); }
+      .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
+      headerbar .path-bar-box widget > .text-button:last-child:backdrop,
+      headerbar .path-bar-box widget > .text-button:last-child:backdrop label {
+        color: #fefefe; }
+    .titlebar .path-bar-box widget > .text-button:last-child:only-child,
+    headerbar .path-bar-box widget > .text-button:last-child:only-child {
+      border-radius: 4px; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,

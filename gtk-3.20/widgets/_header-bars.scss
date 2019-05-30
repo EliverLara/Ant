@@ -33,7 +33,7 @@ headerbar {
   
   button {
     @include button(normal-header);
-    min-height: 14px;
+    min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     box-shadow: none;
@@ -164,6 +164,7 @@ headerbar {
     @extend %linked-header;
     &:active, &:checked {
       background: $selected_bg_color;
+      border-color: $selected_bg_color;
       color: #fff;
       &:backdrop{
         color: $backdrop_selected_fg_color;
@@ -183,12 +184,12 @@ headerbar {
   .path-bar-box {
     .dim-label {
       color: transparent;
+      margin-right: -6px;
     }
     button {
       @extend %linked-button;
-      margin-left: -6px;
       &:last-child {
-        margin-left: -6px;
+        margin-left: -1px;
         border-radius: 0px;
         &:active, &:checked {
           border-radius: 0px 4px 4px 0px;
@@ -200,6 +201,21 @@ headerbar {
           border-radius: 4px;
         }
       }
+    }
+    widget > .text-button:last-child{
+      border-radius: 0px 4px 4px 0px;
+      border-color: $selected_bg_color;
+      @include button(active, $selected_bg_color, #fff);
+      &:backdrop {
+        background: $backdrop_selected_bg_color;
+        border-color: $backdrop_selected_bg_color;
+        &, & label {
+          color: $backdrop_selected_fg_color;
+        }
+      }
+      &:only-child{
+        border-radius: 4px;
+      } 
     }
   }
 
