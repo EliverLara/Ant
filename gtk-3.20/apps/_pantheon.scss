@@ -281,3 +281,48 @@ LibraryWindow {
       0 1px 2px transparentize(#000, 0.77);
 }
 
+
+/********************
+* sidebar level-bars*
+********************/
+
+// .source-list.level-bar,
+// .source-list.level-bar:selected,
+// .source-list.level-bar:selected:focus {
+//     background-color: transparentize(black, 0.86);
+//     border: 1px solid transparentize(black, 0.86);
+//     box-shadow: 0 1px 0 transparentize(#fff, 0.75);
+//     border-radius: 2px;
+// }
+
+// .source-list.fill-block,
+// .source-list.fill-block:hover,
+// .source-list.fill-block:selected,
+// .source-list.fill-block:selected:focus {
+//     background-image: none;
+//     background-color: $selected_bg_color;
+// }
+
+// .source-list.level-bar.fill-block {
+//     border: none;
+// }
+
+.source-list{
+  &.level-bar {
+    &,&:selected,&:selected:focus{
+      background-color: transparentize(black, 0.86);
+      border: 1px solid transparentize(black, 0.86);
+      box-shadow: 0 1px 0 transparentize(#fff, 0.75);
+      border-radius: 2px;
+    }
+    &.fill-block{
+      border: none;
+    }
+  }
+  &.fill-block{
+    &,&:hover,&:selected,&:selected:focus{
+      background-image: none;
+      background-color: $selected_bg_color;
+    }
+  }
+}
