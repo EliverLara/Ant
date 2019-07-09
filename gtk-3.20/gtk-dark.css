@@ -5865,16 +5865,16 @@ LibraryWindow .the-button-in-the-combobox {
 /********************
 * sidebar level-bars*
 ********************/
-.source-list.level-bar, .source-list.level-bar:selected, .source-list.level-bar:selected:focus {
+.source-list.view.level-bar, iconview.source-list.level-bar, .source-list.view.level-bar:selected, iconview.source-list.level-bar:selected, .source-list.view.level-bar:selected:focus, iconview.source-list.level-bar:selected:focus {
   background-color: rgba(0, 0, 0, 0.14);
   border: 1px solid rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
   border-radius: 2px; }
 
-.source-list.level-bar.fill-block {
+.source-list.view.level-bar.fill-block, iconview.source-list.level-bar.fill-block {
   border: none; }
 
-.source-list.fill-block, .source-list.fill-block:hover, .source-list.fill-block:selected, .source-list.fill-block:selected:focus {
+.source-list.view.fill-block, iconview.source-list.fill-block, .source-list.view.fill-block:hover, iconview.source-list.fill-block:hover, .source-list.view.fill-block:selected, iconview.source-list.fill-block:selected, .source-list.view.fill-block:selected:focus, iconview.source-list.fill-block:selected:focus {
   background-image: none;
   background-color: #ff5d73; }
 
