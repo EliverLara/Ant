@@ -282,20 +282,25 @@ headerbar {
   window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 4px; }}
 }
 
-.titlebar:not(headerbar) {
-  window.csd > & {
-    // in csd we assume every titlebar is a headerbar so reset anything, this is needed for split toolbars cases
-    padding: 0;
-    background-color: transparent;
-    background-image: none;
-    border-style: none;
-    border-color: transparent;
-    box-shadow: none;
+.titlebar {
+  &:not(headerbar){
+    window.csd > & {
+      // in csd we assume every titlebar is a headerbar so reset anything, this is needed for split toolbars cases
+      padding: 0;
+      background-color: transparent;
+      background-image: none;
+      border-style: none;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  
+    > separator {
+      background: transparent;
+    }
+  
+    @extend %titlebar;
   }
-
-  > separator {
-    background: transparent;
+  button:active {
+    color: $selected_bg_color;
   }
-
-  @extend %titlebar;
 }
