@@ -2805,6 +2805,9 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar:not(headerbar) > separator {
   background: transparent; }
 
+.titlebar button:active {
+  color: #ff5d73; }
+
 /**************
  * GtkInfoBar *
  **************/
