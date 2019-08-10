@@ -4110,6 +4110,16 @@ placessidebar.sidebar {
     placessidebar.sidebar row.sidebar-row:selected .sidebar-icon {
       -gtk-icon-shadow: 0 1px rgba(255, 93, 115, 0.8);
       color: inherit; }
+  placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row {
+    color: #ff5d73; }
+  placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) {
+    box-shadow: inset 0 1px #4e9a06, inset 0 -1px #4e9a06; }
+    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) image {
+      color: #4e9a06; }
+    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected {
+      background: #4e9a06; }
+      placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected image {
+        color: #fefefe; }
 
 placessidebar list {
   background-color: transparent; }
