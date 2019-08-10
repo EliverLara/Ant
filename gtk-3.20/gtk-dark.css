@@ -4150,6 +4150,21 @@ stacksidebar row {
   stacksidebar row.needs-attention > label {
     background-size: 6px 6px, 0 0; }
 
+placessidebar > viewport.frame {
+  border-style: none; }
+
+placessidebar row.sidebar-new-bookmark-row {
+  color: #ff5d73; }
+
+placessidebar row:drop(active):not(:disabled) {
+  box-shadow: inset 0 1px #4e9a06, inset 0 -1px #4e9a06; }
+  placessidebar row:drop(active):not(:disabled), placessidebar row:drop(active):not(:disabled) label, placessidebar row:drop(active):not(:disabled) image {
+    color: #4e9a06; }
+  placessidebar row:drop(active):not(:disabled):selected {
+    background-color: #4e9a06; }
+    placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
+      color: #fefefe; }
+
 /*****************
  * GtkSpinButton *
  *****************/
