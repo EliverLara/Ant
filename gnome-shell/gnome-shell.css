@@ -103,7 +103,7 @@ StEntry {
   border-radius: 2px;
   padding: 4px;
   border-width: 0;
-  color: #31363d;
+  color: #31363d !important;
   selection-background-color: #FA3F4B;
   selected-color: #f7f7f7; }
   StEntry:focus {
@@ -879,6 +879,10 @@ StScrollBar {
     background-color: rgba(49, 54, 61, 0.05); }
   .pager-button:active {
     background-color: rgba(243, 243, 243, 0.05); }
+
+.calendar-change-month-back StIcon, .calendar-change-month-forward StIcon {
+  icon-size: 1.09em;
+  color: #31363d; }
 
 .calendar-change-month-back {
   background-image: url("assets/calendar-arrow-left.svg"); }

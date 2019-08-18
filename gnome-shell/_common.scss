@@ -64,7 +64,7 @@ StEntry {
   border-radius: 2px;
   padding: 4px;
   border-width: 0;
-  color: $fg_color;
+  color: $fg_color !important;
   //&:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}
@@ -975,15 +975,19 @@ StScrollBar {
       &:hover, &:focus { background-color: transparentize($fg_color,0.95); }
       &:active { background-color: transparentize($bg_color,0.95); }
     }
+    .calendar-change-month-back StIcon, .calendar-change-month-forward StIcon { 
+      icon-size: 1.09em;
+      color: $fg_color;
+    }
 
-      .calendar-change-month-back { //arrow back
-        background-image: url("assets/calendar-arrow-left.svg");
-        &:rtl { background-image: url("assets/calendar-arrow-right.svg"); }
-      }
-      .calendar-change-month-forward { //arrow foreward
-        background-image: url("assets/calendar-arrow-right.svg");
-        &:rtl { background-image: url("assets/calendar-arrow-left.svg"); }
-      }
+    .calendar-change-month-back { //arrow back
+      background-image: url("assets/calendar-arrow-left.svg");
+      &:rtl { background-image: url("assets/calendar-arrow-right.svg"); }
+    }
+    .calendar-change-month-forward { //arrow foreward
+      background-image: url("assets/calendar-arrow-right.svg");
+      &:rtl { background-image: url("assets/calendar-arrow-left.svg"); }
+    }
 
     .calendar-day-base {
       font-size: 80%;
