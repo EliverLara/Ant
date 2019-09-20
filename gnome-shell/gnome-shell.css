@@ -1477,7 +1477,7 @@ StScrollBar {
     icon-size: 1.09em; }
   .notification-banner .notification-actions {
     background-color: rgba(68, 71, 90, 0.4);
-    padding-top: 2px;
+    padding: 2px;
     spacing: 1px; }
   .notification-banner .notification-button {
     padding: 4px 4px 5px;
