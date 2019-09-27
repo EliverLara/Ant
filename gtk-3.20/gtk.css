@@ -2913,7 +2913,7 @@ row {
     box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
   row.activatable:backdrop:hover {
     background-color: transparent; }
-  row.activatable button:not(.image-button) {
+  row.activatable button.flat {
     background-color: transparent; }
   row.activatable:selected:active {
     box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
@@ -5772,7 +5772,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .panel.translucent {
     background-color: rgba(0, 0, 0, 0.5); }
   .panel.color-light.translucent {
-    background-color: rgba(235, 235, 235, 0.7); }
+    background-color: rgba(0, 0, 0, 0.7); }
 
 menubar.panel,
 .panel menubar {
