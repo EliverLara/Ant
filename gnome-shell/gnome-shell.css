@@ -494,7 +494,8 @@ StScrollBar {
 /* Popovers/Menus */
 .popup-menu {
   min-width: 15em;
-  background-color: transparent; }
+  background-color: transparent;
+  color: #31363d; }
   .popup-menu .popup-sub-menu {
     background-color: #e6e6e6;
     box-shadow: none; }
@@ -901,7 +902,8 @@ StScrollBar {
   height: 2.4em;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 1.4em; }
+  border-radius: 1.4em;
+  color: #31363d; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: white; }
   .calendar-day-base:active, .calendar-day-base:selected {
@@ -982,7 +984,8 @@ StScrollBar {
 
 .message {
   border-radius: 1px;
-  background: transparent; }
+  background: transparent;
+  border: none; }
   .message:hover, .message:focus {
     background-color: #f8f8f8;
     box-shadow: 3px 0px 0px 0px #FA3F4B inset; }
@@ -1242,8 +1245,9 @@ StScrollBar {
 
 .list-search-provider-details {
   width: 150px;
-  color: #3c434b;
-  margin-top: 0.24em; }
+  color: #f7f7f7;
+  margin-top: 0.24em;
+  font-weight: bold; }
 
 .list-search-provider-content {
   spacing: 20px; }
