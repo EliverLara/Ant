@@ -1191,6 +1191,7 @@ StScrollBar {
     &:hover, &:focus {
       border: 1px solid $selected_bg_color;
       color: $selected_bg_color;
+      background-color: transparent;
     }
     &:active { background-color: darken($selected_bg_color, 10%); color: $selected_fg_color;}
 
