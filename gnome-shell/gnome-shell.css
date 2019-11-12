@@ -152,6 +152,7 @@ StScrollBar {
   -slider-active-border-color: #B3E235;
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
+  -slider-handle-border-width: 0;
   -barlevel-height: 0.3em;
   -barlevel-background-color: rgba(0, 0, 0, 0.14);
   -barlevel-border-color: black;
