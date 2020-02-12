@@ -998,6 +998,9 @@ StScrollBar {
     box-shadow: 2px 0px 0px 0px #9bbfbf inset;
     border-radius: 1px 5px 5px 1px; }
 
+.message-close-button {
+  color: #C3C7D1; }
+
 .message-icon-bin {
   padding: 10px 3px 10px 10px; }
   .message-icon-bin:rtl {
@@ -1499,7 +1502,7 @@ StScrollBar {
     padding-top: 2px;
     spacing: 1px; }
   .notification-banner .notification-button {
-    padding: 4px 4px 5px;
+    padding: 0px;
     background-color: rgba(30, 40, 44, 0.9); }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 3px; }
