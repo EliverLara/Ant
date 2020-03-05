@@ -10,8 +10,8 @@ $entry_border: transparent;
 $mpris_overlay_fg: $fg_color;
 $mpris_overlay_bg: transparentize(if($variant=='light',$base_color, darken($bg_color, 10%)), 0.1);
 $mpris_overlay_border: $top_highlight;
-$panel_bg: transparentize( darken($headerbar_color,10%),0.05);
-$panel_color: $headerbar_fg_color;
+$panel_bg: #1E282C;
+$panel_fg: #f8f8f8;
 $panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
 $panel_shadow: transparentize(black, 0.7);
 $raven_bg: transparentize($headerbar_color, 0.08);
@@ -86,7 +86,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
       padding: 2px 0 0;
     }
     button {
-      color: $panel_color;
+      color: $panel_fg;
       border: none;
       background: transparent;
         // @include button(normal-header);
@@ -102,7 +102,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
 
 // Budgie Menu
 .budgie-menu {
-    color: $panel_color;
+    color: $panel_fg;
     .container { padding: 0; }
 
     button:hover { -gtk-icon-effect: none; }
@@ -115,7 +115,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
         border-radius: 0;
         font-size: 120%;
         box-shadow: none;
-        color:$panel_color;
+        color:$panel_fg;
         image {
             &:dir(ltr) { padding-left: 8px; padding-right: 12px; }
             &:dir(rtl) { padding-left: 12px; padding-right: 8px; }
@@ -171,23 +171,23 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
     undershoot, overshoot { background: none; }
 
     list {
-      color: transparentize($panel_color, 0.3);
+      color: transparentize($panel_fg, 0.3);
     }
 }
 
 // Menu Button
 button.budgie-menu-launcher {
     padding: 0 2px;
-    color: $headerbar_fg_color;
+    color: $panel_fg;
     box-shadow: none;
     background-color: transparent;
-    &:hover { color: $headerbar_fg_color; }
-    &:active, &:checked { color: $headerbar_fg_color; }
+    &:hover { color: $panel_fg; }
+    &:active, &:checked { color: $panel_fg; }
 
     &:backdrop {
-      color: $headerbar_fg_color;
+      color: $panel_fg;
       background-color: transparent;
-      &:hover { color: $headerbar_fg_color; }
+      &:hover { color: $panel_fg; }
       &:active, &:checked {
         color: $selected_bg_color;
         box-shadow: none;
@@ -252,10 +252,10 @@ button.budgie-menu-launcher {
 button.raven-trigger {
     padding-left: 2px;
     padding-right: 2px;
-    color: $headerbar_fg_color;
+    color: $panel_fg;
     box-shadow: none;
     &:hover {
-      color: $headerbar_fg_color;
+      color: $panel_fg;
       background-color: transparent;
     }
     &:active, &:checked {
@@ -264,9 +264,9 @@ button.raven-trigger {
       color: $selected_bg_color;
     }
     &:backdrop {
-      color: $headerbar_fg_color;
+      color: $panel_fg;
       &:hover {
-        color: $headerbar_fg_color;
+        color: $panel_fg;
       }
       &:active, &:checked {
         box-shadow: none;
@@ -365,7 +365,7 @@ button.raven-trigger {
 
 // Panel
 .budgie-panel {
-    color: $headerbar_fg_color;
+    color: $panel_fg;
     background-color: $panel_bg;
     background-image: none;
     box-shadow: none;
@@ -375,7 +375,7 @@ button.raven-trigger {
     .alert { color: $alert_color; }
 
     &:backdrop {
-      color: $headerbar_fg_color;
+      color: $panel_fg;
       background-color: $panel_bg;
     }
 
@@ -400,12 +400,12 @@ button.raven-trigger {
     }
 
     label {
-      color: $headerbar_fg_color;
+      color: $panel_fg;
       font-weight: 700;
     }
 
     &.transparent {
-        background-color: transparent;
+        background-color: transparentize($panel_bg, 0.75);
 
         .top & {
             border-bottom-color: transparent;
@@ -430,7 +430,7 @@ button.raven-trigger {
       separator { background-color: transparentize($headerbar_fg_color, 0.85); }
       label {
         font-weight: 700;
-        color: $headerbar_fg_color;
+        color: $panel_fg;
       }
     }
 }
@@ -531,7 +531,7 @@ button.raven-trigger {
         }
 
         min-height: 32px;
-        color: $panel_color;
+        color: $panel_fg;
         border: solid $raven_expander_border;
         border-width: 1px 0;
         background-color: $raven_expander_bg;
@@ -590,7 +590,7 @@ button.raven-trigger {
     }
 
     list {
-      color: $panel_color;
+      color: $panel_fg;
       background-color: transparent;
       &:selected { background-color: transparentize($selected_bg_color,0.1); }
       row,
@@ -603,7 +603,7 @@ button.raven-trigger {
     }
 
     .raven-background {
-        color: $panel_color;
+        color: $panel_fg;
         background-color: transparent;
         border-color: transparent;
 
@@ -666,7 +666,7 @@ button.raven-trigger {
 // Calendar
 calendar.raven-calendar {
   padding: 6px;
-  color: $panel_color;
+  color: $panel_fg;
   background: transparent;
   border-color: transparent;
 
@@ -681,7 +681,7 @@ calendar.raven-calendar {
   &:backdrop { background-color: transparent; }
 
   &.header {
-    color: $panel_color;
+    color: $panel_fg;
     border: none;
     border-radius: 0;
     background-color: transparent;
