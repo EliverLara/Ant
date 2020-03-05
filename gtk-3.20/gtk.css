@@ -4887,18 +4887,18 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
 
 button.budgie-menu-launcher {
   padding: 0 2px;
-  color: #31363D;
+  color: #f8f8f8;
   box-shadow: none;
   background-color: transparent; }
   button.budgie-menu-launcher:hover {
-    color: #31363D; }
+    color: #f8f8f8; }
   button.budgie-menu-launcher:active, button.budgie-menu-launcher:checked {
-    color: #31363D; }
+    color: #f8f8f8; }
   button.budgie-menu-launcher:backdrop {
-    color: #31363D;
+    color: #f8f8f8;
     background-color: transparent; }
     button.budgie-menu-launcher:backdrop:hover {
-      color: #31363D; }
+      color: #f8f8f8; }
     button.budgie-menu-launcher:backdrop:active, button.budgie-menu-launcher:backdrop:checked {
       color: #ff5d73;
       box-shadow: none;
@@ -4949,19 +4949,19 @@ button.budgie-menu-launcher {
 button.raven-trigger {
   padding-left: 2px;
   padding-right: 2px;
-  color: #31363D;
+  color: #f8f8f8;
   box-shadow: none; }
   button.raven-trigger:hover {
-    color: #31363D;
+    color: #f8f8f8;
     background-color: transparent; }
   button.raven-trigger:active, button.raven-trigger:checked {
     box-shadow: none;
     background-color: transparent;
     color: #ff5d73; }
   button.raven-trigger:backdrop {
-    color: #31363D; }
+    color: #f8f8f8; }
     button.raven-trigger:backdrop:hover {
-      color: #31363D; }
+      color: #f8f8f8; }
     button.raven-trigger:backdrop:active, button.raven-trigger:backdrop:checked {
       box-shadow: none;
       color: #ff5d73;
@@ -5038,8 +5038,8 @@ button.raven-trigger {
   box-shadow: inset 0px 1px 1px alpha(@theme_fg_color, 0.04);; }
 
 .budgie-panel {
-  color: #31363D;
-  background-color: rgba(213, 213, 213, 0.95);
+  color: #f8f8f8;
+  background-color: #1E282C;
   background-image: none;
   box-shadow: none;
   border: none;
@@ -5047,8 +5047,8 @@ button.raven-trigger {
   .budgie-panel .alert {
     color: #FF044A; }
   .budgie-panel:backdrop {
-    color: #31363D;
-    background-color: rgba(213, 213, 213, 0.95); }
+    color: #f8f8f8;
+    background-color: #1E282C; }
   .budgie-panel button {
     border-top-width: 0;
     border-bottom-width: 0;
@@ -5058,10 +5058,10 @@ button.raven-trigger {
     padding: 0;
     margin: 0; }
   .budgie-panel label {
-    color: #31363D;
+    color: #f8f8f8;
     font-weight: 700; }
   .budgie-panel.transparent {
-    background-color: transparent; }
+    background-color: rgba(30, 40, 44, 0.25); }
     .top .budgie-panel.transparent {
       border-bottom-color: transparent; }
     .bottom .budgie-panel.transparent {
@@ -5076,13 +5076,13 @@ button.raven-trigger {
       background-color: rgba(49, 54, 61, 0.15); }
     .budgie-panel .end-region label {
       font-weight: 700;
-      color: #31363D; }
+      color: #f8f8f8; }
 
 .budgie-panel #tasklist-button,
 .budgie-panel #tasklist-button:backdrop {
   outline-color: transparent;
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border-color: rgba(213, 213, 213, 0);
+  border-color: rgba(30, 40, 44, 0);
   border-radius: 0;
   background-color: transparent;
   box-shadow: none;
@@ -5091,7 +5091,7 @@ button.raven-trigger {
 .budgie-panel button.flat.launcher {
   outline-color: transparent;
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border-color: rgba(213, 213, 213, 0);
+  border-color: rgba(30, 40, 44, 0);
   border-radius: 0;
   padding: 0;
   background-clip: padding-box;
@@ -5464,7 +5464,7 @@ calendar.raven-calendar {
 
 .budgie-session-dialog, .budgie-polkit-dialog, .budgie-run-dialog {
   color: #31363D;
-  background-color: rgba(213, 213, 213, 0.95); }
+  background-color: #1E282C; }
   .budgie-session-dialog label:backdrop, .budgie-polkit-dialog label:backdrop, .budgie-run-dialog label:backdrop {
     color: rgba(49, 54, 61, 0.5); }
   .budgie-session-dialog .dialog-title, .budgie-polkit-dialog .dialog-title, .budgie-run-dialog .dialog-title {
@@ -5540,7 +5540,7 @@ calendar.raven-calendar {
   margin: 4px;
   padding: 5px;
   border-radius: 0;
-  background-color: rgba(213, 213, 213, 0.95); }
+  background-color: #1E282C; }
   .budgie-menubar menu menuitem:hover {
     background-color: #ff5d73;
     color: #fefefe; }
@@ -5567,7 +5567,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   border-style: none none solid; }
 
 .workspace-switcher .workspace-layout {
-  border: 0 solid rgba(213, 213, 213, 0.95); }
+  border: 0 solid #1E282C; }
   .top .workspace-switcher .workspace-layout:dir(ltr),
   .bottom .workspace-switcher .workspace-layout:dir(ltr) {
     border-left-width: 1px; }
@@ -5580,7 +5580,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 
 .workspace-switcher .workspace-item,
 .workspace-switcher .workspace-add-button {
-  border: 0 solid rgba(162, 162, 162, 0.95); }
+  border: 0 solid black; }
   .top .workspace-switcher .workspace-item:dir(ltr),
   .bottom .workspace-switcher .workspace-item:dir(ltr), .top
   .workspace-switcher .workspace-add-button:dir(ltr),
@@ -5601,7 +5601,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     border-bottom-width: 1px; }
 
 .workspace-switcher .workspace-item.current-workspace {
-  background-color: rgba(174, 174, 174, 0.95); }
+  background-color: black; }
 
 .workspace-switcher .workspace-add-button {
   border: none;
