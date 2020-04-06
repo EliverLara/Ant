@@ -10,7 +10,7 @@ $mpris_overlay_bg: transparentize(if($variant=='light',$base_color, darken($bg_c
 $mpris_overlay_border: $top_highlight;
 $panel_bg: #1E282C;
 $panel_fg: #f8f8f8;
-$panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
+$panel_border: darken($panel_bg, 7%);
 $panel_shadow: transparentize(black, 0.7);
 $raven_bg: transparentize($bg_color, 0.08);
 $raven_expander_border: transparentize($borders_color, 0.05);
