@@ -5185,7 +5185,7 @@ button.raven-trigger {
     border-right: 2px solid #ff5d73; }
 
 .top .budgie-panel {
-  border-bottom: 1px solid rgba(220, 220, 220, 0.92); }
+  border-bottom: 1px solid #101517; }
 
 .top .raven-frame {
   padding: 0;
@@ -5199,7 +5199,7 @@ button.raven-trigger {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent); }
 
 .bottom .budgie-panel {
-  border-top: 1px solid rgba(220, 220, 220, 0.92); }
+  border-top: 1px solid #101517; }
 
 .bottom .raven-frame {
   padding: 0;
@@ -5213,7 +5213,7 @@ button.raven-trigger {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent); }
 
 .left .budgie-panel {
-  border-right: 1px solid rgba(220, 220, 220, 0.92); }
+  border-right: 1px solid #101517; }
 
 .left .raven-frame {
   padding: 0;
@@ -5227,7 +5227,7 @@ button.raven-trigger {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent); }
 
 .right .budgie-panel {
-  border-left: 1px solid rgba(220, 220, 220, 0.92); }
+  border-left: 1px solid #101517; }
 
 .right .raven-frame {
   padding: 0;
