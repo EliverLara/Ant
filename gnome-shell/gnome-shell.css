@@ -1146,7 +1146,8 @@ StScrollBar {
   icon-size: 32px; }
 
 .nm-dialog-scroll-view {
-  border: 2px solid #182023; }
+  border: 2px solid #182023;
+  background: transparent; }
 
 .nm-dialog-header {
   font-weight: bold; }
