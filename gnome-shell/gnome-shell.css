@@ -1074,13 +1074,13 @@ StScrollBar {
 
 /* Weather */
 .weather-button .weather-header {
-  color: #340311;
+  color: #a6acbb;
   font-weight: bold; }
   .weather-button .weather-header.location {
     font-weight: normal; }
 
 .weather-button .weather-forecast-time {
-  color: #556e10;
+  color: #a6acbb;
   font-feature-settings: "tnum";
   font-weight: normal;
   padding-top: 0.2em;
