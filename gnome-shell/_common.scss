@@ -1204,7 +1204,7 @@ StScrollBar {
 .weather-button {
 
   .weather-header {
-    color: desaturate(darken($red,40%), 10%);
+    color: darken($fg_color, 10%);
     font-weight: bold;
 
     &.location {
@@ -1213,7 +1213,7 @@ StScrollBar {
   }
 
   .weather-forecast-time {
-    color: darken($lime,30%);
+    color: darken($fg_color, 10%);
     font-feature-settings: "tnum";
     font-weight: normal;
     padding-top: 0.2em;
