@@ -234,17 +234,16 @@
   border-radius: 0;
   text-shadow: none;
   box-shadow: none;
+  border: none;
 }
 
   @else if $t==hover-header {
   //
   // hovered button headerbar look
   //
-  color: if($tc==$text_color, $headerbar_fg_color, $tc);
   background-color: transparent;
-  border-radius: 0;
-  text-shadow: none;
-  //@include lines(up);
+  color: $selected_bg_color;
+  box-shadow: none;
 }
 
 @else if $t==backdrop-header {
