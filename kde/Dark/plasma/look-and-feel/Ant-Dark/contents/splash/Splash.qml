@@ -3,7 +3,7 @@ import QtQuick 2.5
 
 Rectangle {
     id: root
-   color:"#252E32"
+    color:"#252E32"
 
     property int stage
 
@@ -34,35 +34,69 @@ Rectangle {
 
             source: "images/logo.png"
 
-            sourceSize.width: 140
-            sourceSize.height: 140        
+            sourceSize.width: 100
+            sourceSize.height: 100        
         }
 
-        Rectangle {
-            radius: 4
-            color: "#1E282C"
-            y: parent.height - (parent.height - logo.y) / 3 - height/2
-            anchors.horizontalCenter: parent.horizontalCenter
-            height: 6
-            width: height*32
-            Rectangle {
-                radius: 3
-                anchors {
-                    left: parent.left
-                    top: parent.top
-                    bottom: parent.bottom
-                }
-                width: (parent.width / 6) * (stage - 1)
-                color: "#698989"
-                Behavior on width { 
-                    PropertyAnimation {
-                        duration: 250
-                        easing.type: Easing.InOutQuad
-                    }
-                }
+        Image {
+            id: busyIndicator
+            source: "images/busy02.svg"
+            anchors.centerIn: parent
+            sourceSize.height: 200
+            sourceSize.width: 200
+            RotationAnimator on rotation {
+                id: rotationAnimator
+                from: 0
+                to: 360
+                duration: 2000
+                loops: Animation.Infinite
             }
         }
 
+        Image {
+            id: busyIndicator2
+            source: "images/busy02.svg"
+            anchors.centerIn: parent
+            sourceSize.height: 250
+            sourceSize.width: 250
+            RotationAnimator on rotation {
+                id: rotationAnimator2
+                from: 360
+                to: 0
+                duration: 2000
+                loops: Animation.Infinite
+            }
+        }
+
+        Rectangle {
+            id: circle
+            property real size: units.gridUnit * 12
+            anchors.centerIn: parent
+            width: 150
+            height: 150
+            radius: height / 2
+            color: "#00000000"
+            border.color: "#507C7B"
+            border.width: 5
+
+            SequentialAnimation {
+                running: true
+                loops: Animation.Infinite
+
+                ScaleAnimator {
+                    target: circle
+                    from: 0.93
+                    to: 1
+                    duration: 1000
+                }
+                ScaleAnimator {
+                    target: circle
+                    from: 1
+                    to: 0.93
+                    duration: 1000
+                }
+            }
+        }
     }
 
     OpacityAnimator {
