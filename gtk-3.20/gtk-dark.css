@@ -2725,8 +2725,8 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none; }
 
-.titlebar:not(headerbar) > separator {
-  background: transparent; }
+.titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
+  background: #EEEEEE; }
 
 /**************
  * GtkInfoBar *
@@ -6044,14 +6044,14 @@ SheetStyleDialog.unity-force-quit {
 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid #101517; }
+  border: 1px solid #d5d5d5; }
   MsdOsdWindow.background.osd .progressbar {
     background-color: #ff5d73;
     border: none;
     border-color: #ff5d73;
     border-radius: 5px; }
   MsdOsdWindow.background.osd .trough {
-    background-color: rgba(9, 10, 12, 0.8);
+    background-color: rgba(31, 34, 38, 0.93);
     border: none;
     border-radius: 5px; }
 
@@ -6204,14 +6204,14 @@ ConversationListView {
 
 /* thunar */
 .thunar toolbar {
-  background-color: #1E282C; }
+  background-color: #EEEEEE; }
 
 /* buttons in toolbar */
 .thunar toolbar.horizontal button image {
   -gtk-icon-transform: scale(0.72); }
 
 scrolledwindow.sidebar treeview.view {
-  background: #222e32;
+  background: #f8f8f8;
   padding: 1.5px;
   border: none;
   box-shadow: none; }

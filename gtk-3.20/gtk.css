@@ -2725,8 +2725,8 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none; }
 
-.titlebar:not(headerbar) > separator {
-  background: transparent; }
+.titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
+  background: #EEEEEE; }
 
 /**************
  * GtkInfoBar *
@@ -6044,14 +6044,14 @@ SheetStyleDialog.unity-force-quit {
 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.2); }
+  border: 1px solid #d5d5d5; }
   MsdOsdWindow.background.osd .progressbar {
     background-color: #ff5d73;
     border: none;
     border-color: #ff5d73;
     border-radius: 5px; }
   MsdOsdWindow.background.osd .trough {
-    background-color: rgba(9, 10, 12, 0.8);
+    background-color: rgba(31, 34, 38, 0.93);
     border: none;
     border-radius: 5px; }
 
