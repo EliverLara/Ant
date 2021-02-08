@@ -2802,8 +2802,8 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none; }
 
-.titlebar:not(headerbar) > separator {
-  background: transparent; }
+.titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
+  background: #1E282C; }
 
 .titlebar button:active {
   color: #ff5d73; }
