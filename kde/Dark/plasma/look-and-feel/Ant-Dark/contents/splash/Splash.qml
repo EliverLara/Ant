@@ -35,7 +35,25 @@ Rectangle {
             source: "images/logo.png"
 
             sourceSize.width: 100
-            sourceSize.height: 100        
+            sourceSize.height: 100   
+            
+            SequentialAnimation {
+                running: true
+                loops: Animation.Infinite
+
+                OpacityAnimator {
+                    target: logo
+                    from: 0.75
+                    to: 1
+                    duration: 1000
+                }
+                OpacityAnimator {
+                    target: logo
+                    from: 1
+                    to: 0.75
+                    duration: 1000
+                }
+            }     
         }
 
         Image {
