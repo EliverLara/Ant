@@ -6349,3 +6349,53 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
       box-shadow: none; }
       .nemo-window toolbar.primary-toolbar button:hover:backdrop, .nemo-window toolbar.primary-toolbar button:hover:backdrop label, .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:selected:backdrop label, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop label, .nemo-window toolbar.primary-toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop label {
         color: rgba(118, 167, 167, 0.6); }
+
+.caja-notebook .entry {
+  background: #222e32;
+  color: #C3C7D1;
+  border-color: #101517; }
+  .caja-notebook .entry:selected {
+    background: #76A7A7;
+    color: #fefefe; }
+
+/**************
+* Caja sidebar *
+**************/
+.caja-side-pane notebook treeview.view,
+.caja-side-pane notebook textview.view text,
+.caja-side-pane notebook viewport.frame,
+.caja-side-pane notebook widget .vertical {
+  padding: 3px 0px; }
+  .caja-side-pane notebook treeview.view:hover,
+  .caja-side-pane notebook textview.view text:hover,
+  .caja-side-pane notebook viewport.frame:hover,
+  .caja-side-pane notebook widget .vertical:hover {
+    background-color: rgba(30, 40, 44, 0.4); }
+  .caja-side-pane notebook treeview.view:selected,
+  .caja-side-pane notebook textview.view text:selected,
+  .caja-side-pane notebook viewport.frame:selected,
+  .caja-side-pane notebook widget .vertical:selected {
+    color: #76A7A7;
+    background: #222e32; }
+    .caja-side-pane notebook treeview.view:selected:hover,
+    .caja-side-pane notebook textview.view text:selected:hover,
+    .caja-side-pane notebook viewport.frame:selected:hover,
+    .caja-side-pane notebook widget .vertical:selected:hover {
+      background-color: rgba(118, 167, 167, 0.2); }
+
+/**************
+* Caja pathbar *
+**************/
+.caja-pathbar button, .caja-pathbar button:backdrop {
+  color: #C3C7D1;
+  background-color: transparent;
+  border-radius: 0;
+  text-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+.caja-pathbar button:hover, .caja-pathbar button:active, .caja-pathbar button:checked, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:checked {
+  background: transparent;
+  box-shadow: none; }
+  .caja-pathbar button:hover, .caja-pathbar button:hover label, .caja-pathbar button:active, .caja-pathbar button:active label, .caja-pathbar button:checked, .caja-pathbar button:checked label, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:active label, .caja-pathbar button:backdrop:checked, .caja-pathbar button:backdrop:checked label {
+    color: #76A7A7; }

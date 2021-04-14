@@ -1,0 +1,54 @@
+.caja-notebook .entry {
+    background: $base_color;
+    color: $fg_color;
+    border-color: $borders_color;
+    &:selected {
+      background: $selected_bg_color;
+      color: $selected_fg_color;
+    }
+}
+
+/**************
+* Caja sidebar *
+**************/
+
+.caja-side-pane notebook {
+
+    treeview.view,
+    textview.view text,
+    viewport.frame,
+    widget .vertical {
+        padding: 3px 0px;
+        &:hover {
+            background-color: if(variant == light, transparentize($bg_color, 0.6), transparentize($bg_color, 0.6));
+        }
+        &:selected {
+            color: $selected_bg_color;
+            background: $base_color;
+            &:hover {
+                background-color: transparentize($selected_bg_color, 0.8);
+            }
+        }
+
+    }
+
+}
+
+/**************
+* Caja pathbar *
+**************/
+
+.caja-pathbar button {
+    &, &:backdrop { @include button(normal-header); }
+    &:hover,
+    &:active,
+    &:checked,
+    &:backdrop:active,
+    &:backdrop:checked {
+      background: transparent;
+      box-shadow: none;
+      &, & label {
+          color: $selected_bg_color;
+      }
+    }
+}
