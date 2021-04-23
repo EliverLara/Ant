@@ -72,7 +72,7 @@ SessionManagementScreen {
                 opacity: 1
                 radius: 4
                 height: 30
-                width: 220
+                width: parent.width
                 anchors.centerIn: parent
             }
 
