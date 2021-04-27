@@ -3050,7 +3050,8 @@ menu,
   padding: 2px 0px;
   background-color: #f8f8f8;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px; }
+  border-radius: 5px;
+  font: initial; }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
