@@ -5702,11 +5702,13 @@ checkbutton.color-button {
   border: 1px solid #101517;
   border-radius: 100px;
   background-clip: border-box;
-  padding: 0; }
+  padding: 0;
+  margin: 2px 1px; }
   checkbutton.color-button > check {
     -gtk-icon-source: none;
     background: none;
-    margin-right: 0; }
+    margin-right: 0;
+    padding: 2px; }
   checkbutton.color-button.none > check {
     background-color: transparent;
     border-radius: 100px;
@@ -5729,6 +5731,8 @@ radiobutton.color-button:active > radio {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   box-shadow: inset-shadow();
+  color: #222e32;
+  -gtk-icon-source: -gtk-icontheme("check-active-symbolic");
   min-height: rem(12px);
   min-width: rem(12px);
   padding: rem(3px); }

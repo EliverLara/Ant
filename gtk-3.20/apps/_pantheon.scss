@@ -312,11 +312,13 @@ checkbutton.color-button {
   border-radius: 100px;
   background-clip: border-box;
   padding: 0;
+  margin: 2px 1px;
 
   > check {
     -gtk-icon-source: none;
     background: none;
     margin-right: 0;
+    padding: 2px;
   }
 
   &.none {
@@ -352,6 +354,8 @@ radiobutton.color-button {
       border: 1px solid rgba(black, 0.2);
       border-radius: 50%;
       box-shadow: inset-shadow();
+      color: $base_color;
+      -gtk-icon-source: -gtk-icontheme("check-active-symbolic");
       min-height: rem(12px);
       min-width: rem(12px);
       padding: rem(3px);
