@@ -5,7 +5,7 @@ widgetStyle=kvantum
 ColorScheme=Ant-Dark
 
 [kdeglobals][Icons]
-Theme=breeze-dark
+Theme=Ant-Dark
 
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors
