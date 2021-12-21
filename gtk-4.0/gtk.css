@@ -4195,8 +4195,7 @@ switch {
 /************
  * Toolbars *
  ************/
-toolbar, .inline-toolbar, searchbar,
-.location-bar {
+toolbar, .inline-toolbar, searchbar > revealer > box {
   padding: 4px;
   background-color: #EEEEEE; }
 
@@ -4228,18 +4227,15 @@ toolbar {
   border-width: 0 1px 1px;
   border-radius: 0  0 5px 5px; }
 
-searchbar,
-.location-bar {
+searchbar > revealer > box {
   border-width: 0 0 1px;
   padding: 3px; }
 
-.inline-toolbar, searchbar,
-.location-bar {
+.inline-toolbar, searchbar > revealer > box {
   border-style: solid;
   border-color: #d5d5d5;
   background-color: #e7e7e7; }
-  .inline-toolbar:backdrop, searchbar:backdrop,
-  .location-bar:backdrop {
+  .inline-toolbar:backdrop, searchbar > revealer > box:backdrop {
     border-color: #d8d8d8;
     background-color: #e6e6e6;
     box-shadow: none;
