@@ -9,7 +9,7 @@ BackgroundNormal=32,32,32
 DecorationFocus=#789494
 DecorationHover=#789494
 ForegroundNormal=195,199,209
-s
+
 [Colors:View]
 BackgroundNormal=#222e32
 DecorationFocus=#789494
