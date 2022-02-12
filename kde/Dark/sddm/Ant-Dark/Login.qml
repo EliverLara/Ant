@@ -127,7 +127,7 @@ SessionManagementScreen {
             height: 30
             radius: width / 2
             color: config.selected_color
-            opacity: enabled ? 0.6 : 0.3
+            opacity: enabled ? 0.9 : 0.3
         }
 
         onClicked: startLogin();
