@@ -48,7 +48,7 @@ stage {
   padding: 10px;
   border: 1px solid #182023;
   color: #C3C7D1;
-  background: #141a1d;
+  background: #182023;
   text-shadow: none;
   icon-shadow: none;
   box-shadow: none; }
@@ -86,11 +86,11 @@ stage {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .modal-dialog-linked-button:first-child {
-    border-radius: 0px 0px 0px 2px; }
+    border-radius: 0px 0px 0px 10px; }
   .modal-dialog-linked-button:last-child {
-    border-radius: 0px 0px 2px 0px; }
+    border-radius: 0px 0px 10px 0px; }
   .modal-dialog-linked-button:first-child:last-child {
-    border-radius: 0px 0px 2px 2px; }
+    border-radius: 0px 0px 10px 10px; }
 
 /* Entries */
 StEntry {
@@ -211,8 +211,8 @@ StScrollBar {
   background-color: white; }
 
 .modal-dialog {
-  border: none;
-  border-radius: 2px;
+  border: 1px solid #182023;
+  border-radius: 10px;
   color: #C3C7D1;
   background-color: rgba(20, 26, 29, 0.95);
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
@@ -1186,7 +1186,7 @@ StScrollBar {
 
 .nm-dialog-scroll-view {
   border: 2px solid #182023;
-  background: transparent; }
+  background: #1E282C; }
 
 .nm-dialog-header {
   font-weight: bold; }
@@ -1237,7 +1237,7 @@ StScrollBar {
 .window-caption {
   spacing: 20px;
   color: #fdfdfd;
-  background-color: rgba(20, 26, 29, 0.7);
+  background-color: rgba(24, 32, 35, 0.7);
   padding: 4px 8px;
   border: 1px solid #182023; }
 
