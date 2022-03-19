@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="restore.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    version="1.1"
    id="svg4428"
    height="29.866667"
-   width="119.46667">
+   width="119.46667"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4430">
     <linearGradient
@@ -343,23 +343,24 @@
      inkscape:showpageshadow="false"
      showborder="false"
      inkscape:window-maximized="1"
-     inkscape:window-y="21"
+     inkscape:window-y="36"
      inkscape:window-x="0"
-     inkscape:window-height="723"
-     inkscape:window-width="1366"
+     inkscape:window-height="1019"
+     inkscape:window-width="1920"
      inkscape:snap-bbox="true"
      showgrid="false"
      inkscape:current-layer="pressed-center"
      inkscape:document-units="px"
-     inkscape:cy="17.508843"
-     inkscape:cx="60.179924"
-     inkscape:zoom="15.038706"
+     inkscape:cy="22.807813"
+     inkscape:cx="60.17805"
+     inkscape:zoom="7.519353"
      inkscape:pageshadow="2"
      inkscape:pageopacity="1"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#eff0f1"
-     id="base">
+     id="base"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        spacingy="1.0666667"
        spacingx="1.0666667"
@@ -413,7 +414,7 @@
          inkscape:export-xdpi="90"
          inkscape:connector-curvature="0"
          d="m 481.70952,78.639587 c 204.5903,0 370.444,165.858073 370.444,370.449523 0,204.59238 -165.8537,370.44688 -370.444,370.44688 -204.594,0 -370.4479,-165.8545 -370.4479,-370.44688 0,-204.59145 165.8539,-370.449523 370.4479,-370.449523"
-         style="fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.72130281"
+         style="fill:#c3e88d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.72130281"
          id="path4291-5" />
     </g>
     <g
@@ -431,7 +432,7 @@
          inkscape:export-xdpi="90"
          inkscape:connector-curvature="0"
          d="m 597.53816,75.415994 c 204.59134,0 370.44579,165.857996 370.44579,370.449386 0,204.5923 -165.85445,370.4467 -370.44579,370.4467 -204.59516,0 -370.44981,-165.8544 -370.44981,-370.4467 0,-204.59139 165.85465,-370.449386 370.44981,-370.449386"
-         style="fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.72130454"
+         style="fill:#c3e88d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.72130454"
          id="path4291" />
       <path
          id="path4293-3"
@@ -454,7 +455,7 @@
          inkscape:export-xdpi="90"
          inkscape:connector-curvature="0"
          d="m 555.80938,79.786458 c 204.5914,0 370.4458,165.857272 370.4458,370.447712 0,204.59139 -165.8544,370.44508 -370.4458,370.44508 -204.5952,0 -370.4498,-165.85369 -370.4498,-370.44508 0,-204.59044 165.8546,-370.447712 370.4498,-370.447712"
-         style="fill:#2ecc71;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.72130305"
+         style="fill:#c3e88d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.72130305"
          id="path4291-6" />
       <path
          id="path4293-3-2"
