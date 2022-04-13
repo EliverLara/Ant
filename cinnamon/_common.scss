@@ -268,49 +268,63 @@ StScrollBar {
 .popup-menu,
 %menu {
   color: $fg_color;
-  border-image: url("#{$asset_path}/menu/menu.svg") 9 9 9 9;
+  border: 1px solid $borders_color;
+  border-radius: 6px;
+	background-color: transparentize($bg_color, 0.01);
 
-  &-arrow { icon-size: 16px; }
-
-  .popup-sub-menu {
-    background-gradient-direction: none;
-    box-shadow: none;
-    border-image: url("#{$asset_path}/menu/submenu.svg") 9 9 9 9;
-
-    .popup-menu-item:ltr { padding-right: 0em; }
-    .popup-menu-item:rtl { padding-left: 0em; }
-
-    StScrollBar {
-      padding: 4px;
-      StBin#trough, StBin#vhandle { border-width: 0; }
-    }
+  &.top {
+    border-radius: 0 0 6px 6px;
   }
 
-  .popup-menu-content { padding: 1em 0em 1em 0em; }
-  .popup-menu-item {
-    padding: .4em 1.75em;
-    spacing: 1em;
-
-    &:active {
-      color: $selected_fg_color;
-      background-color: transparent;
-      border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1;
-    }
-    &:insensitive {
-      color: transparentize($fg_color, 0.5);
-      background: none;
-    }
+  &.bottom {
+    border-radius: 6px 6px 0 0;
   }
 
-  .popup-inactive-menu-item { //all icons and other graphical elements
-    color: $fg_color;
-
-    &:insensitive { color: $insensitive_fg_color; }
+  &.left {
+    border-radius: 0 6px 6px 0;
   }
 
-  .popup-menu-item:active .popup-inactive-menu-item { color: $selected_fg_color; }
+  &.right {
+    border-radius: 6px 0 0 6px;
+  }
+}
 
-  &-icon { icon-size: 16px; }
+.popup-sub-menu {
+  background-color: $base_color;
+  box-shadow: none;
+
+  .popup-menu-item:ltr { padding-right: 1.75em; }
+  .popup-menu-item:rtl { padding-left: 1.75em; }
+
+  StScrollBar {
+    padding: 4px;
+    StBin#trough, StBin#vhandle { border-width: 0; }
+  }
+}
+
+.popup-menu-content { padding: 1em 0em 1em 0em; }
+.popup-menu-item {
+  padding: .4em 1.75em;
+  spacing: 1em;
+  // border: 1px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+
+  &:active {
+    color: $selected_fg_color;
+    // border-color: transparentize($fg_color, 0.89);
+    background-color: $selected_bg_color;
+  }
+  &:insensitive {
+    color: transparentize($fg_color, 0.5);
+    background: none;
+  }
+}
+
+.popup-inactive-menu-item { //all icons and other graphical elements
+  color: $fg_color;
+
+  &:insensitive { color: $insensitive_fg_color; }
 }
 
 .popup-menu-boxpointer {
