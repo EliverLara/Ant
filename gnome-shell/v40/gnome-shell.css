@@ -499,10 +499,14 @@ StScrollBar {
     background-color: #1a2226;
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
   .popup-menu .popup-menu-content {
+    background-color: #1E282C;
+    border: none;
+    border-radius: 7px;
     padding: 15px 0; }
   .popup-menu .popup-menu-item {
     spacing: 6px;
-    padding: 6px; }
+    padding: 6px;
+    border-radius: 0px; }
     .popup-menu .popup-menu-item:ltr {
       padding-right: 1.75em;
       padding-left: 0; }
@@ -510,7 +514,7 @@ StScrollBar {
       padding-right: 0;
       padding-left: 1.75em; }
     .popup-menu .popup-menu-item:checked {
-      background-color: rgba(38, 51, 56, 0.93);
+      background-color: rgba(38, 51, 56, 0.93) !important;
       color: #fefefe;
       box-shadow: inset 1px 0px 0px #ff7789;
       font-weight: normal; }
@@ -518,10 +522,10 @@ StScrollBar {
         background-color: rgba(38, 51, 56, 0.93);
         color: #ff5d73; }
     .popup-menu .popup-menu-item.selected {
-      background-color: rgba(195, 199, 209, 0.1);
+      background-color: rgba(195, 199, 209, 0.1) !important;
       color: #C3C7D1; }
     .popup-menu .popup-menu-item:active {
-      background-color: #ff5d73;
+      background-color: #ff5d73 !important;
       color: #fefefe; }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(195, 199, 209, 0.5); }
@@ -922,7 +926,8 @@ StScrollBar {
   .calendar-day-base:active, .calendar-day-base:selected {
     color: #fefefe;
     background-color: #ff5d73;
-    border-color: transparent; }
+    border-color: transparent;
+    box-shadow: none; }
   .calendar-day-base.calendar-day-heading {
     color: #a6acbb;
     margin-top: 1em;
@@ -977,7 +982,8 @@ StScrollBar {
 
 /* Message list */
 .message-list {
-  width: 31.5em; }
+  width: 31.5em;
+  border: none; }
   .message-list .message-title {
     color: #babfca; }
   .message-list .message-content, .message-list .message-body {
@@ -1414,10 +1420,12 @@ StScrollBar {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: #304247; }
+  background-color: #304247;
+  border-radius: 12px; }
 
 .app-folder-dialog {
-  background-color: #1a2226; }
+  background-color: #1a2226;
+  border: none; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;
