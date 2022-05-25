@@ -572,7 +572,7 @@ StScrollBar {
 
   &:checked { 
     background-color: transparentize($selected_bg_color, 0.2) !important;
-    color: $selected_fg_color;
+    color: $selected_fg_color !important;
     border-radius: 6px 6px 0px 0px;
     box-shadow: none;
   }
@@ -934,13 +934,6 @@ StScrollBar {
 }
 
   // calendar popover
-  #calendarArea {
-    padding: 0.75em 1.0em;
-  }
-
-  .calendar {
-    margin-bottom: 1em;
-  }
 
   .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
@@ -948,17 +941,6 @@ StScrollBar {
     color: $fg_color;
     box-shadow: none;
   }
-
-    .calendar,
-    .datemenu-today-button,
-    .datemenu-displays-box,
-    .message-list-sections {
-      margin: 0 1.5em;
-    }
-
-    .datemenu-calendar-column { spacing: 0.5em; }
-    .datemenu-displays-section { padding-bottom: 3em; }
-    .datemenu-displays-box { spacing: 1em; }
 
     .datemenu-calendar-column {
       border: 0 solid transparent;
@@ -968,22 +950,11 @@ StScrollBar {
     }
 
     .datemenu-today-button,
-    .world-clocks-button,
-    .weather-button,
     .events-section-title,
-    .message-list-section-title,
-    .events-button {
+    .message-list-section-title  {
       border-radius: 4px;
       color: $fg_color;
       padding: .4em;
-    }
-
-    .message-list-section-list:ltr {
-      padding-left: .4em;
-    }
-
-    .message-list-section-list:rtl {
-      padding-right: .4em;
     }
 
     .datemenu-today-button,
@@ -1095,7 +1066,7 @@ StScrollBar {
         font-weight: bold;
         border: 1px solid $selected_bg_color;
         background-color: transparent;
-        color: $selected_fg_color;
+        color: $selected_fg_color !important;
 
         &:hover,&:focus {
           background-color:lighten($selected_bg_color, 3%);
