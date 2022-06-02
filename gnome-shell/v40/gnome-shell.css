@@ -146,14 +146,14 @@ StScrollBar {
   color: #bebebe;
   border-color: black;
   -slider-height: 0.1em;
-  -slider-background-color: #2c3b41;
+  -slider-background-color: #33444a;
   -slider-border-color: black;
   -slider-active-background-color: #9bbfbf;
   -slider-active-border-color: #B3E235;
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
   -barlevel-height: 0.1em;
-  -barlevel-background-color: #2c3b41;
+  -barlevel-background-color: #33444a;
   -barlevel-border-color: black;
   -barlevel-active-background-color: #9bbfbf;
   -barlevel-active-border-color: #B3E235;
@@ -532,6 +532,7 @@ StScrollBar {
   .popup-menu-item:checked {
     background-color: rgba(255, 93, 115, 0.8) !important;
     color: #fefefe !important;
+    font-weight: bold;
     border-radius: 6px 6px 0px 0px;
     box-shadow: none; }
   .popup-menu-item:insensitive {
@@ -559,7 +560,7 @@ StScrollBar {
     margin-left: 6px; }
   .popup-separator-menu-item .popup-separator-menu-item-separator {
     height: 1px;
-    background-color: #2c3b41; }
+    background-color: #33444a; }
   .popup-separator-menu-item .popup-menu-ornament {
     width: 0 !important; }
   .popup-sub-menu .popup-separator-menu-item {
@@ -569,7 +570,7 @@ StScrollBar {
     .popup-sub-menu .popup-separator-menu-item:rtl {
       margin-left: 2.5em; }
     .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
-      background-color: #3b4f56; }
+      background-color: #415760; }
 
 .background-menu {
   -boxpointer-gap: 4px;
@@ -595,7 +596,7 @@ StScrollBar {
     color: #C3C7D1;
     border: 1px solid #182023;
     -barlevel-height: 0.4em;
-    -barlevel-background-color: #2c3b41;
+    -barlevel-background-color: #33444a;
     -barlevel-active-background-color: #ff5d73;
     -barlevel-overdrive-color: #FF044A;
     -barlevel-overdrive-separator-width: 0.2em; }
@@ -810,7 +811,8 @@ StScrollBar {
   border: 0 solid transparent;
   background: #222e32;
   border-radius: 7px;
-  box-shadow: 0px 0px 1px 1px #182023 inset; }
+  box-shadow: 0px 0px 1px 1px #182023 inset;
+  padding: 0; }
 
 .datemenu-today-button,
 .events-section-title,
@@ -896,7 +898,7 @@ StScrollBar {
   height: 2.4em;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 1.4em;
+  border-radius: 99px;
   color: #C3C7D1; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: #28363b; }
@@ -959,7 +961,6 @@ StScrollBar {
 
 /* Message list */
 .message-list {
-  width: 31.5em;
   border: none; }
   .message-list .message-title {
     color: #babfca; }
@@ -1276,7 +1277,7 @@ StScrollBar {
 
 .search-section-separator {
   height: 2px;
-  background-color: #2c3b41; }
+  background-color: #33444a; }
 
 .list-search-result-content {
   spacing: 30px; }
@@ -1305,7 +1306,7 @@ StScrollBar {
 
 .dash-separator {
   width: 1px;
-  background-color: #2c3b41; }
+  background-color: #33444a; }
 
 .dash-label {
   border-radius: 7px;
