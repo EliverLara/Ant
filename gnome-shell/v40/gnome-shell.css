@@ -770,8 +770,6 @@ StScrollBar {
       box-shadow: inset 0 0 0 100px #ff5d73;
       color: #fefefe;
       transition-duration: 200ms; }
-      #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
-        icon-shadow: red 0 2px 2px; }
       #panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
         box-shadow: none; }
         #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
@@ -982,8 +980,7 @@ StScrollBar {
   background-color: transparent; }
 .message-list-section-close:hover > StIcon, .message-list-section-close:focus > StIcon
 .message-list-section-close:active > StIcon {
-  color: #FF044A;
-  background: transparent; }
+  color: #fefefe; }
 
 .message {
   background: #243135;
@@ -996,19 +993,11 @@ StScrollBar {
     border-radius: 1px 7px 7px 1px; }
 
 .message-close-button {
-  color: #C3C7D1; }
-
-.message-icon-bin {
-  padding: 10px 3px 10px 10px; }
-  .message-icon-bin:rtl {
-    padding: 10px 10px 10px 3px; }
-
-.message-icon-bin > StIcon {
-  icon-size: 16px;
-  -st-icon-style: symbolic; }
-
-.message-secondary-bin {
-  padding: 0 12px; }
+  color: #C3C7D1;
+  border-radius: 100px; }
+  .message-close-button:hover {
+    background-color: rgba(255, 4, 74, 0.9);
+    color: #fefefe; }
 
 .message-secondary-bin > .event-time {
   color: #989fb0;
@@ -1022,9 +1011,6 @@ StScrollBar {
 
 .message-content {
   padding: 10px; }
-  .message-content *:hover > StIcon,
-  .message-content *:focus > StIcon {
-    color: #FF044A; }
 
 .message-media-control {
   padding: 12px;
@@ -1501,15 +1487,15 @@ StScrollBar {
   font-size: 11pt;
   width: 34em;
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 12px;
   color: #fdfdfd;
   background-color: #1E282C;
   border: 1px solid #182023;
-  box-shadow: 0 1px 4px black; }
-  .notification-banner:hover {
-    background-color: rgba(30, 40, 44, 0.96); }
-  .notification-banner:focus {
-    background-color: rgba(30, 40, 44, 0.96); }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.393); }
+  .notification-banner:hover, .notification-banner:focus {
+    background-color: #263338;
+    border-radius: 12px;
+    box-shadow: none; }
   .notification-banner * {
     color: #fefefe; }
   .notification-banner .notification-icon {
@@ -1522,15 +1508,16 @@ StScrollBar {
   .notification-banner .notification-actions {
     background-color: #1a2226;
     padding-top: 2px;
-    spacing: 1px; }
+    spacing: 1px;
+    border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
-    padding: 5px;
+    padding: 7px;
     background-color: rgba(30, 40, 44, 0.9);
     box-shadow: none; }
     .notification-banner .notification-button:first-child {
-      border-radius: 0 0 0 3px; }
+      border-radius: 0 0 0 12px; }
     .notification-banner .notification-button:last-child {
-      border-radius: 0 0 3px 0; }
+      border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
       background-color: #1a2226;
       color: #ff5d73; }
