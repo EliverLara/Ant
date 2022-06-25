@@ -1,38 +1,48 @@
-
 /* thunar */
 .thunar toolbar {
-    background-color: $headerbar_color; 
-  }
-  
-  /* buttons in toolbar */
-  .thunar toolbar.horizontal button image {
-    -gtk-icon-transform:scale(0.72);
-  }
-  
-  scrolledwindow.sidebar treeview.view {
-    background: $base_color;
-    padding: 1.5px;
-    border: none;
-    box-shadow: none;
-  }
-  
-  /* path-bar of thunar */
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, window.thunar paned > scrolledwindow treeview.view {
-    &:hover, &:checked, &:selected{ 
-        background: transparent;
-        color: $selected_bg_color; 
-        box-shadow: none;
-    }
+  background-color: $headerbar_color; 
+}
 
-    &:checked:backdrop, &:selected:backdrop {
-        label { color: $backdrop_selected_bg_color; }
-    }
+/* buttons in toolbar */
+.thunar toolbar.horizontal button {
+  color: $headerbar_fg_color;
+  &:hover { @include button(hover-header); }
+  image { -gtk-icon-transform:scale(0.72); }
+}
+
+scrolledwindow.sidebar treeview.view {
+  background: $base_color;
+  padding: 4px 0px;
+  color: $fg_color;
+}
+
+/* path-bar of thunar */
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, .thunar toolbar .path-bar-button {
+  color: $headerbar_fg_color;
+  &:hover, &:checked, &:checked:backdrop { 
+    background: transparent;
+    color: $selected_bg_color; 
   }
-  
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
-    background: none;
-    outline: none;
-    border: none;
+}
+
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button, .thunar toolbar .path-bar-button {
+  background: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* thunar sidepane */
+window.thunar paned > scrolledwindow treeview.view {
+
+  &:hover {
+    background-color: $base_color;
+    color: $selected_bg_color;
+  }
+  &:selected {
+    @include button(hover-header);
+    background-color: $base_color;
+    border-radius: 0;
     box-shadow: none;
   }
-  
+}
