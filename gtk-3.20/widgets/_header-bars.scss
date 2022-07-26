@@ -63,6 +63,7 @@ headerbar {
       background-color: transparent;
       color: $selected_bg_color;
       box-shadow: none;
+      border: none;
       //@include button(hover-header);
     }
 
