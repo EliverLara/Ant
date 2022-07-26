@@ -2329,7 +2329,8 @@ GraniteWidgetsWelcome {
     headerbar button:checked {
       background-color: transparent;
       color: #ff5d73;
-      box-shadow: none; }
+      box-shadow: none;
+      border: none; }
     .titlebar:not(headerbar) button:backdrop, .titlebar:not(headerbar) button:disabled, .titlebar:not(headerbar) button:backdrop:disabled,
     headerbar button:backdrop,
     headerbar button:disabled,
