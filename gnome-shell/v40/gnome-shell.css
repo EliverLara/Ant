@@ -383,14 +383,9 @@ StScrollBar {
 
 /* Password or Authentication Dialog */
 .prompt-dialog {
-  width: 34em;
-  border: none;
-  border-radius: 2px; }
-  .prompt-dialog .message-dialog-main-layout {
-    spacing: 24px;
-    padding: 10px; }
-  .prompt-dialog .message-dialog-content {
-    spacing: 16px; }
+  width: 30em;
+  border: 1px solid #182023;
+  border-radius: 10px; }
   .prompt-dialog .message-dialog-title {
     color: #7b849a; }
 

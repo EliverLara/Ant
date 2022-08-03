@@ -387,12 +387,12 @@ StScrollBar {
 
 .prompt-dialog {
   //this is the width of the entire modal popup
-  width: 34em;
-  border: none;
-  border-radius: 2px;
+  width: 30em;
+  border: 1px solid $borders_color;
+  border-radius: 10px;
 
-  .message-dialog-main-layout { spacing: 24px; padding: 10px; }
-  .message-dialog-content { spacing: 16px; }
+  // .message-dialog-main-layout { spacing: 24px; padding: 10px; }
+  // .message-dialog-content { spacing: 16px; }
   .message-dialog-title { color: darken($osd_fg_color,25%); }
 }
 
