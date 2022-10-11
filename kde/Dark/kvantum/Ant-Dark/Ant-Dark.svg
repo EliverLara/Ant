@@ -6,7 +6,7 @@
    viewBox="0 0 380.00266 635.00043"
    id="svg1764"
    sodipodi:docname="Ant-Dark.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -39,42 +39,50 @@
      inkscape:pageopacity="0.98823529"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1020"
+     inkscape:window-height="1019"
      id="namedview1766"
      showgrid="false"
-     inkscape:zoom="14.17813"
-     inkscape:cx="46.021583"
-     inkscape:cy="485.2544"
+     inkscape:zoom="5.0127259"
+     inkscape:cx="81.193348"
+     inkscape:cy="469.20578"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="36"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g408"
+     inkscape:current-layer="g454"
      inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#001419">
     <sodipodi:guide
        id="guide2031"
        orientation="1,0"
-       position="121.42284,143.7997" />
+       position="121.42284,143.7997"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide2033"
        orientation="1,0"
-       position="134.96936,152.33161" />
+       position="134.96936,152.33161"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide2035"
        orientation="0,-1"
-       position="137.63807,148.71198" />
+       position="137.63807,148.71198"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide2037"
        orientation="1,0"
-       position="146.54032,144.79746" />
+       position="146.54032,144.79746"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide2039"
        orientation="0,-1"
-       position="146.54032,135.24572" />
+       position="146.54032,135.24572"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide2041"
        orientation="1,0"
-       position="159.89268,134.78559" />
+       position="159.89268,134.78559"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs116">
@@ -96,7 +104,7 @@
       <stop
          id="stop2045"
          offset="0"
-         style="stop-color:#555564;stop-opacity:0.12941177" />
+         style="stop-color:#555564;stop-opacity:0.25;" />
       <stop
          id="stop2047"
          offset="1"
@@ -2001,42 +2009,42 @@
        y="410"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
     <rect
        id="floating-tab-toggled-top"
        x="80"
        y="400"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
     <rect
        id="floating-tab-toggled-right"
        x="90"
        y="410"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
     <rect
        id="floating-tab-toggled-topright"
        x="90"
        y="400"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
     <rect
        id="floating-tab-toggled-left"
        x="70"
        y="410"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
     <rect
        id="floating-tab-toggled-topleft"
        x="70"
        y="400"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
     <g
        id="g2022"
        style="fill:url(#linearGradient2030);fill-opacity:1">
@@ -2068,63 +2076,63 @@
        y="410"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-top"
        x="45"
        y="400"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-right"
        x="55"
        y="410"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:1;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:1;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-topright"
        x="55"
        y="400"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-left"
        x="35"
        y="410"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-topleft"
        x="35"
        y="400"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-bottom"
        x="45"
        y="420"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-bottomright"
        x="55"
        y="420"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-focused-bottomleft"
        x="35"
        y="420"
        width="10"
        height="10"
-       style="opacity:0.13;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
+       style="opacity:0.25;fill:#555564;fill-opacity:0.908257;fill-rule:evenodd" />
     <rect
        id="floating-tab-normal"
        x="10"
