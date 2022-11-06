@@ -2469,6 +2469,14 @@ GraniteWidgetsWelcome {
     headerbar .linked > button:active:backdrop label,
     headerbar .linked > button:checked:backdrop label {
       color: rgba(255, 93, 115, 0.6); }
+  .titlebar:not(headerbar) .path-buttons-box .current-dir:hover,
+  headerbar .path-buttons-box .current-dir:hover {
+    background-color: transparent; }
+  .titlebar:not(headerbar) .path-buttons-box .current-dir label,
+  headerbar .path-buttons-box .current-dir label {
+    background-color: transparent;
+    color: #ff5d73;
+    box-shadow: none; }
   .selection-mode.titlebar:not(headerbar),
   headerbar.selection-mode {
     color: #fefefe;
