@@ -128,6 +128,16 @@ headerbar {
       }
     }
   }
+
+  .path-buttons-box {
+    .current-dir:hover {
+      background-color: transparent;
+    }
+    .current-dir label {
+      @include button(hover-header);
+    }
+  }
+
   // End reset style
 
   &.selection-mode {
