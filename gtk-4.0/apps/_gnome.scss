@@ -103,6 +103,25 @@
       }
     }
   }
+
+  #NautilusPathBar {
+
+    background-color: transparent;
+    .dim-label { color: transparent; }
+  
+    //Buttons before current path
+    button {
+      .horizontal  .dim-label { color: $headerbar_fg_color; }
+      &:hover, &:focus {
+        .dim-label { color: $selected_bg_color; }
+      }
+    }
+    .current-dir label {
+      padding: 0px 12px;
+      color: $selected_bg_color;
+      &:backdrop { color: $backdrop_selected_bg_color; }
+    }
+  }
 }
 
 .nautilus-circular-button {
