@@ -32,7 +32,7 @@ $headerbar_color: $bg_color;
 $headerbar_fg_color: $text_color;
 $menu_color: if($variant == 'light', $base_color, darken($bg_color, 1%));
 $popover_bg_color: $menu_color;
-$popover_hover_color: if($variant == 'light', darken($bg_color, 2%), lighten($base_color, 2%));
+$popover_hover_color: if($variant == 'light', darken($bg_color, 5%), lighten($base_color, 2%));
 
 $scrollbar_bg_color: mix($base_color, $bg_color, 50%);
 $scrollbar_slider_color: mix($fg_color, $bg_color, 60%);
