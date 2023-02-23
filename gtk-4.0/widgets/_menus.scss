@@ -28,8 +28,8 @@ menu,
 .context-menu {
   margin: 4px;
   padding: 2px 0px;
-  background: $menu_color;
-  border: 1px solid $borders_color; // adds borders in a non composited env
+  background-color: $menu_color;
+  border: none; // adds borders in a non composited env
   border-radius: 5px;
   font: initial;
 
