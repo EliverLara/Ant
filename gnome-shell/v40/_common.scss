@@ -2242,7 +2242,7 @@ $base_padding: 6px;
   min-height: 40px;
 
   &:checked { 
-    @include button(active, lighten($base_color, 8%));
+    @include button(active, lighten($base_color, 11%));
     color: $selected_fg_color;
   }
 

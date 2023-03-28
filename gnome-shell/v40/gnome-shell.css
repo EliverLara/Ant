@@ -2020,7 +2020,7 @@ StScrollBar {
       to extend to the border */ }
   .quick-toggle:checked {
     color: #ff5d73;
-    background-color: #33444a;
+    background-color: #394d53;
     border: 1px solid #182023;
     text-shadow: none;
     icon-shadow: none;
