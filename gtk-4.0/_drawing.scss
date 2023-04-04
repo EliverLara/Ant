@@ -481,21 +481,21 @@ box-shadow: none;
   box-shadow: inset 0 1px $hc; // top highlight
 }
 
-@mixin overshoot($p, $t:normal, $c:darken($bg_color, 5%)) {
-//
-// overshoot
-//
-// $p: position
-// $t: type
-// $c: base color
-//
-// possible $p values:
-// top, bottom, right, left
-//
-// possible $t values:
-// normal, backdrop
-//
-
+@mixin overshoot($p, $t:normal, $c:$fg_color) {
+  //
+  // overshoot
+  //
+  // $p: position
+  // $t: type
+  // $c: base color
+  //
+  // possible $p values:
+  // top, bottom, right, left
+  //
+  // possible $t values:
+  // normal, backdrop
+  //
+  
   $_small_gradient_length: 5%;
   $_big_gradient_length: 100%;
 
@@ -524,8 +524,8 @@ box-shadow: none;
   $_big_gradient_color: $c;
 
   @if $c==$fg_color {
-    $_small_gradient_color: darken($borders_color, 10%);
-    $_big_gradient_color: $fg_color;
+    $_small_gradient_color: $borders_color;
+    $_big_gradient_color: $borders_color;
 
     @if $t==backdrop { $_small_gradient_color: $backdrop_borders_color; }
   }
@@ -537,6 +537,7 @@ box-shadow: none;
   $_big_gradient: radial-gradient(farthest-side at $p,
                                 $_big_gradient_color,
                                 transparentize($_big_gradient_color, 1));
+
   @if $t==normal {
     background-image: $_small_gradient, $_big_gradient;
     background-size: $_small_gradient_size, $_big_gradient_size;
