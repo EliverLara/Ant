@@ -2279,9 +2279,10 @@ GraniteWidgetsWelcome {
     box-shadow: none;
     border: none;
     min-height: 24px; }
-    .titlebar:not(headerbar) button:hover, .titlebar:not(headerbar) button:active, .titlebar:not(headerbar) button:checked,
+    .titlebar:not(headerbar) button:hover, .titlebar:not(headerbar) button:active, .titlebar:not(headerbar) button:active:hover, .titlebar:not(headerbar) button:checked,
     headerbar button:hover,
     headerbar button:active,
+    headerbar button:active:hover,
     headerbar button:checked {
       background-color: transparent;
       color: #76A7A7;
