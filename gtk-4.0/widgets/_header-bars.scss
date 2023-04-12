@@ -59,6 +59,7 @@ headerbar {
 
     &:hover,
     &:active,
+    &:active:hover,
     &:checked {
       background-color: transparent;
       color: $selected_bg_color;
