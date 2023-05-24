@@ -1607,7 +1607,7 @@ $slider_size: 16px;
 .app-folder-dialog { //style like the dash
   background-color:  $_dash_bg;
   border: none;
-
+  box-shadow: none;
   & .folder-name-label { color: $fg_color; }
   
   .edit-folder-button {
