@@ -2248,10 +2248,13 @@ $base_padding: 6px;
 
   &:checked { 
     @include button(active, lighten($base_color, 11%));
-    color: $selected_fg_color;
+
+    &:hover { @include button(active, lighten($base_color, 13%), 0.4); }
+
+    &, &:hover { color: $selected_fg_color; }
   }
 
-  &, &:hover, &:checked { border: none; }
+  &, &:hover, &:checked, &:checked:hover { border: none; }
 
   & > StBoxLayout { spacing: $base_padding; }
 
@@ -2289,8 +2292,14 @@ $base_padding: 6px;
     color: $fg_color;
     &:checked { 
       @include button(active, lighten($base_color, 7%));
-      color: $selected_fg_color;
-      border-width: 0;
+      &:hover { @include button(active, lighten($base_color, 9%)); }
+      &, &:hover {
+        color: $selected_fg_color;
+        border-width: 0;
+      }
+    }
+    &:hover {
+      background-color: lighten($base_color, 5%);
     }
   
     &:ltr { border-radius: 0 99px 99px 0; }
