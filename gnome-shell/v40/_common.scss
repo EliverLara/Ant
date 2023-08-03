@@ -184,7 +184,11 @@ $slider_size: 16px;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
 
-  .modal-dialog-content-box { padding: 24px; }
+  .modal-dialog-content-box {
+    margin: 32px 40px;
+    spacing: 32px;
+    max-width: 28em;
+  }
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -386,7 +390,7 @@ $slider_size: 16px;
 
 .prompt-dialog {
   //this is the width of the entire modal popup
-  width: 30em;
+  width: 28em;
   border: 1px solid $borders_color;
   border-radius: 10px;
 
