@@ -6150,6 +6150,18 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   border: none;
   box-shadow: none; }
 
+/* thunar sidepane */
+.thunar scrolledwindow.sidebar treeview.view:hover {
+  background-color: #222e32;
+  color: #76A7A7; }
+.thunar scrolledwindow.sidebar treeview.view:selected, .thunar scrolledwindow.sidebar treeview.view:active, .thunar scrolledwindow.sidebar treeview.view:checked {
+  background-color: transparent;
+  color: #76A7A7;
+  box-shadow: none;
+  background-color: #222e32;
+  border-radius: 0;
+  box-shadow: none; }
+
 .nemo-window .places-treeview {
   -NemoPlacesTreeView-disk-full-bg-color: #030405;
   -NemoPlacesTreeView-disk-full-fg-color: #f1c40f;

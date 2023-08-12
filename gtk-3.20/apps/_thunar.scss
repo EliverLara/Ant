@@ -36,3 +36,17 @@
     box-shadow: none;
   }
   
+  /* thunar sidepane */
+.thunar scrolledwindow.sidebar treeview.view {
+
+  &:hover {
+    background-color: $base_color;
+    color: $selected_bg_color;
+  }
+  &:selected, &:active, &:checked {
+    @include button(hover-header);
+    background-color: $base_color;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
