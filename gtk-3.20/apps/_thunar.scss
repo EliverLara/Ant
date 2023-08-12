@@ -33,13 +33,13 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 }
 
 /* thunar sidepane */
-window.thunar paned > scrolledwindow treeview.view {
+.thunar scrolledwindow.sidebar treeview.view {
 
   &:hover {
     background-color: $base_color;
     color: $selected_bg_color;
   }
-  &:selected {
+  &:selected, &:active, &:checked {
     @include button(hover-header);
     background-color: $base_color;
     border-radius: 0;

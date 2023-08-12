@@ -6190,10 +6190,10 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   box-shadow: none; }
 
 /* thunar sidepane */
-window.thunar paned > scrolledwindow treeview.view:hover {
+.thunar scrolledwindow.sidebar treeview.view:hover {
   background-color: #222e32;
   color: #76A7A7; }
-window.thunar paned > scrolledwindow treeview.view:selected {
+.thunar scrolledwindow.sidebar treeview.view:selected, .thunar scrolledwindow.sidebar treeview.view:active, .thunar scrolledwindow.sidebar treeview.view:checked {
   background-color: transparent;
   color: #76A7A7;
   box-shadow: none;
