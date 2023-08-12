@@ -1063,7 +1063,7 @@ popover.background radiobutton,
   modelbutton.flat:hover, popover.background checkbutton:hover,
   popover.background radiobutton:hover,
   .menuitem.button.flat:hover {
-    background-color: #e9e9e9; }
+    background-color: #e1e1e1; }
   modelbutton.flat check:last-child, popover.background checkbutton check:last-child,
   popover.background radiobutton check:last-child,
   modelbutton.flat radio:last-child,
@@ -6174,6 +6174,18 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   background: none;
   outline: none;
   border: none;
+  box-shadow: none; }
+
+/* thunar sidepane */
+.thunar scrolledwindow.sidebar treeview.view:hover {
+  background-color: #f8f8f8;
+  color: #ff5d73; }
+.thunar scrolledwindow.sidebar treeview.view:selected, .thunar scrolledwindow.sidebar treeview.view:active, .thunar scrolledwindow.sidebar treeview.view:checked {
+  background-color: transparent;
+  color: #ff5d73;
+  box-shadow: none;
+  background-color: #f8f8f8;
+  border-radius: 0;
   box-shadow: none; }
 
 .nemo-window .places-treeview {

@@ -1061,7 +1061,7 @@ popover.background radiobutton,
   modelbutton.flat:hover, popover.background checkbutton:hover,
   popover.background radiobutton:hover,
   .menuitem.button.flat:hover {
-    background-color: #1a2226; }
+    background-color: #263338; }
   modelbutton.flat check:last-child, popover.background checkbutton check:last-child,
   popover.background radiobutton check:last-child,
   modelbutton.flat radio:last-child,
@@ -2932,7 +2932,7 @@ menubar,
 menu, .menu, .context-menu {
   margin: 4px;
   padding: 2px 0px;
-  background-color: #212d31;
+  background-color: #1c2529;
   border: 1px solid #101517;
   border-radius: 5px;
   font: initial; }
@@ -2978,7 +2978,7 @@ menu, .menu, .context-menu {
     min-height: 16px;
     min-width: 16px;
     padding: 4px;
-    background-color: #212d31;
+    background-color: #1c2529;
     border-radius: 0; }
     menu > arrow.top, .menu > arrow.top, .context-menu > arrow.top {
       margin-top: -6px;
@@ -3306,7 +3306,7 @@ paned.vertical > separator {
 popover.background {
   padding: 2px;
   border-radius: 5px;
-  background-color: #222e32;
+  background-color: #1c2529;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
   .csd popover.background, popover.background {
     border: 1px solid #101517; }
@@ -6150,6 +6150,18 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   background: none;
   outline: none;
   border: none;
+  box-shadow: none; }
+
+/* thunar sidepane */
+.thunar scrolledwindow.sidebar treeview.view:hover {
+  background-color: #222e32;
+  color: #ff5d73; }
+.thunar scrolledwindow.sidebar treeview.view:selected, .thunar scrolledwindow.sidebar treeview.view:active, .thunar scrolledwindow.sidebar treeview.view:checked {
+  background-color: transparent;
+  color: #ff5d73;
+  box-shadow: none;
+  background-color: #222e32;
+  border-radius: 0;
   box-shadow: none; }
 
 .nemo-window .places-treeview {
