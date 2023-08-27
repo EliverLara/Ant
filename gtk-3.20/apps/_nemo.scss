@@ -6,7 +6,15 @@
         .view.cell,
         iconview.cell {
             &:hover,
-            &:selected { @include button(hover-header); }
+            &:selected, &:focus, &:active { 
+                @include button(hover-header);
+                background-color: $base_color;
+                text-shadow: none;
+                font-weight: bold;
+                label {
+                    font-weight: bold;
+                }
+             }
         }
     }
 
