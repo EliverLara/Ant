@@ -6205,12 +6205,23 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   -NemoPlacesTreeView-disk-full-bg-color: #030405;
   -NemoPlacesTreeView-disk-full-fg-color: #f1c40f;
   -GtkTreeView-vertical-separator: 7; }
-  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover, .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
+  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover, .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected, .nemo-window .places-treeview .view.cell:focus, .nemo-window .places-treeview iconview.cell:focus, .nemo-window .places-treeview .view.cell:active, .nemo-window .places-treeview iconview.cell:active,
   .nemo-window .places-treeview iconview.cell:hover,
-  .nemo-window .places-treeview iconview.cell:selected {
+  .nemo-window .places-treeview iconview.cell:selected,
+  .nemo-window .places-treeview iconview.cell:focus,
+  .nemo-window .places-treeview iconview.cell:active {
     background-color: transparent;
     color: #76A7A7;
-    box-shadow: none; }
+    box-shadow: none;
+    background-color: #222e32;
+    text-shadow: none;
+    font-weight: bold; }
+    .nemo-window .places-treeview .view.cell:hover label, .nemo-window .places-treeview iconview.cell:hover label, .nemo-window .places-treeview .view.cell:selected label, .nemo-window .places-treeview iconview.cell:selected label, .nemo-window .places-treeview .view.cell:focus label, .nemo-window .places-treeview iconview.cell:focus label, .nemo-window .places-treeview .view.cell:active label, .nemo-window .places-treeview iconview.cell:active label,
+    .nemo-window .places-treeview iconview.cell:hover label,
+    .nemo-window .places-treeview iconview.cell:selected label,
+    .nemo-window .places-treeview iconview.cell:focus label,
+    .nemo-window .places-treeview iconview.cell:active label {
+      font-weight: bold; }
 .nemo-window .sidebar {
   color: #C3C7D1;
   background-color: #222e32; }
