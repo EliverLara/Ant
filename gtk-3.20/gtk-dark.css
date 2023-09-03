@@ -4847,7 +4847,7 @@ button.raven-trigger {
     color: #f8f8f8;
     font-weight: 700; }
   .budgie-panel.transparent {
-    background-color: rgba(30, 40, 44, 0.25); }
+    background-color: rgba(30, 40, 44, 0.85); }
     .top .budgie-panel.transparent {
       border-bottom-color: transparent; }
     .bottom .budgie-panel.transparent {
@@ -5162,8 +5162,8 @@ calendar.raven-calendar {
   calendar.raven-calendar:indeterminate {
     color: alpha(currentColor,0.3); }
   calendar.raven-calendar:selected {
-    background: transparent;
-    color: #ff5d73;
+    background: #ff5d73;
+    color: #fefefe;
     font-weight: bold; }
   calendar.raven-calendar:backdrop {
     background-color: transparent; }
