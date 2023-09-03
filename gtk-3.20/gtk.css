@@ -4662,7 +4662,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
 .budgie-popover.background {
   border-radius: 2px;
   padding: 0;
-  background: #1E282C;
+  background: #fff;
   background-clip: border-box;
   box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(0, 0, 0, 0.2); }
@@ -4677,18 +4677,17 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     padding: 2px 0 0; }
   .budgie-popover button,
   .budgie-popover.background button {
-    color: #f8f8f8;
-    border: none;
-    background: transparent; }
+    color: #31363d; }
     .budgie-popover button:hover,
     .budgie-popover.background button:hover {
-      color: #ff5d73; }
+      background-color: #ff5d73;
+      color: #fefefe; }
 
 .budgie-popover > .container {
   padding: 2px; }
 
 .budgie-menu {
-  color: #f8f8f8; }
+  color: #31363d; }
   .budgie-menu .container {
     padding: 0; }
   .budgie-menu button:hover {
@@ -4701,7 +4700,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     border-radius: 0;
     font-size: 120%;
     box-shadow: none;
-    color: #f8f8f8; }
+    color: #31363d; }
     .budgie-menu entry.search image:dir(ltr) {
       padding-left: 8px;
       padding-right: 12px; }
@@ -4738,30 +4737,29 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 0;
-    box-shadow: none;
-    background: yellow; }
+    box-shadow: none; }
   .budgie-menu button {
     border: none;
     background: transparent; }
   .budgie-menu undershoot, .budgie-menu overshoot {
     background: none; }
   .budgie-menu list {
-    color: rgba(248, 248, 248, 0.7); }
+    color: rgba(49, 54, 61, 0.7); }
 
 button.budgie-menu-launcher {
   padding: 0 2px;
-  color: #f8f8f8;
+  color: #31363d;
   box-shadow: none;
   background-color: transparent; }
   button.budgie-menu-launcher:hover {
-    color: #f8f8f8; }
+    color: #31363d; }
   button.budgie-menu-launcher:active, button.budgie-menu-launcher:checked {
-    color: #f8f8f8; }
+    color: #31363d; }
   button.budgie-menu-launcher:backdrop {
-    color: #f8f8f8;
+    color: #31363d;
     background-color: transparent; }
     button.budgie-menu-launcher:backdrop:hover {
-      color: #f8f8f8; }
+      color: #31363d; }
     button.budgie-menu-launcher:backdrop:active, button.budgie-menu-launcher:backdrop:checked {
       color: #ff5d73;
       box-shadow: none;
@@ -4810,19 +4808,19 @@ button.budgie-menu-launcher {
 button.raven-trigger {
   padding-left: 2px;
   padding-right: 2px;
-  color: #f8f8f8;
+  color: #31363d;
   box-shadow: none; }
   button.raven-trigger:hover {
-    color: #f8f8f8;
+    color: #31363d;
     background-color: transparent; }
   button.raven-trigger:active, button.raven-trigger:checked {
     box-shadow: none;
     background-color: transparent;
     color: #ff5d73; }
   button.raven-trigger:backdrop {
-    color: #f8f8f8; }
+    color: #31363d; }
     button.raven-trigger:backdrop:hover {
-      color: #f8f8f8; }
+      color: #31363d; }
     button.raven-trigger:backdrop:active, button.raven-trigger:backdrop:checked {
       box-shadow: none;
       color: #ff5d73;
@@ -4886,8 +4884,8 @@ button.raven-trigger {
   box-shadow: inset 0px 1px 1px alpha(@theme_fg_color, 0.04);; }
 
 .budgie-panel {
-  color: #f8f8f8;
-  background-color: #1E282C;
+  color: #31363d;
+  background-color: #fff;
   background-image: none;
   box-shadow: none;
   border: none;
@@ -4895,8 +4893,8 @@ button.raven-trigger {
   .budgie-panel .alert {
     color: #FF044A; }
   .budgie-panel:backdrop {
-    color: #f8f8f8;
-    background-color: #1E282C; }
+    color: #31363d;
+    background-color: #fff; }
   .budgie-panel button {
     border-top-width: 0;
     border-bottom-width: 0;
@@ -4912,10 +4910,10 @@ button.raven-trigger {
     padding: 0;
     margin: 0; }
   .budgie-panel label {
-    color: #f8f8f8;
+    color: #31363d;
     font-weight: 700; }
   .budgie-panel.transparent {
-    background-color: rgba(30, 40, 44, 0.25); }
+    background-color: rgba(255, 255, 255, 0.8); }
     .top .budgie-panel.transparent {
       border-bottom-color: transparent; }
     .bottom .budgie-panel.transparent {
@@ -4930,13 +4928,13 @@ button.raven-trigger {
       background-color: rgba(49, 54, 61, 0.15); }
     .budgie-panel .end-region label {
       font-weight: 700;
-      color: #f8f8f8; }
+      color: #31363d; }
 
 .budgie-panel #tasklist-button,
 .budgie-panel #tasklist-button:backdrop {
   outline-color: transparent;
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border-color: rgba(30, 40, 44, 0);
+  border-color: rgba(255, 255, 255, 0);
   border-radius: 0;
   background-color: transparent;
   box-shadow: none;
@@ -4945,7 +4943,7 @@ button.raven-trigger {
 .budgie-panel button.flat.launcher {
   outline-color: transparent;
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border-color: rgba(30, 40, 44, 0);
+  border-color: rgba(255, 255, 255, 0);
   border-radius: 0;
   padding: 0;
   background-clip: padding-box;
@@ -5058,7 +5056,7 @@ button.raven-trigger {
     border-right: 2px solid #ff5d73; }
 
 .top .budgie-panel {
-  border-bottom: 1px solid #101517; }
+  border-bottom: 1px solid #ededed; }
 
 .top .raven-frame {
   padding: 0;
@@ -5072,7 +5070,7 @@ button.raven-trigger {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent); }
 
 .bottom .budgie-panel {
-  border-top: 1px solid #101517; }
+  border-top: 1px solid #ededed; }
 
 .bottom .raven-frame {
   padding: 0;
@@ -5086,7 +5084,7 @@ button.raven-trigger {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent); }
 
 .left .budgie-panel {
-  border-right: 1px solid #101517; }
+  border-right: 1px solid #ededed; }
 
 .left .raven-frame {
   padding: 0;
@@ -5100,7 +5098,7 @@ button.raven-trigger {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent); }
 
 .right .budgie-panel {
-  border-left: 1px solid #101517; }
+  border-left: 1px solid #ededed; }
 
 .right .raven-frame {
   padding: 0;
@@ -5115,64 +5113,11 @@ button.raven-trigger {
 
 .raven {
   padding: 0;
-  color: #FF044A;
-  background: #1E282C;
+  color: #31363d;
+  background: #fff;
   transition: 170ms ease-out; }
-  .raven .raven-header {
-    min-height: 32px;
-    color: #f8f8f8;
-    border: solid rgba(0, 0, 0, 0.15);
-    border-width: 1px 0;
-    background-color: rgba(61, 81, 89, 0.5); }
-    .raven .raven-header * {
-      padding-top: 0;
-      padding-bottom: 0; }
-    .raven .raven-header.top {
-      border-top-style: none;
-      border-color: transparent;
-      margin-top: 3px;
-      min-height: 32px; }
-      .raven .raven-header.top button.image-button:hover {
-        color: #ff445d;
-        box-shadow: none; }
-    .raven .raven-header > button.text-button {
-      border-radius: 2px;
-      color: #fefefe;
-      background-color: rgba(234, 0, 65, 0.9);
-      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.2); }
-      .raven .raven-header > button.text-button:hover {
-        border-radius: 2px;
-        color: #fefefe;
-        background-color: rgba(255, 4, 74, 0.9);
-        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.2); }
-      .raven .raven-header > button.text-button:active {
-        color: #fefefe;
-        background-color: rgba(255, 30, 92, 0.9);
-        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.2); }
-    .raven .raven-header.bottom {
-      border-bottom-style: none; }
-    .raven .raven-header button {
-      color: #31363D;
-      border-radius: 4px;
-      text-shadow: none;
-      box-shadow: none;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      background-color: #f7f7f7;
-      border-radius: 0; }
-      .raven .raven-header button:hover {
-        color: #ff5d73;
-        border-radius: 4px;
-        text-shadow: none;
-        background-color: #fafafa;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 0; }
-      .raven .raven-header button:active, .raven .raven-header button:checked {
-        color: #ff5d73;
-        background-color: #fafafa; }
-      .raven .raven-header button:disabled {
-        color: #909296; }
   .raven list {
-    color: #f8f8f8;
+    color: #31363d;
     background-color: transparent; }
     .raven list:selected {
       background-color: rgba(255, 93, 115, 0.9); }
@@ -5181,12 +5126,12 @@ button.raven-trigger {
       background-color: transparent; }
       .raven list row:hover,
       .raven list row.activatable:hover {
-        background-color: rgba(61, 81, 89, 0.3); }
+        background-color: rgba(255, 255, 255, 0.3); }
       .raven list row:selected,
       .raven list row.activatable:selected {
         background-color: rgba(255, 93, 115, 0.9); }
   .raven .raven-background {
-    color: #f8f8f8;
+    color: #31363d;
     background-color: transparent;
     border-color: transparent; }
     .raven .raven-background.middle {
@@ -5228,19 +5173,19 @@ button.raven-trigger {
 
 calendar.raven-calendar {
   padding: 4px;
-  color: #f8f8f8;
+  color: #31363d;
   background: transparent;
   border-color: transparent; }
   calendar.raven-calendar:indeterminate {
     color: alpha(currentColor,0.3); }
   calendar.raven-calendar:selected {
-    background: transparent;
-    color: #ff4961;
+    background: #ff5d73;
+    color: #fefefe;
     font-weight: bold; }
   calendar.raven-calendar:backdrop {
     background-color: transparent; }
   calendar.raven-calendar.header {
-    color: #f8f8f8;
+    color: #31363d;
     border: none;
     border-radius: 0;
     background-color: transparent; }
@@ -5336,7 +5281,7 @@ calendar.raven-calendar {
 
 .budgie-session-dialog, .budgie-polkit-dialog, .budgie-run-dialog {
   color: #31363D;
-  background-color: #1E282C; }
+  background-color: #fff; }
   .budgie-session-dialog label:backdrop, .budgie-polkit-dialog label:backdrop, .budgie-run-dialog label:backdrop {
     color: rgba(49, 54, 61, 0.5); }
   .budgie-session-dialog .dialog-title, .budgie-polkit-dialog .dialog-title, .budgie-run-dialog .dialog-title {
@@ -5411,7 +5356,7 @@ headerbar .budgie-run-dialog list row:selected .subtitle {
   margin: 4px;
   padding: 5px;
   border-radius: 0;
-  background-color: #1E282C; }
+  background-color: #fff; }
   .budgie-menubar menu menuitem:hover {
     background-color: #ff5d73;
     color: #fefefe; }
@@ -5435,7 +5380,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   border-style: none none solid; }
 
 .workspace-switcher .workspace-layout {
-  border: 0 solid #1E282C; }
+  border: 0 solid #fff; }
   .top .workspace-switcher .workspace-layout:dir(ltr), .bottom .workspace-switcher .workspace-layout:dir(ltr) {
     border-left-width: 1px; }
   .top .workspace-switcher .workspace-layout:dir(rtl), .bottom .workspace-switcher .workspace-layout:dir(rtl) {
@@ -5443,7 +5388,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .left .workspace-switcher .workspace-layout, .right .workspace-switcher .workspace-layout {
     border-top-width: 1px; }
 .workspace-switcher .workspace-item, .workspace-switcher .workspace-add-button {
-  border: 0 solid black; }
+  border: 0 solid #cccccc; }
   .top .workspace-switcher .workspace-item:dir(ltr), .bottom .workspace-switcher .workspace-item:dir(ltr),
   .top .workspace-switcher .workspace-add-button:dir(ltr), .bottom .workspace-switcher .workspace-add-button:dir(ltr) {
     border-right-width: 1px; }
@@ -5453,7 +5398,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .left .workspace-switcher .workspace-item, .right .workspace-switcher .workspace-item, .left .workspace-switcher .workspace-add-button, .right .workspace-switcher .workspace-add-button {
     border-bottom-width: 1px; }
 .workspace-switcher .workspace-item.current-workspace {
-  background-color: black; }
+  background-color: #d9d9d9; }
 .workspace-switcher .workspace-add-button {
   border: none;
   background: transparent; }

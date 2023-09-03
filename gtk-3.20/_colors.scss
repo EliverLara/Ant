@@ -9,7 +9,7 @@ $fg_color: if($variant == 'light', #31363d, #C3C7D1);
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
 $shadow_color: rgba(162, 162, 165, 0.21);
 
-$main_dark_color: #fff;
+$main_dark_color: if($variant == 'light', #fff, darken(#1E282C, 1%));
 $_sidebar_color: if($variant == 'light', darken(#f8f8f8, 0%), $main_dark_color);
 
 // Primary colors
