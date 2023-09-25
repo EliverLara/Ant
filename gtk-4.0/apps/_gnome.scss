@@ -92,6 +92,9 @@
     border: none;
     margin: 0;
     padding: 0;
+    &:hover, &:active, &:checked {
+      color: $selected_bg_color;
+    }
   }
 
   // Selected dir
@@ -128,6 +131,9 @@
     margin: 0;
     -gtk-icon-size: 12px;
     padding: 0 4px;
+    &:hover, &:active, &:checked {
+      image { color: $selected_fg_color; }
+    }
   }
 
   > text, > image { margin: 0; }

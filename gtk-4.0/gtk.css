@@ -5637,6 +5637,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     border: none;
     margin: 0;
     padding: 0; }
+    .nautilus-window #NautilusPathBar button:hover, .nautilus-window #NautilusPathBar button:active, .nautilus-window #NautilusPathBar button:checked {
+      color: #ff5d73; }
   .nautilus-window #NautilusPathBar .current-dir label {
     padding: 1px 12px; }
   .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
@@ -5659,6 +5661,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     margin: 0;
     -gtk-icon-size: 12px;
     padding: 0 4px; }
+    .nautilus-window #NautilusQueryEditor > menubutton > button:hover image, .nautilus-window #NautilusQueryEditor > menubutton > button:active image, .nautilus-window #NautilusQueryEditor > menubutton > button:checked image {
+      color: #fefefe; }
   .nautilus-window #NautilusQueryEditor > text, .nautilus-window #NautilusQueryEditor > image {
     margin: 0; }
 .nautilus-window notebook > stack:only-child {
