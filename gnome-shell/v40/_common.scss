@@ -62,6 +62,7 @@ StEntry {
   @include entry(normal);
   border-radius: 6px;
   padding: 4px;
+  border-width: 2px;
   color: $fg_color;
   &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
@@ -1433,21 +1434,15 @@ $slider_size: 16px;
   }
 
   //search entry
-  .search-entry {
-    width: 320px;
-    padding: 9px;
-    border-radius: 10px;
-    border: 1px solid $borders_color;
-    color: $fg_color;
-    box-shadow: $depth;
-    
-    .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
+.search-entry {
+  width: 320px;
+  padding: 9px;
+  border-radius: 10px;
+  border-color: transparent;
 
-    &:hover, &:focus {
-      border-color: transparentize($selected_bg_color, 0.2);
-      .search-entry-icon { color: $fg_color; }
-    }
-  }
+  .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
+
+}
 
   //search results
 
