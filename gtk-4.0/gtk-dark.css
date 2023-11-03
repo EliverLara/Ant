@@ -5974,7 +5974,54 @@ radiobutton.color-button:active > radio {
 
 .xfce4-panel.panel {
   background-color: #f8f8f8;
-  color: #31363d; }
+  color: #31363d;
+  text-shadow: none;
+  -gtk-icon-shadow: none; }
+
+#tasklist-button {
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0); }
+  #tasklist-button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.17); }
+  #tasklist-button:checked {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 -2px #ff5d73; }
+
+.xfce4-panel.panel button.flat {
+  color: #31363d;
+  border-radius: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: normal; }
+  .xfce4-panel.panel button.flat:hover {
+    border: none;
+    background-color: #dfdfdf; }
+  .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
+    color: #31363d;
+    box-shadow: inset 0 -2px #ff5d73;
+    background-color: #ebebeb; }
+    .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
+      color: inherit; }
+
+/* Vala-appmenu-plugin*/
+.-vala-panel-appmenu-core scrolledwindow,
+.-vala-panel-appmenu-private > menuitem,
+.-vala-panel-appmenu-private > menuitem:first-child > label {
+  color: white; }
+
+#whiskermenu-window button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  font-weight: normal;
+  padding: 3px;
+  margin: 1px 2px; }
+  #whiskermenu-window button:hover, #whiskermenu-window button:checked {
+    background-color: #ff5d73; }
 
 /********
 * Unity *
