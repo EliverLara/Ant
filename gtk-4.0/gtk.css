@@ -1070,11 +1070,11 @@ button.color {
     button.color colorswatch:only-child:disabled, button.color colorswatch:only-child:backdrop {
       box-shadow: none; }
 
-notebook button, list button, .view button, iconview button, popover button {
+notebook button, list button, popover button {
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2); }
-  notebook button:backdrop, list button:backdrop, .view button:backdrop, iconview button:backdrop, popover button:backdrop {
+  notebook button:backdrop, list button:backdrop, popover button:backdrop {
     box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2); }
-notebook .linked > button, list .linked > button, .view .linked > button, iconview .linked > button, popover .linked > button {
+notebook .linked > button, list .linked > button, popover .linked > button {
   box-shadow: none; }
 
 /************
@@ -2670,6 +2670,17 @@ window.csd > .titlebar:not(headerbar) {
   background: #EEEEEE; }
 .titlebar button:active {
   color: #ff5d73; }
+
+.nautilus-window .sidebar-pane .top-bar headerbar {
+  background-color: #EEEEEE;
+  border-top-right-radius: 0;
+  padding-top: 1px;
+  padding-bottom: 1px; }
+.nautilus-window .sidebar-pane .top-bar:backdrop {
+  background-color: #EEEEEE; }
+.nautilus-window .content-pane .top-bar {
+  background-color: #EEEEEE;
+  border-top-left-radius: 0; }
 
 /**************
  * GtkInfoBar *
