@@ -324,3 +324,18 @@ headerbar {
 .titlebar{
   @extend %titlebar;
 }
+
+// Gnome 45
+
+.sidebar-pane, .content-pane {
+  .top-bar {
+    &, headerbar {
+      background-color: $headerbar_color;
+    }
+  }
+}
+
+.nautilus-window .sidebar-pane .top-bar headerbar {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}

@@ -2581,6 +2581,13 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
   background: #EEEEEE; }
 
+.sidebar-pane .top-bar, .sidebar-pane .top-bar headerbar, .content-pane .top-bar, .content-pane .top-bar headerbar {
+  background-color: #EEEEEE; }
+
+.nautilus-window .sidebar-pane .top-bar headerbar {
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
 /**************
  * GtkInfoBar *
  **************/
@@ -5596,9 +5603,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .nautilus-window.background:backdrop {
     background-color: rgba(240, 240, 240, 0.95); }
 .nautilus-window #NautilusPathBar {
-  height: 20px;
-  margin-top: 7px;
-  margin-bottom: 7px;
   color: #31363D;
   border-radius: 4px;
   text-shadow: none;
@@ -5651,8 +5655,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     padding: 0px 0px 0px 12px;
     border-radius: 4px 0px 0px 4px; }
 .nautilus-window #NautilusQueryEditor {
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 6px; }
   .nautilus-window #NautilusQueryEditor #NautilusQueryEditorTag > button {
     margin: 0; }
   .nautilus-window #NautilusQueryEditor > menubutton > button {
