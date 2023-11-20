@@ -2633,8 +2633,8 @@ headerbar spinbutton,
 headerbar separator:not(.sidebar),
 headerbar button,
 headerbar menubutton {
-  margin-top: 5px;
-  margin-bottom: 5px; }
+  margin-top: 3px;
+  margin-bottom: 3px; }
 headerbar menubutton > button,
 headerbar spinbutton > button,
 headerbar splitbutton > button,
@@ -2671,16 +2671,12 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar button:active {
   color: #ff5d73; }
 
+.sidebar-pane .top-bar, .sidebar-pane .top-bar headerbar, .content-pane .top-bar, .content-pane .top-bar headerbar {
+  background-color: #EEEEEE; }
+
 .nautilus-window .sidebar-pane .top-bar headerbar {
-  background-color: #EEEEEE;
-  border-top-right-radius: 0;
   padding-top: 1px;
   padding-bottom: 1px; }
-.nautilus-window .sidebar-pane .top-bar:backdrop {
-  background-color: #EEEEEE; }
-.nautilus-window .content-pane .top-bar {
-  background-color: #EEEEEE;
-  border-top-left-radius: 0; }
 
 /**************
  * GtkInfoBar *
