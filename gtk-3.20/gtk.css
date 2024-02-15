@@ -2715,13 +2715,15 @@ infobar {
       box-shadow: none; }
 
 .info {
-  background-color: #B3E235; }
+  background-color: #B3E235;
+  color: #31363d; }
   .info:backdrop {
     background-color: #c4e862;
     color: #fefefe; }
 
 .warning {
-  background-color: #f39c12; }
+  background-color: #f39c12;
+  color: #31363d; }
   .warning:backdrop {
     background-color: #f5b043;
     color: #fefefe; }
