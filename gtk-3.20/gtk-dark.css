@@ -2773,13 +2773,15 @@ infobar {
       box-shadow: none; }
 
 .info {
-  background-color: #B3E235; }
+  background-color: #B3E235;
+  color: #C3C7D1; }
   .info:backdrop {
     background-color: #c4e862;
     color: rgba(254, 254, 254, 0.5); }
 
 .warning {
-  background-color: #c87f0a; }
+  background-color: #c87f0a;
+  color: #C3C7D1; }
   .warning:backdrop {
     background-color: #f39c12;
     color: rgba(254, 254, 254, 0.5); }
