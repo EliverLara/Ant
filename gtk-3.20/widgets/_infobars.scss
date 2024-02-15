@@ -80,6 +80,7 @@ infobar {
 .info {
   @extend %color_infobar;
   background-color: $info_color;
+  color: $fg_color;
 
   &:backdrop {
     background-color:lighten($info_color,10%);
@@ -90,6 +91,7 @@ infobar {
 .warning {
   @extend %color_infobar;
   background-color: $warning_color;
+  color: $fg_color;
 
   &:backdrop {
     background-color:lighten($warning_color,10%);
