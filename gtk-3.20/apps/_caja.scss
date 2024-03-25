@@ -1,10 +1,15 @@
-.caja-notebook .entry {
-    background: $base_color;
-    color: $fg_color;
-    border-color: $borders_color;
-    &:selected {
-      background: $selected_bg_color;
-      color: $selected_fg_color;
+.caja-notebook {
+
+    .frame { border-width: 0 0 1px; }
+
+    .entry {
+        background: $base_color;
+        color: $fg_color;
+        border-color: $borders_color;
+        &:selected {
+          background: $selected_bg_color;
+          color: $selected_fg_color;
+        }
     }
 }
 
@@ -12,19 +17,26 @@
 * Caja sidebar *
 **************/
 
-.caja-side-pane notebook {
+$_sidebar_bg:  $base_color;
 
+.caja-side-pane {
+
+    .frame { border-width: 0 0 0 0; }
+
+    background: $_sidebar_bg;
     treeview.view,
     textview.view text,
     viewport.frame,
     widget .vertical {
-        padding: 3px 0px;
+        background: $_sidebar_bg;
+        color: $fg_color; 
+        padding: 3px 2px;
         &:hover {
-            background-color: if(variant == light, transparentize($bg_color, 0.6), transparentize($bg_color, 0.6));
+            background-color: transparentize($bg_color, 0.6);
         }
         &:selected {
             color: $selected_bg_color;
-            background: $base_color;
+            background: $_sidebar_bg;
             &:hover {
                 background-color: transparentize($selected_bg_color, 0.8);
             }
@@ -37,18 +49,43 @@
 /**************
 * Caja pathbar *
 **************/
+.caja-navigation-window paned {
 
-.caja-pathbar button {
-    &, &:backdrop { @include button(normal-header); }
-    &:hover,
-    &:active,
-    &:checked,
-    &:backdrop:active,
-    &:backdrop:checked {
-      background: transparent;
+    background: $base_color;
+  
+    button.image-button, //Edit pathbar button
+    .caja-pathbar button { 
+        @include button(normal-header);
+        &:hover, &:checked { 
+            @include button(hover-header); 
+        }
+    }
+  
+    // Real path bar buttons
+    .caja-pathbar button {
+
       box-shadow: none;
-      &, & label {
-          color: $selected_bg_color;
+      min-height: 20px;
+
+      &:checked { @include button(active-header, transparentize($selected_bg_color, 0.3), #fff); }
+    }
+  }
+  
+  .caja-navigation-window .primary-toolbar {
+    background: $base_color;
+    button {
+      &, &:backdrop { 
+        @include button(undecorated); 
+    }
+      &:hover,
+      &:active,
+      &:backdrop:active,
+      &:backdrop:checked {
+        background: $selected_bg_color;
+        box-shadow: none;
+        &, & label {
+            color: $selected_fg_color;  
+        }
       }
     }
-}
+  }
