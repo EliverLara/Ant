@@ -6275,6 +6275,8 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 .nemo-window .nemo-inactive-pane iconview {
   background-color: #eeeeee; }
 
+.caja-notebook .frame {
+  border-width: 0 0 1px; }
 .caja-notebook .entry {
   background: #f8f8f8;
   color: #31363d;
@@ -6286,42 +6288,70 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 /**************
 * Caja sidebar *
 **************/
-.caja-side-pane notebook treeview.view,
-.caja-side-pane notebook textview.view text,
-.caja-side-pane notebook viewport.frame,
-.caja-side-pane notebook widget .vertical {
-  padding: 3px 0px; }
-  .caja-side-pane notebook treeview.view:hover,
-  .caja-side-pane notebook textview.view text:hover,
-  .caja-side-pane notebook viewport.frame:hover,
-  .caja-side-pane notebook widget .vertical:hover {
-    background-color: rgba(238, 238, 238, 0.4); }
-  .caja-side-pane notebook treeview.view:selected,
-  .caja-side-pane notebook textview.view text:selected,
-  .caja-side-pane notebook viewport.frame:selected,
-  .caja-side-pane notebook widget .vertical:selected {
-    color: #ff5d73;
-    background: #f8f8f8; }
-    .caja-side-pane notebook treeview.view:selected:hover,
-    .caja-side-pane notebook textview.view text:selected:hover,
-    .caja-side-pane notebook viewport.frame:selected:hover,
-    .caja-side-pane notebook widget .vertical:selected:hover {
-      background-color: rgba(255, 93, 115, 0.2); }
+.caja-side-pane {
+  background: #f8f8f8; }
+  .caja-side-pane .frame {
+    border-width: 0 0 0 0; }
+  .caja-side-pane treeview.view,
+  .caja-side-pane textview.view text,
+  .caja-side-pane viewport.frame,
+  .caja-side-pane widget .vertical {
+    background: #f8f8f8;
+    color: #31363d;
+    padding: 3px 2px; }
+    .caja-side-pane treeview.view:hover,
+    .caja-side-pane textview.view text:hover,
+    .caja-side-pane viewport.frame:hover,
+    .caja-side-pane widget .vertical:hover {
+      background-color: rgba(238, 238, 238, 0.4); }
+    .caja-side-pane treeview.view:selected,
+    .caja-side-pane textview.view text:selected,
+    .caja-side-pane viewport.frame:selected,
+    .caja-side-pane widget .vertical:selected {
+      color: #ff5d73;
+      background: #f8f8f8; }
+      .caja-side-pane treeview.view:selected:hover,
+      .caja-side-pane textview.view text:selected:hover,
+      .caja-side-pane viewport.frame:selected:hover,
+      .caja-side-pane widget .vertical:selected:hover {
+        background-color: rgba(255, 93, 115, 0.2); }
 
 /**************
 * Caja pathbar *
 **************/
-.caja-pathbar button, .caja-pathbar button:backdrop {
-  color: #31363D;
-  background-color: transparent;
-  border-radius: 0;
-  text-shadow: none;
-  box-shadow: none;
-  border: none; }
-.caja-pathbar button:hover, .caja-pathbar button:active, .caja-pathbar button:checked, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:checked {
-  background: transparent;
-  box-shadow: none; }
-  .caja-pathbar button:hover, .caja-pathbar button:hover label, .caja-pathbar button:active, .caja-pathbar button:active label, .caja-pathbar button:checked, .caja-pathbar button:checked label, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:active label, .caja-pathbar button:backdrop:checked, .caja-pathbar button:backdrop:checked label {
-    color: #ff5d73; }
+.caja-navigation-window paned {
+  background: #f8f8f8; }
+  .caja-navigation-window paned button.image-button,
+  .caja-navigation-window paned .caja-pathbar button {
+    color: #31363D;
+    background-color: transparent;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: none;
+    border: none; }
+    .caja-navigation-window paned button.image-button:hover, .caja-navigation-window paned button.image-button:checked,
+    .caja-navigation-window paned .caja-pathbar button:hover,
+    .caja-navigation-window paned .caja-pathbar button:checked {
+      background-color: transparent;
+      color: #ff5d73;
+      box-shadow: none; }
+  .caja-navigation-window paned .caja-pathbar button {
+    box-shadow: none;
+    min-height: 20px; }
+
+.caja-navigation-window .primary-toolbar {
+  background: #f8f8f8; }
+  .caja-navigation-window .primary-toolbar button, .caja-navigation-window .primary-toolbar button:backdrop {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+  .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:checked {
+    background: #ff5d73;
+    box-shadow: none; }
+    .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:hover label, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:active label, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:active label, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-navigation-window .primary-toolbar button:backdrop:checked label {
+      color: #fefefe; }
 
 /*# sourceMappingURL=gtk.css.map */
