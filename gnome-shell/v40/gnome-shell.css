@@ -1359,7 +1359,7 @@ StScrollBar {
   .dash-item-container .overview-tile:hover .overview-icon,
   .dash-item-container .overview-tile:focus .overview-icon,
   .dash-item-container .overview-tile:selected .overview-icon {
-    background-color: lighen(#222e32, 7%);
+    background-color: #304247;
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
