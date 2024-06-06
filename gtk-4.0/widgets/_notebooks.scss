@@ -26,6 +26,7 @@
           &:checked {
               background-color: $base_color;
               &:hover{background-color: $base_color;}
+              box-shadow: none;
           }
         }
       }
