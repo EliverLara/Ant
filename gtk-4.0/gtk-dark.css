@@ -5769,6 +5769,16 @@ headerbar .nautilus-window .path-bar-box .subtitle {
   border: 0;
   background-color: #1E282C; }
 
+/*******************
+ * Calendar events *
+********************/
+.color-light.timed label, .color-light .event-popover label {
+  color: #C3C7D1;
+  opacity: 1; }
+.color-light label {
+  color: #C3C7D1;
+  opacity: 1; }
+
 /********
  * Gala *
  *******/
