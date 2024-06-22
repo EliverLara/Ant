@@ -219,3 +219,18 @@
      border: 0;
      background-color: $bg_color;
  }
+
+
+/*******************
+ * Calendar events *
+********************/
+.color-light {
+  &.timed label, .event-popover label {
+    color: $fg_color;
+    opacity: 1;
+  }
+  & label {
+    color: $fg_color;
+    opacity: 1;
+  }
+}
