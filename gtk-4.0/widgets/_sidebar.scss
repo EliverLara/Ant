@@ -197,3 +197,14 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar{
   
   
 }
+
+// Gnome 46: File operations status bar at the bottom of sidebar
+.bottom-bar  {
+  background-color: $_sidebar_color;
+  button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    .view { background-color: transparent; }
+  }
+}

@@ -4143,6 +4143,15 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
     placessidebar.sidebar list:backdrop, .nautilus-window .navigation-sidebar list:backdrop {
       background-color: transparent; }
 
+.bottom-bar {
+  background-color: #f8f8f8; }
+  .bottom-bar button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px; }
+    .bottom-bar button .view, .bottom-bar button iconview {
+      background-color: transparent; }
+
 spinbutton {
   font-feature-settings: "tnum"; }
   spinbutton:not(.vertical) {
@@ -5756,10 +5765,10 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
  * Calendar events *
 ********************/
 .color-light.timed label, .color-light .event-popover label {
-  color: #C3C7D1;
+  color: #31363d;
   opacity: 1; }
 .color-light label {
-  color: #C3C7D1;
+  color: #31363d;
   opacity: 1; }
 
 /********
