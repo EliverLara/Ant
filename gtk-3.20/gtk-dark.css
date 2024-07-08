@@ -5800,7 +5800,7 @@ radiobutton.color-button:active > radio {
     background-color: rgba(255, 255, 255, 0.7); }
   .xfce4-panel.panel button.flat:active:not(.open_group), .xfce4-panel.panel button.flat:checked:not(.open_group) {
     color: #C3C7D1;
-    border-bottom: 2px solid #76A7A7;
+    box-shadow: 0px -2px #76A7A7 inset;
     background-color: rgba(222, 222, 222, 0.7); }
     .xfce4-panel.panel button.flat:active:not(.open_group) label, .xfce4-panel.panel button.flat:active:not(.open_group) image, .xfce4-panel.panel button.flat:checked:not(.open_group) label, .xfce4-panel.panel button.flat:checked:not(.open_group) image {
       color: inherit; }
