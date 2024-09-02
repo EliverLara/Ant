@@ -4243,59 +4243,41 @@ spinner {
  **********/
 switch {
   font-size: 1px;
-  font-weight: bold;
-  outline-offset: -4px;
-  transition: all 200ms ease-in;
-  border: none;
-  border-radius: 14px;
-  color: transparent;
-  padding: 2px;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(0, 0, 0, 0.2); }
+  min-width: 40px;
+  min-height: 25px;
+  background-color: transparent;
+  background-size: 40px 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off.svg")); }
   switch:disabled {
-    background-color: #f2f2f2; }
-  switch:backdrop {
-    background-color: #EEEEEE;
-    transition: 200ms ease-out; }
-    switch:backdrop:disabled {
-      background-color: #f2f2f2; }
-  switch:active, switch:checked {
-    background-color: #ff5d73; }
-    switch:active:backdrop, switch:checked:backdrop {
-      background-color: rgba(255, 93, 115, 0.6); }
+    background-image: -gtk-scaled(url("../assets/switch-insensitive.svg"), url("../assets/switch-insensitive.svg")); }
+    switch:disabled slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-insensitive.svg"), url("../assets/switch-slider-insensitive@2.png")); }
+  switch, switch slider {
+    outline-color: transparent;
+    color: transparent;
+    border: none;
+    box-shadow: none; }
+  switch:checked {
+    background-image: -gtk-scaled(url("../assets/switch-on.svg"), url("../assets/switch-on.svg")); }
+    switch:checked slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"), url("../assets/switch-slider-on@2.png")); }
+    switch:checked:disabled {
+      background-image: -gtk-scaled(url("../assets/switch-on-insensitive.svg"), url("../assets/switch-on-insensitive.svg")); }
+      switch:checked:disabled slider {
+        background-image: -gtk-scaled(url("../assets/switch-slider-on-insensitive.svg"), url("../assets/switch-slider-on-insensitive@2.png")); }
   switch slider {
-    padding: 2px;
-    min-width: 16px;
-    min-height: 16px;
-    border-radius: 100%;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2); }
-    switch slider:backdrop {
-      padding: 2px;
-      box-shadow: none;
-      background-color: #f8f8f8; }
-  switch:checked slider {
-    background: #f8f8f8; }
-    switch:checked slider:backdrop {
-      box-shadow: none;
-      background-color: rgba(248, 248, 248, 0.9);
-      border: none; }
-  row:selected switch {
-    box-shadow: none;
-    border-color: #ff2a47; }
-    row:selected switch:backdrop {
-      border-color: #ff2a47; }
-    row:selected switch.slider:dir(rtl) {
-      border-left-color: rgba(0, 0, 0, 0.2); }
-    row:selected switch.slider:dir(ltr) {
-      border-right-color: rgba(0, 0, 0, 0.2); }
-    row:selected switch.slider:checked, row:selected switch.slider {
-      border-color: #ff2a47; }
-  switch trough:active, switch trough:checked {
-    background-color: #ff5d73; }
-    switch trough:active:backdrop, switch trough:checked:backdrop {
-      background-color: rgba(255, 93, 115, 0.6); }
+    min-width: 1px;
+    min-height: 1px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off@2.png")); }
+  row:selected switch:checked {
+    background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off.svg")); }
+    row:selected switch:checked slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-on-selected.svg"), url("../assets/switch-slider-on-selected@2.png")); }
 
 /************
  * Toolbars *

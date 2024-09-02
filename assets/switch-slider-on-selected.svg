@@ -8,9 +8,9 @@
    height="20"
    version="1.1"
    id="svg1991"
-   sodipodi:docname="switch-slider-on.svg"
+   sodipodi:docname="switch-slider-on-selected.svg"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
-   inkscape:export-filename="switch-slider-on@2.png"
+   inkscape:export-filename="switch-slider-on-selected@2.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -101,7 +101,7 @@
      id="rect912"
      style="color:#000000;display:inline;overflow:visible;visibility:visible;isolation:isolate;fill:#000000;fill-opacity:0.2;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;filter:url(#filter930);enable-background:new" />
   <rect
-     style="color:#000000;display:inline;overflow:visible;visibility:visible;isolation:isolate;fill:#f8f8f8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;enable-background:new"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;isolation:isolate;fill:#ff5d73;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76471;stroke-opacity:1;marker:none;enable-background:new"
      id="rect3872"
      width="15"
      height="15"
