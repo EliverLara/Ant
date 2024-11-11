@@ -1047,6 +1047,25 @@ notebook .linked > button, list .linked > button, .view .linked > button, iconvi
   .app-notification.frame border {
     border: none; }
 
+toast {
+  padding: 5px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+  color: #31363d;
+  border-radius: 8px; }
+  toast:backdrop {
+    background-image: none;
+    transition: 200ms ease-out; }
+  toast button {
+    padding: 2px; }
+  toast button.circular.flat.image-button {
+    padding: 2px; }
+    toast button.circular.flat.image-button:hover {
+      color: #fefefe;
+      outline-color: rgba(254, 254, 254, 0.3);
+      background-color: #FF044A;
+      text-shadow: none; }
+
 /************
  * Calendar *
  ***********/
@@ -5758,8 +5777,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
  * Gnome system monitor graph *
 ******************************/
 #gnome-system-monitor .loadgraph {
-  background: #1E282C;
-  color: #C3C7D1; }
+  background: #EEEEEE;
+  color: #31363D; }
 
 /********
  * Gala *
