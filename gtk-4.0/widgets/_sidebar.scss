@@ -1,7 +1,7 @@
 /***********
  * Sidebar *
  ***********/
-.sidebar, .nautilus-window .navigation-sidebar {
+.sidebar, placessidebar {
   border-style: none;
   border-width: 0;
   background-color: $base_color;
@@ -35,7 +35,7 @@
   row{
     margin: 0;
     border-radius: 0;
-    padding: 2px 12px;
+    padding: 8px 12px;
     &:selected{
       &:backdrop{
         color: $backdrop_selected_bg_color;
