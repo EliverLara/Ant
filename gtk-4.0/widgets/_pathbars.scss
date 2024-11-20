@@ -27,3 +27,85 @@
     padding-right: 0;
   }
 }
+
+// Nautilus, filechooser(gnome 47) pathbar
+#NautilusPathBar {
+
+  @include button(normal-header);
+
+  .dim-label {
+    color: transparent;
+    margin-right: -5px;
+  }
+
+  //Buttons before current path
+  button {
+    .horizontal > .dim-label {
+      color: $headerbar_fg_color;
+      padding: 3px 12px;
+      margin: 0;
+      border-right: 1px solid $borders_color;
+    }
+    &:hover, &:focus {
+      .dim-label {@include button(active, $selected_bg_color, #fff); }
+    }
+  }
+
+  // Home icon
+  button > .horizontal > image.dim-label { 
+    padding: 3px 0px 3px 12px; 
+    border-right: none;
+    margin-right: -6px;
+  }
+
+  // Reset path buttons appearance
+  button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    &:hover, &:active, &:checked {
+      color: $selected_bg_color;
+    }
+  }
+
+  // Selected dir
+  .current-dir  {
+    label { padding: 1px 12px; }
+
+    label, image { @include button(active, transparentize($selected_bg_color, 0), #fff); }
+  }
+
+  button.current-dir:only-child {
+    image {
+      margin-right: -6px;
+      padding: 0px 0px 0px 12px;
+      border-radius: 4px 0px 0px 4px;
+    }
+  }
+}
+
+// search entry
+#NautilusQueryEditor { 
+
+  margin-top: 6px;
+
+  #NautilusQueryEditorTag {
+    > button {
+      margin: 0;
+    }
+  }
+
+  > menubutton > button {
+    min-width: 16px;
+    min-height: 16px;
+    margin: 0;
+    -gtk-icon-size: 12px;
+    padding: 0 4px;
+    &:hover, &:active, &:checked {
+      image { color: $selected_fg_color; }
+    }
+  }
+
+  > text, > image { margin: 0; }
+}
