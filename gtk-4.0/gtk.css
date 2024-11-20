@@ -4258,6 +4258,8 @@ placessidebar row {
   padding: 1px 11px; }
   placessidebar row label {
     padding-left: 8px; }
+  placessidebar row.sidebar-row:selected:backdrop {
+    background-color: transparent; }
   placessidebar row.sidebar-new-bookmark-row {
     color: #ff5d73; }
   placessidebar row:drop(active):not(:disabled) {
