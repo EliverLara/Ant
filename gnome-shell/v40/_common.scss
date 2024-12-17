@@ -1773,11 +1773,11 @@ $slider_size: 16px;
     color: $topbar_color;
     background-color: $bg_color;
     border: 1px solid $borders_color;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.393);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.393);
     &:hover, &:focus { 
-      background-color: lighten($bg_color, 4%); 
+      background-color: lighten($bg_color, 1.5%); 
       border-radius: 12px;
-      box-shadow: none;
+      box-shadow: 0 1px 7px rgba(0, 0, 0, 0.393);
     }
     *{ color: #fefefe; }
 
@@ -1792,12 +1792,15 @@ $slider_size: 16px;
     }
     .notification-button {
       padding: 7px;
-      background-color: transparentize($bg_color, 0.1);
-      box-shadow: none;
+      @extend %button;
       &:first-child { border-radius: 0 0 0 12px; }
       &:last-child { border-radius: 0 0 12px 0; }
-      &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
+      &, &:hover, &:focus { border: none; }
     }
+  }
+
+  .notification-buttons-bin .notification-button {
+    border-radius: 10px !important;
   }
   .summary-source-counter {
     font-size: 10pt;
