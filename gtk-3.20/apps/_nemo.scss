@@ -1,0 +1,67 @@
+.nemo-window {
+    .places-treeview {
+        -NemoPlacesTreeView-disk-full-bg-color: lighten($sidebar_bg_color, 15%);
+        -NemoPlacesTreeView-disk-full-fg-color: $yellow;
+        -GtkTreeView-vertical-separator: 10; 
+        .view.cell,
+        iconview.cell {
+            &:hover { background: transparentize(darken($sidebar_bg_color, 3%), 0.3); }
+            &:selected {
+                background: $selected_bg_color;
+                color: $selected_fg_color;
+            }
+        }
+    }
+
+    .sidebar {
+        background-color: $sidebar_bg_color; 
+        .view, .iconview, row {
+            color: $fg_color;
+            background-color: transparent;
+        }
+    }
+
+    .nemo-window-pane {
+        widget.entry {
+            background-clip: padding-box;
+            min-height: 28px;
+            padding: 5px;
+            color: $fg_color;
+            border: 1px solid $selected_bg_color;
+            border-radius: 3px;
+            &:selected {
+                background-color: $selected_bg_color;
+                color: $selected_fg_color;
+            }
+        }
+    }
+
+    toolbar.primary-toolbar {
+        margin-bottom: -1px;
+        background: $headerbar_color;
+        .path-bar button {
+            @include button(normal-header);
+            &:hover,
+            &:active,
+            &:checked {
+                @include button(active, $selected_bg_color, #fff);
+                &:backdrop { @include button(backdrop,$backdrop_selected_bg_color,transparentize($fg_color,0.8)); }
+            }
+        
+            &:backdrop,
+            &:disabled,
+            &:backdrop:disabled {
+              @include button(backdrop-header,$backdrop_selected_bg_color,transparentize($fg_color,0.8));
+            }
+        }
+
+        .path-bar button { margin-right: -1px; }
+    }
+
+    .nemo-inactive-pane .view,
+    .nemo-inactive-pane iconview {
+        background-color: darken($base_color, 3%); 
+    }
+
+    grid > paned > separator { background-image: image($sidebar_bg_color); }
+}
