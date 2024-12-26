@@ -6191,9 +6191,9 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   min-height: 28px;
   padding: 5px;
   color: #C3C7D1;
-  border: 1px solid #101517;
+  border: 1px solid #76A7A7;
   border-radius: 3px;
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.9), inset 1px 0 rgba(0, 0, 0, 0.96), inset -1px 0 rgba(0, 0, 0, 0.96), inset 0 -1px rgba(0, 0, 0, 0.98), 0 1px rgba(255, 255, 255, 0.6); }
+  box-shadow: 0px 0px 1px 1px #76A7A7 inset; }
   .nemo-window .nemo-window-pane widget.entry:selected {
     background-color: #76A7A7;
     color: #fefefe; }
@@ -6218,6 +6218,8 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 .nemo-window .nemo-inactive-pane .view:not(:selected), .nemo-window .nemo-inactive-pane iconview:not(:selected),
 .nemo-window .nemo-inactive-pane iconview {
   background-color: #1a2226; }
+.nemo-window grid > paned > separator {
+  background-image: image(#222e32); }
 
 .caja-notebook .frame {
   border-width: 0 0 1px; }
