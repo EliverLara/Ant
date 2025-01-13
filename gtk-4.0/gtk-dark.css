@@ -2910,6 +2910,13 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   background-color: rgba(118, 167, 167, 0.5); }
 row.activatable:selected:backdrop {
   background-color: rgba(118, 167, 167, 0.6); }
+row.activatable.button {
+  font-weight: bold;
+  color: #C3C7D1;
+  outline-color: rgba(195, 199, 209, 0.3);
+  background-color: #222e32;
+  text-shadow: none;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
 
 columnview > listview > row {
   padding: 0; }
@@ -2972,6 +2979,9 @@ columnview.complex.data-table > listview > row > cell {
   columnview.complex.data-table > listview > row > cell > * {
     padding-top: 2px;
     padding-bottom: 2px; }
+
+.boxed-list-separate {
+  background-color: transparent; }
 
 /*********
  * Menus *
