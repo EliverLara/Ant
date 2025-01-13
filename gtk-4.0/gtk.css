@@ -2822,6 +2822,11 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   background-color: rgba(255, 93, 115, 0.5); }
 row.activatable:selected:backdrop {
   background-color: rgba(255, 93, 115, 0.6); }
+row.activatable.button {
+  font-weight: normal;
+  color: #31363D;
+  background-color: #f7f7f7;
+  text-shadow: none; }
 
 columnview > listview > row {
   padding: 0; }
@@ -2884,6 +2889,9 @@ columnview.complex.data-table > listview > row > cell {
   columnview.complex.data-table > listview > row > cell > * {
     padding-top: 2px;
     padding-bottom: 2px; }
+
+.boxed-list-separate {
+  background-color: transparent; }
 
 /*********
  * Menus *
