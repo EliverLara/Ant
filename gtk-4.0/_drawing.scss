@@ -207,14 +207,12 @@
     box-shadow: none;
   //  border: 1px solid $c;
     color: white;
-    border-radius: 4px;
     background: $suggested_bg_color; }
 
     @if $t==rounded-red {
       box-shadow: none;
     //  border: 1px solid $c;
       color: white;
-      border-radius: 4px;
       background: $destructive_bg_color; 
     }
   
@@ -245,7 +243,6 @@
   // normal button headerbar look
   //
   color: if($tc==$text_color, $headerbar_fg_color, $tc);
-  border-radius: 4px;
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $dark_borders_color;
@@ -258,7 +255,6 @@
   //
   color: if($tc==$text_color, $selected_bg_color, $tc);
   //background-color: transparent;
-  border-radius: 4px;
   text-shadow: none;
   background-color: $selected_bg_color;
   border: 1px solid $selected_bg_color;
@@ -424,10 +420,9 @@ box-shadow: none;
   //
   // reset
   //
-   // border-color: transparent;
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: mix($bg_color, $base_color, 20%);
    // border: 1px solid transparentize($tc, 0.7);
     @include _shadows(inset 0 1px transparentize(white, 1),
                       $_blank_edge);

@@ -80,28 +80,16 @@
     image {
       margin-right: -6px;
       padding: 0px 0px 0px 12px;
-      border-radius: 4px 0px 0px 4px;
+      border-radius: 6px 0px 0px 6px;
     }
   }
 }
 
 // search entry
 #NautilusQueryEditor { 
-
-  margin-top: 6px;
-
-  #NautilusQueryEditorTag {
-    > button {
-      margin: 0;
-    }
-  }
-
   > menubutton > button {
-    min-width: 16px;
-    min-height: 16px;
-    margin: 0;
     -gtk-icon-size: 12px;
-    padding: 0 4px;
+    padding: 0 2px;
     &:hover, &:active, &:checked {
       image { color: $selected_fg_color; }
     }
