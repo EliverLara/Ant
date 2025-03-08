@@ -5839,6 +5839,35 @@ radiobutton.color-button:active > radio {
 .-vala-panel-appmenu-private > menuitem:first-child > label {
   color: #C3C7D1; }
 
+#XfceNotifyWindow {
+  background-color: #1a2226;
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid #101517;
+  color: #C3C7D1;
+  padding: 40px; }
+  #XfceNotifyWindow:hover, #XfceNotifyWindow:focus {
+    background-color: #1E282C; }
+  #XfceNotifyWindow label, #XfceNotifyWindow image {
+    color: #C3C7D1; }
+  #XfceNotifyWindow button {
+    font-weight: bold;
+    color: #C3C7D1;
+    outline-color: rgba(195, 199, 209, 0.3);
+    background-color: #222e32;
+    text-shadow: none;
+    border: 1px solid #222e32;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+    #XfceNotifyWindow button:hover {
+      color: #C3C7D1;
+      outline-color: rgba(195, 199, 209, 0.3);
+      background-color: #76A7A7;
+      text-shadow: none;
+      border: 1px solid #76A7A7;
+      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+      #XfceNotifyWindow button:hover label {
+        color: #fefefe; }
+
 /********
 * Unity *
 *********/
