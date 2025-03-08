@@ -15,6 +15,7 @@
 
     &:hover {
       color: lighten($panel_fg_color, 10%);
+
       background-color: transparentize(black, 0.83);
     }
 
@@ -64,5 +65,24 @@
   margin: 1px 2px;
   &:hover, &:checked {
       background-color: $selected_bg_color;
+  }
+}
+// Notifications
+
+#XfceNotifyWindow {
+  background-color: darken($bg_color, 2%);
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid $borders_color;
+  color: $fg_color;
+  padding: 40px;
+  &:hover, &:focus { background-color: $bg_color; }
+  label, image { color: $fg_color; }
+  button { 
+    @include button(normal); 
+    &:hover {
+      @include button(hover, $selected_bg_color);
+      label { color: $selected_fg_color; }
+    }
   }
 }

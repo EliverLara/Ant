@@ -5780,6 +5780,30 @@ radiobutton.color-button:active > radio {
   #whiskermenu-window button:hover, #whiskermenu-window button:checked {
     background-color: #ff5d73; }
 
+#XfceNotifyWindow {
+  background-color: #1a2226;
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid #090c0e;
+  color: #C3C7D1;
+  padding: 40px; }
+  #XfceNotifyWindow:hover, #XfceNotifyWindow:focus {
+    background-color: #1E282C; }
+  #XfceNotifyWindow label, #XfceNotifyWindow image {
+    color: #C3C7D1; }
+  #XfceNotifyWindow button {
+    font-weight: normal;
+    color: #C3C7D1;
+    background-color: #212d31;
+    text-shadow: none; }
+    #XfceNotifyWindow button:hover {
+      color: #C3C7D1;
+      outline-color: rgba(195, 199, 209, 0.3);
+      background-color: #ff5d73;
+      text-shadow: none; }
+      #XfceNotifyWindow button:hover label {
+        color: #fefefe; }
+
 /********
 * Unity *
 *********/
