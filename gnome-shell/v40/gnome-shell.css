@@ -13,13 +13,13 @@ stage {
   background-color: #263438;
   box-shadow: none;
   border: 1px solid #182023;
-  text-shadow: 0 1px black;
-  icon-shadow: 0 1px black; }
+  text-shadow: none;
+  icon-shadow: none; }
   .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .notification-banner .notification-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     background-color: #2e3f44;
     color: #fefefe;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    text-shadow: none;
+    icon-shadow: none;
     box-shadow: none !important;
     border: 1px solid #182023; }
   .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .notification-banner .notification-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
@@ -39,8 +39,8 @@ stage {
     background-color: #2c3c41;
     color: #fefefe;
     border: 1px solid #182023;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+    text-shadow: none;
+    icon-shadow: none; }
 
 .button {
   border-radius: 6px;
@@ -70,23 +70,23 @@ stage {
   .modal-dialog-linked-button:focus {
     background-color: #2e3f44;
     color: #fefefe;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    text-shadow: none;
+    icon-shadow: none;
     box-shadow: none !important;
     border: 1px solid #182023; }
     .modal-dialog-linked-button:focus:hover {
       background-color: #2e3f44;
       color: #fefefe;
-      text-shadow: 0 1px black;
-      icon-shadow: 0 1px black;
+      text-shadow: none;
+      icon-shadow: none;
       box-shadow: none !important;
       border: 1px solid #182023; }
   .modal-dialog-linked-button:hover {
     background-color: #2c3c41;
     color: #fefefe;
     border: 1px solid #182023;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+    text-shadow: none;
+    icon-shadow: none; }
   .modal-dialog-linked-button:first-child {
     border-radius: 0px 0px 0px 10px; }
   .modal-dialog-linked-button:last-child {
@@ -1677,8 +1677,8 @@ StScrollBar {
   background-color: #263438;
   box-shadow: none;
   border: 1px solid #182023;
-  text-shadow: 0 1px black;
-  icon-shadow: 0 1px black;
+  text-shadow: none;
+  icon-shadow: none;
   background-color: #222e32;
   min-height: 2em;
   min-width: 2em;
@@ -1688,16 +1688,16 @@ StScrollBar {
   .keyboard-key:focus {
     background-color: #2e3f44;
     color: #fefefe;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    text-shadow: none;
+    icon-shadow: none;
     box-shadow: none !important;
     border: 1px solid #182023; }
   .keyboard-key:hover, .keyboard-key:checked {
     background-color: #2c3c41;
     color: #fefefe;
     border: 1px solid #182023;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black; }
+    text-shadow: none;
+    icon-shadow: none; }
   .keyboard-key:active {
     color: #ff5d73;
     background-color: rgba(30, 40, 44, 0.95);
@@ -1781,14 +1781,14 @@ StScrollBar {
       background-color: #263438;
       box-shadow: none;
       border: 1px solid #182023;
-      text-shadow: 0 1px black;
-      icon-shadow: 0 1px black; }
+      text-shadow: none;
+      icon-shadow: none; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
         background-color: #2c3c41;
         color: #fefefe;
         border: 1px solid #182023;
-        text-shadow: 0 1px black;
-        icon-shadow: 0 1px black; }
+        text-shadow: none;
+        icon-shadow: none; }
       .login-dialog .modal-dialog-button:default:active {
         color: #ff5d73;
         background-color: #ff5d73;
@@ -2152,8 +2152,8 @@ StScrollBar {
   background-color: #2c3c41;
   color: #fefefe;
   border: 1px solid #182023;
-  text-shadow: 0 1px black;
-  icon-shadow: 0 1px black; }
+  text-shadow: none;
+  icon-shadow: none; }
 
 .screenshot-ui-close-button {
   background-color: #FFAA5A;
