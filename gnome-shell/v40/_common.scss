@@ -2315,8 +2315,8 @@ $base_padding: 6px;
     border-width: 0;
     color: $fg_color;
     &:checked { 
-      @include button(active, lighten($base_color, 7%));
-      &:hover { @include button(active, lighten($base_color, 9%)); }
+      @include button(active, lighten($base_color, 14%));
+      &:hover { @include button(active, lighten($base_color, 16%)); }
       &, &:hover {
         color: $selected_fg_color;
         border-width: 0;
