@@ -29,10 +29,10 @@
 }
 
 // Nautilus, filechooser(gnome 47) pathbar
-#NautilusPathBar {
+#NautilusPathBar, .pathbar  {
 
   @include button(normal-header);
-
+  border-radius: 6px;
   .dim-label {
     color: transparent;
     margin-right: -5px;
@@ -56,6 +56,7 @@
     padding: 3px 0px 3px 12px; 
     border-right: none;
     margin-right: -6px;
+    border-radius: 6px 0px 0px 6px;
   }
 
   // Reset path buttons appearance
@@ -68,6 +69,19 @@
       color: $selected_bg_color;
     }
   }
+
+  .flat.popup {
+    margin: 0;
+    button {
+      padding: 4px 6px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &:hover, &:active, &:checked {
+        @include button(active, $selected_bg_color, $selected_fg_color);
+      }
+    }
+  }
+
 
   // Selected dir
   .current-dir  {
