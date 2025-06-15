@@ -1067,6 +1067,15 @@ toast {
       background-color: #FF044A;
       text-shadow: none; }
 
+toggle-group {
+  padding: 3px; }
+  toggle-group toggle {
+    padding: 0 4px; }
+    toggle-group toggle:checked {
+      background-color: #ff5d73; }
+      toggle-group toggle:checked, toggle-group toggle:checked label {
+        color: #fefefe; }
+
 /************
  * Calendar *
  ***********/
