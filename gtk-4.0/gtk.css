@@ -3039,13 +3039,24 @@ tabbar:backdrop .box > .end-action {
   filter: opacity(1); }
 tabbar tabbox {
   background-color: #e4e4e4;
-  padding: 0px;
+  padding: 4px;
   color: #31363d; }
   tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
   tabbar tabbox > tabboxchild > tab:checked,
   tabbar tabbox > tabboxchild > tab:selected {
     background-color: #f8f8f8;
     color: #31363d; }
+  tabbar tabbox > tab button.flat,
+  tabbar tabbox > tabboxchild > tab button.flat {
+    padding: 0;
+    margin: 4px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 10px; }
+    tabbar tabbox > tab button.flat:hover,
+    tabbar tabbox > tabboxchild > tab button.flat:hover {
+      background-color: white;
+      color: #31363d; }
 
 /*********
  * Paned *
