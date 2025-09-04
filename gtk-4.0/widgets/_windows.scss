@@ -13,8 +13,6 @@
   $_menu_radius: 7px;
 
   &.csd {
-    box-shadow: 0 3px 9px 1px transparentize(black, 0.5),
-                0 0 0 1px $_wm_border; //doing borders with box-shadow
     margin: 0px;
     border-radius: $_window_radius $_window_radius 0 0;
     &:backdrop {
@@ -22,9 +20,7 @@
       // change when we go to backdrop, to prevent jumping windows.
       // The biggest shadow should be in the same order then in the active state
       // or the jumping will happen during the transition.
-      box-shadow: 0 3px 9px 1px transparent,
-                  0 2px 6px 2px transparentize(black, 0.8),
-                  0 0 0 1px $_wm_border_backdrop;
+      
       transition: $backdrop_transition;
     }
 
