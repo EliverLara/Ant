@@ -1041,7 +1041,7 @@ entry:only-child {
 modelbutton.flat,
 .menuitem.button.flat, modelbutton.flat:backdrop, modelbutton.flat:backdrop:hover,
 .menuitem.button.flat:backdrop,
-.menuitem.button.flat:backdrop:hover, calendar.button, calendar.button:hover, calendar.button:backdrop, calendar.button:disabled, button:link,
+.menuitem.button.flat:backdrop:hover, button:link,
 button:visited, button:link:hover, button:link:active, button:link:checked,
 button:visited:hover,
 button:visited:active,
@@ -1125,30 +1125,34 @@ button.accent-button:checked, button.accent-button:checked:backdrop {
  ***********/
 calendar {
   color: #C3C7D1;
-  border: 1px solid #101517; }
-  calendar:selected {
-    border-radius: 3px; }
-  calendar.header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0; }
-    calendar.header:backdrop {
-      border-color: rgba(0, 0, 0, 0.1); }
-  calendar.button {
-    color: rgba(195, 199, 209, 0.45); }
-    calendar.button:hover {
-      color: #C3C7D1; }
-    calendar.button:backdrop {
-      color: rgba(113, 120, 127, 0.45); }
-    calendar.button:disabled {
-      color: rgba(113, 120, 127, 0.45); }
-  calendar:indeterminate, calendar:indeterminate:backdrop {
-    color: alpha(currentColor,0.55); }
-  calendar.highlight, calendar.highlight:backdrop {
-    font-size: smaller;
-    color: #C3C7D1; }
-  calendar:backdrop {
-    color: #a3a9b2;
-    border-color: #111719; }
+  border: 1px solid #101517;
+  font-feature-settings: "tnum"; }
+  calendar > header {
+    border-bottom: 1px solid #101517; }
+    calendar > header > button {
+      border: none;
+      box-shadow: none;
+      background: none;
+      border-radius: 0; }
+    calendar > header > button:backdrop {
+      background: none; }
+  calendar > grid > label.today {
+    box-shadow: inset 0px -2px #76A7A7; }
+    calendar > grid > label.today:selected {
+      box-shadow: none; }
+  calendar > grid > label:focus {
+    outline-color: #76A7A7;
+    outline-offset: -2px;
+    outline-width: 2px;
+    outline-style: solid; }
+  calendar > grid > label.day-number {
+    padding: 4px; }
+    calendar > grid > label.day-number:selected {
+      border-radius: 3px; }
+    calendar > grid > label.day-number:checked {
+      background-color: alpha(#76A7A7,0.3); }
+  calendar > grid > label.day-number.other-month {
+    color: alpha(currentColor,0.3); }
 
 /*************************
  * Check and Radio Items *
@@ -4850,7 +4854,7 @@ iconview text:selected,
 textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
 textview text selection:focus,
 textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selected,
-.menuitem.button.flat:selected, calendar:selected, spinbutton:not(.vertical) selection:focus, spinbutton.vertical > text selection:focus, spinbutton:not(.vertical) selection, spinbutton.vertical > text selection,
+.menuitem.button.flat:selected, calendar > grid > label.day-number:selected, spinbutton:not(.vertical) selection:focus, spinbutton.vertical > text selection:focus, spinbutton:not(.vertical) selection, spinbutton.vertical > text selection,
 entry selection:focus,
 entry selection, row:selected, columnview.view:selected:focus, columnview.view:selected,
 treeview.view:selected:focus,
@@ -4865,7 +4869,7 @@ treeview.view:selected {
   textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
   textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selected,
-  .menuitem.button.flat:selected, calendar:selected, spinbutton:not(.vertical) selection:focus, spinbutton.vertical > text selection:focus, spinbutton:not(.vertical) selection, spinbutton.vertical > text selection,
+  .menuitem.button.flat:selected, calendar > grid > label.day-number:selected, spinbutton:not(.vertical) selection:focus, spinbutton.vertical > text selection:focus, spinbutton:not(.vertical) selection, spinbutton.vertical > text selection,
   entry selection:focus,
   entry selection, row:selected, columnview.view:selected:focus, columnview.view:selected,
   treeview.view:selected:focus,
@@ -4879,7 +4883,7 @@ treeview.view:selected {
     iconview text:disabled:selected,
     textview text:disabled:selected, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
     textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, modelbutton.flat:disabled:selected,
-    .menuitem.button.flat:disabled:selected, calendar:disabled:selected, spinbutton:not(.vertical) selection:disabled, spinbutton.vertical > text selection:disabled,
+    .menuitem.button.flat:disabled:selected, calendar > grid > label.day-number:disabled:selected, spinbutton:not(.vertical) selection:disabled, spinbutton.vertical > text selection:disabled,
     entry selection:disabled, row:disabled:selected {
       color: #ffaeb9; }
     row:selected label:backdrop, label:backdrop:selected, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected,
@@ -4889,7 +4893,7 @@ treeview.view:selected {
     iconview text:backdrop:selected,
     textview text:backdrop:selected, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
     textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, label:backdrop selection, modelbutton.flat:backdrop:selected,
-    .menuitem.button.flat:backdrop:selected, calendar:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, spinbutton.vertical > text selection:backdrop,
+    .menuitem.button.flat:backdrop:selected, calendar > grid > label.day-number:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, spinbutton.vertical > text selection:backdrop,
     entry selection:backdrop, row:backdrop:selected {
       color: rgba(254, 254, 254, 0.5); }
       row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected,
@@ -4897,7 +4901,7 @@ treeview.view:selected {
       iconview text:backdrop:disabled:selected,
       textview text:backdrop:disabled:selected, .view text selection:backdrop:disabled, iconview text selection:backdrop:disabled,
       textview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected, label:disabled selection:backdrop, label:backdrop selection:disabled, modelbutton.flat:backdrop:disabled:selected,
-      .menuitem.button.flat:backdrop:disabled:selected, calendar:backdrop:disabled:selected, spinbutton:not(.vertical) selection:backdrop:disabled, spinbutton.vertical > text selection:backdrop:disabled,
+      .menuitem.button.flat:backdrop:disabled:selected, calendar > grid > label.day-number:backdrop:disabled:selected, spinbutton:not(.vertical) selection:backdrop:disabled, spinbutton.vertical > text selection:backdrop:disabled,
       entry selection:backdrop:disabled, row:backdrop:disabled:selected {
         color: rgba(255, 113, 132, 0.85); }
 
@@ -5835,6 +5839,39 @@ headerbar .nautilus-window .path-bar-box .subtitle {
 .color-light label {
   color: #C3C7D1;
   opacity: 1; }
+
+/*******************
+ * Calendar sidebar *
+********************/
+datechooser .flat {
+  color: #C3C7D1; }
+datechooser .circular.day.text-button {
+  padding: 6px;
+  border-radius: 50%;
+  min-height: 22px;
+  min-width: 22px;
+  border: none; }
+  datechooser .circular.day.text-button.flat.other-month, datechooser .circular.day.text-button.flat.non-workday {
+    color: #71787f; }
+  datechooser .circular.day.text-button.today {
+    color: #76A7A7; }
+  datechooser .circular.day.text-button:active, datechooser .circular.day.text-button:selected {
+    color: #fefefe;
+    outline-color: rgba(254, 254, 254, 0.3);
+    background-color: #76A7A7;
+    text-shadow: none;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+    font-weight: bold; }
+
+agenda-view list.background {
+  padding: 8px; }
+  agenda-view list.background .caption-heading, agenda-view list.background .dim-label.no-events, agenda-view list.background label.no-events.separator, agenda-view list.background .titlebar:not(headerbar) .no-events.subtitle, .titlebar:not(headerbar) agenda-view list.background .no-events.subtitle,
+  agenda-view list.background headerbar .no-events.subtitle,
+  headerbar agenda-view list.background .no-events.subtitle {
+    color: #C3C7D1; }
+
+datechooser, datechooser:backdrop, agenda-view list.background, agenda-view list.background:backdrop {
+  background-color: #1E282C; }
 
 /******************************
  * Gnome system monitor graph *
