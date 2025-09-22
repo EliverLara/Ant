@@ -4100,13 +4100,13 @@ placessidebar {
     placessidebar list:backdrop {
       background-color: transparent; }
 
-.bottom-bar {
+.sidebar-pane .bottom-bar {
   background-color: #f8f8f8; }
-  .bottom-bar button.toggle:not(.image-button) {
+  .sidebar-pane .bottom-bar button.toggle:not(.image-button) {
     background-color: transparent;
     border: none;
     border-radius: 0px; }
-    .bottom-bar button.toggle:not(.image-button) .view, .bottom-bar button.toggle:not(.image-button) iconview {
+    .sidebar-pane .bottom-bar button.toggle:not(.image-button) .view, .sidebar-pane .bottom-bar button.toggle:not(.image-button) iconview {
       background-color: transparent; }
 
 spinbutton {
