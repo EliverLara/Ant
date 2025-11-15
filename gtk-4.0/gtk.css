@@ -4100,14 +4100,18 @@ placessidebar {
     placessidebar list:backdrop {
       background-color: transparent; }
 
-.sidebar-pane .bottom-bar {
-  background-color: #f8f8f8; }
-  .sidebar-pane .bottom-bar button.toggle:not(.image-button) {
-    background-color: transparent;
-    border: none;
-    border-radius: 0px; }
-    .sidebar-pane .bottom-bar button.toggle:not(.image-button) .view, .sidebar-pane .bottom-bar button.toggle:not(.image-button) iconview {
-      background-color: transparent; }
+.sidebar-pane, .sidebar-pane .bottom-bar {
+  background-color: #f8f8f8;
+  box-shadow: none; }
+.sidebar-pane .bottom-bar button {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none; }
+  .sidebar-pane .bottom-bar button .view, .sidebar-pane .bottom-bar button iconview {
+    background-color: transparent; }
 
 spinbutton {
   font-feature-settings: "tnum"; }
@@ -5664,6 +5668,12 @@ datechooser .circular.day.text-button {
     background-color: #ff5d73;
     text-shadow: none;
     font-weight: bold; }
+datechooser .weekday, datechooser .weeknum {
+  color: #909296; }
+datechooser .weeknum {
+  background-color: #e9e9e9; }
+datechooser .current-week {
+  background-color: rgba(144, 146, 150, 0.1); }
 
 agenda-view list.background {
   padding: 8px; }
@@ -5672,8 +5682,15 @@ agenda-view list.background {
   headerbar agenda-view list.background .no-events.subtitle {
     color: #31363D; }
 
-datechooser, datechooser:backdrop, agenda-view list.background, agenda-view list.background:backdrop {
-  background-color: #EEEEEE; }
+datechooser, datechooser:backdrop,
+agenda-view list.background,
+agenda-view list.background:backdrop,
+.calendar-list,
+.calendar-list:backdrop {
+  background-color: #f8f8f8; }
+
+popover datechooser {
+  background-color: transparent; }
 
 /******************************
  * Gnome system monitor graph *
