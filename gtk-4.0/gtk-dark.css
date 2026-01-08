@@ -313,7 +313,7 @@ window.assistant.csd .sidebar {
 window.assistant .sidebar label {
   padding: 6px 12px; }
 window.assistant .sidebar label.highlight {
-  background-color: #76A7A7;
+  background-color: #ff5d73;
   color: #fefefe; }
 
 window.aboutdialog image.large-icons {
@@ -337,10 +337,6 @@ popover.background.magnifier > contents, .osd {
   popover.background.magnifier > contents:backdrop, .osd:backdrop {
     text-shadow: none;
     -gtk-icon-shadow: none; }
-
-*:selected {
-  background: #ff5d73;
-  color: #fefefe; }
 
 /***********
  * Buttons *
@@ -3037,8 +3033,9 @@ menubar,
   .menubar > item {
     min-height: 16px;
     padding: 4px 8px; }
-    menubar > item:hover,
-    .menubar > item:hover {
+    menubar > item:hover, menubar > item:selected,
+    .menubar > item:hover,
+    .menubar > item:selected {
       box-shadow: inset 0 -3px #ff5d73; }
     menubar > item:disabled,
     .menubar > item:disabled {
@@ -3046,7 +3043,6 @@ menubar,
       box-shadow: none; }
 
 menu, .menu, .context-menu {
-  margin: 4px;
   padding: 2px 0px;
   background-color: #1c2529;
   border: none;
