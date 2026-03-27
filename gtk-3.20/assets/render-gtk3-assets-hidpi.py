@@ -26,13 +26,13 @@ def wait_for_prompt(process, command=None):
         process.stdin.write((command+'\n').encode('utf-8'))
 
     # This is kinda ugly ...
-    # Wait for just a '>', or '\n>' if some other char appearead first
+    # Wait for just a '> ' if some other char appearead first
     output = process.stdout.read(1)
-    if output == b'>':
+    if output == b'> ':
         return
 
     output += process.stdout.read(1)
-    while output != b'\n>':
+    while output != b'> ':
         output += process.stdout.read(1)
         output = output[1:]
 
@@ -51,7 +51,7 @@ def inkscape_render_rect(icon_file, rect, output_file):
     if inkscape_process is None:
         inkscape_process = start_inkscape()
     wait_for_prompt(inkscape_process,
-                    '--export-dpi=180 %s -i %s -e %s'
+                    'file-open:%s; export-dpi:180; export-id:%s; export-filename:%s; export-do;'
                     % (icon_file, rect, output_file)
                     )
     optimize_png(output_file)
